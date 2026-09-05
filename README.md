@@ -1,3 +1,4 @@
+
 # DealFlow360 — B2B Sales Operations Engine
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
@@ -339,3 +340,20 @@ phoen/
 ├── README.md        # This file
 └── vite.config.js   # Vite configuration
 ```
+├── vite.config.js   # Vite configuration
+```
+
+---
+
+# DealFlow360 — Production-Quality Enterprise IT Hardware Seed Dataset
+
+## Quick Reference
+The complete enterprise dataset is located in the [`seed-data/`](seed-data/) directory, featuring 16 relationally consistent CSV files focused on the **Ahmedabad Enterprise Distribution Center (`AMD-DC-01`)**.
+
+To validate the dataset, run:
+```bash
+python validate_seed_data.py
+```
+
+For full documentation regarding schema definitions, entity relationships, customer tiers, discount governance, and demo scenarios, see the complete guide:
+👉 [**`seed-data/README.md`**](seed-data/README.md)
