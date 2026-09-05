@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from models.base import db
 from models.users import User, UserCreate, Token, RoleEnum
+from dependencies import get_current_user
 import uuid
 
 router = APIRouter()
@@ -76,8 +77,6 @@ def login(login_data: LoginData):
         
     # For mock, we return the user_id as the token
     return {"access_token": user["id"], "token_type": "bearer"}
-
-from dependencies import get_current_user
 
 @router.get("/me", response_model=User)
 def read_users_me(current_user: dict = Depends(get_current_user)):
