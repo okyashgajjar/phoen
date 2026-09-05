@@ -13,6 +13,37 @@ class LoginData(BaseModel):
 @router.post("/signup", response_model=User)
 def signup(user_in: UserCreate):
     users = db.list("users")
+    
+    # Check if email is already registered
+    for u in users:
+        if u.get("email") == user_in.email:
+            raise HTTPException(status_code=400, detail="Email already registered")
+            
+    # Check if an admin already exists (we only allow 1 unique admin for signup)
+    if user_in.role == RoleEnum.admin:
+        admin_exists = any(u.get("role") == "admin" for u in users)
+        if admin_exists:
+            raise HTTPException(status_code=400, detail="An admin account already exists. Please log in.")
+    else:
+        # For this mockup, direct signup is only for admins. Other roles are created by admin.
+        raise HTTPException(status_code=400, detail="Only the initial Admin can be created via signup.")
+            
+    user_id = str(uuid.uuid4())
+    user_dict = user_in.dict()
+    user_dict["id"] = user_id
+    user_dict["tier"] = "Gold" # default tier
+    # We store the password as plaintext in the mock, don't do this in prod
+    db.insert("users", user_id, user_dict)
+    
+    return user_dict
+
+@router.post("/users", response_model=User)
+def create_user(user_in: UserCreate, current_user: dict = Depends(get_current_user)):
+    # Only Admin can create users (in this simple mockup)
+    if current_user.get("role") != "admin":
+        raise HTTPException(status_code=403, detail="Not authorized to create users")
+        
+    users = db.list("users")
     for u in users:
         if u.get("email") == user_in.email:
             raise HTTPException(status_code=400, detail="Email already registered")
@@ -20,10 +51,16 @@ def signup(user_in: UserCreate):
     user_id = str(uuid.uuid4())
     user_dict = user_in.dict()
     user_dict["id"] = user_id
-    # We store the password as plaintext in the mock, don't do this in prod
+    user_dict["tier"] = "Gold" # default tier for internal or mock
     db.insert("users", user_id, user_dict)
     
     return user_dict
+
+@router.get("/users/all")
+def get_all_users(current_user: dict = Depends(get_current_user)):
+    if current_user.get("role") not in ["admin", "manager"]:
+        raise HTTPException(status_code=403, detail="Not authorized")
+    return db.list("users")
 
 @router.post("/login", response_model=Token)
 def login(login_data: LoginData):

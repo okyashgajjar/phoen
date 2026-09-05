@@ -70,7 +70,27 @@ export const api = {
     return api.login(email, password);
   },
 
+  createUser: (userData) => request('/auth/users', {
+    method: 'POST',
+    body: JSON.stringify(userData),
+  }),
+
+  getAllUsers: () => request('/auth/users/all'),
+
   getMe: () => request('/auth/me'),
+
+  getHealth: async () => {
+    try {
+      const res = await fetch('http://localhost:8000/health');
+      if (res.ok) {
+        const data = await res.json();
+        return data.status === 'ok';
+      }
+      return false;
+    } catch {
+      return false;
+    }
+  },
 
   // ─── Quotations ───
   getQuotations: () => request('/quotations/'),

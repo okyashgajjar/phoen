@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api';
 
-export default function CatalogRulesView({ setActiveTab }) {
+export default function CatalogRulesView({  }) {
+  const navigate = useNavigate();
+
   const [rules, setRules] = useState([]);
   const [catalogProducts, setCatalogProducts] = useState([]);
 

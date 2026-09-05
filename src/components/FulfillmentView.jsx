@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api';
 
-export default function FulfillmentView({ setActiveTab }) {
+export default function FulfillmentView({  }) {
+  const navigate = useNavigate();
+
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
@@ -82,7 +85,7 @@ export default function FulfillmentView({ setActiveTab }) {
                   </button>
                 )}
                 <button
-                  onClick={() => setActiveTab('invoices')}
+                  onClick={() => navigate('/invoices')}
                   className="px-4 py-2.5 rounded-xl bg-[#eff4ff] hover:bg-[#e5eeff] text-[#2563eb] font-bold text-xs"
                 >
                   View Invoice Ledger

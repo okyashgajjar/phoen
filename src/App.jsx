@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import DashboardView from './components/DashboardView';
 import QuotationsView from './components/QuotationsView';
@@ -13,24 +14,58 @@ import DealHealthView from './components/DealHealthView';
 import NewQuoteModal from './components/NewQuoteModal';
 import LandingView from './components/LandingView';
 import AuthView from './components/AuthView';
+import TeamManagementView from './components/TeamManagementView';
+import { api, getToken } from './api';
 
-export default function App() {
+function AppContent() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [authMode, setAuthMode] = useState(null); // 'login' or 'signup'
-  const [activeTab, setActiveTab] = useState('dashboard');
   const [searchQuery, setSearchQuery] = useState('');
   const [isNewQuoteModalOpen, setIsNewQuoteModalOpen] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
+  const [apiStatus, setApiStatus] = useState(true);
 
-  const handleCreateQuote = (newQuote) => {
-    setActiveTab('quote-detail');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const token = getToken();
+      if (token) {
+        try {
+          const user = await api.getMe();
+          setCurrentUser(user);
+          setIsAuthenticated(true);
+        } catch (err) {
+          console.error("Auth check failed", err);
+          setIsAuthenticated(false);
+        }
+      }
+    };
+    checkAuth();
+
+    const checkHealth = async () => {
+      const isHealthy = await api.getHealth();
+      setApiStatus(isHealthy);
+    };
+    checkHealth();
+    const interval = setInterval(checkHealth, 30000); // Check every 30s
+    return () => clearInterval(interval);
+  }, [isAuthenticated]);
+
+  const handleAuthSuccess = () => {
+    setIsAuthenticated(true);
   };
 
-  if (!isAuthenticated) {
+  const handleCreateQuote = (newQuote) => {
+    navigate('/quote-detail');
+  };
+
+  if (!isAuthenticated || !currentUser) {
     if (authMode) {
       return (
         <AuthView 
           mode={authMode} 
-          onAuthSuccess={() => setIsAuthenticated(true)} 
+          onAuthSuccess={handleAuthSuccess} 
           onBackToLanding={() => setAuthMode(null)} 
         />
       );
@@ -42,8 +77,8 @@ export default function App() {
     <div className="min-h-screen bg-[#f8f9ff] text-[#0b1c30] flex flex-col antialiased">
       {/* Global Navbar */}
       <Navbar
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        currentUser={currentUser}
+        apiStatus={apiStatus}
         onOpenNewQuote={() => setIsNewQuoteModalOpen(true)}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
@@ -51,42 +86,21 @@ export default function App() {
 
       {/* Main Content View Container */}
       <main className="pt-20 flex-1 w-full pb-16">
-        {activeTab === 'dashboard' && (
-          <DashboardView
-            setActiveTab={setActiveTab}
-            onOpenNewQuote={() => setIsNewQuoteModalOpen(true)}
-          />
-        )}
-        {activeTab === 'quotations' && (
-          <QuotationsView
-            setActiveTab={setActiveTab}
-            onOpenNewQuote={() => setIsNewQuoteModalOpen(true)}
-          />
-        )}
-        {activeTab === 'quote-detail' && (
-          <QuotationDetailView setActiveTab={setActiveTab} />
-        )}
-        {activeTab === 'approvals' && (
-          <ApprovalCockpitView setActiveTab={setActiveTab} />
-        )}
-        {activeTab === 'catalog' && (
-          <CatalogRulesView setActiveTab={setActiveTab} />
-        )}
-        {activeTab === 'negotiation' && (
-          <NegotiationPortalView setActiveTab={setActiveTab} />
-        )}
-        {activeTab === 'fulfillment' && (
-          <FulfillmentView setActiveTab={setActiveTab} />
-        )}
-        {activeTab === 'subscriptions' && (
-          <SubscriptionsView setActiveTab={setActiveTab} />
-        )}
-        {activeTab === 'invoices' && (
-          <InvoicesView setActiveTab={setActiveTab} />
-        )}
-        {activeTab === 'deal-health' && (
-          <DealHealthView setActiveTab={setActiveTab} />
-        )}
+        <Routes>
+          <Route path="/" element={<Navigate to="/dashboard" replace />} />
+          <Route path="/dashboard" element={<DashboardView onOpenNewQuote={() => setIsNewQuoteModalOpen(true)} />} />
+          <Route path="/quotations" element={<QuotationsView onOpenNewQuote={() => setIsNewQuoteModalOpen(true)} />} />
+          <Route path="/quote-detail" element={<QuotationDetailView />} />
+          <Route path="/approvals" element={<ApprovalCockpitView />} />
+          <Route path="/catalog" element={<CatalogRulesView />} />
+          <Route path="/team" element={<TeamManagementView currentUser={currentUser} />} />
+          <Route path="/negotiation" element={<NegotiationPortalView />} />
+          <Route path="/fulfillment" element={<FulfillmentView />} />
+          <Route path="/subscriptions" element={<SubscriptionsView />} />
+          <Route path="/invoices" element={<InvoicesView />} />
+          <Route path="/deal-health" element={<DealHealthView />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        </Routes>
       </main>
 
       {/* Create New Quote Modal */}
@@ -112,5 +126,13 @@ export default function App() {
         </div>
       </footer>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }

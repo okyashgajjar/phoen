@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api';
 
-export default function ApprovalCockpitView({ setActiveTab }) {
+export default function ApprovalCockpitView({  }) {
+  const navigate = useNavigate();
+
   const [approvalState, setApprovalState] = useState('PENDING'); // PENDING, APPROVED, REJECTED
   const [comment, setComment] = useState('');
   const [overrideChecked, setOverrideChecked] = useState(false);
@@ -43,9 +46,9 @@ export default function ApprovalCockpitView({ setActiveTab }) {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white p-6 rounded-2xl border border-[#e2e8f0] shadow-sm">
         <div>
           <div className="flex items-center gap-2 text-xs font-semibold text-[#76777d] mb-1">
-            <button onClick={() => setActiveTab('quotations')} className="hover:text-[#2563eb]">Quotations</button>
+            <button onClick={() => navigate('/quotations')} className="hover:text-[#2563eb]">Quotations</button>
             <span>/</span>
-            <button onClick={() => setActiveTab('quote-detail')} className="hover:text-[#2563eb]">Q-1042</button>
+            <button onClick={() => navigate('/quote-detail')} className="hover:text-[#2563eb]">Q-1042</button>
             <span>/</span>
             <span className="text-amber-800 font-bold">Approval Cockpit</span>
           </div>
@@ -55,7 +58,7 @@ export default function ApprovalCockpitView({ setActiveTab }) {
 
         <div className="flex items-center gap-3">
           <button
-            onClick={() => setActiveTab('quote-detail')}
+            onClick={() => navigate('/quote-detail')}
             className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#eff4ff] hover:bg-[#e5eeff] text-[#2563eb] font-bold text-xs transition-all"
           >
             <span className="material-symbols-outlined text-[18px]">edit</span>
@@ -77,7 +80,7 @@ export default function ApprovalCockpitView({ setActiveTab }) {
             </p>
           </div>
           <button
-            onClick={() => setActiveTab('negotiation')}
+            onClick={() => navigate('/negotiation')}
             className="ml-auto px-4 py-2.5 rounded-xl bg-emerald-800 text-white font-bold text-xs hover:bg-emerald-900 transition-colors"
           >
             Publish to Customer Portal
@@ -97,7 +100,7 @@ export default function ApprovalCockpitView({ setActiveTab }) {
             </p>
           </div>
           <button
-            onClick={() => setActiveTab('quote-detail')}
+            onClick={() => navigate('/quote-detail')}
             className="ml-auto px-4 py-2.5 rounded-xl bg-rose-800 text-white font-bold text-xs hover:bg-rose-900 transition-colors"
           >
             Modify Line Items

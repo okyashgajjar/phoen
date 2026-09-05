@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function NegotiationPortalView({ setActiveTab }) {
+export default function NegotiationPortalView({  }) {
+  const navigate = useNavigate();
+
   const [showSignModal, setShowSignModal] = useState(false);
   const [signatureName, setSignatureName] = useState('John Doe');
   const [signatureTitle, setSignatureTitle] = useState('VP Infrastructure');
@@ -65,7 +68,7 @@ export default function NegotiationPortalView({ setActiveTab }) {
             </p>
           </div>
           <button
-            onClick={() => setActiveTab('fulfillment')}
+            onClick={() => navigate('/fulfillment')}
             className="ml-auto px-4 py-2 rounded-xl bg-emerald-800 text-white font-bold text-xs hover:bg-emerald-900"
           >
             Track Order Fulfillment

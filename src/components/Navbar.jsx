@@ -1,21 +1,30 @@
 import React, { useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-export default function Navbar({ activeTab, setActiveTab, onOpenNewQuote, searchQuery, setSearchQuery }) {
+export default function Navbar({ currentUser, apiStatus, onOpenNewQuote, searchQuery, setSearchQuery }) {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
 
-  const navItems = [
-    { id: 'dashboard', label: 'Dashboard' },
-    { id: 'quotations', label: 'Quotations' },
-    { id: 'quote-detail', label: 'Quote Q-1042' },
-    { id: 'approvals', label: 'Approvals', badge: '4 pending', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
-    { id: 'catalog', label: 'Catalog & Rules' },
-    { id: 'negotiation', label: 'Customer Portal' },
-    { id: 'fulfillment', label: 'Fulfillment' },
-    { id: 'subscriptions', label: 'Subscriptions' },
-    { id: 'invoices', label: 'Invoices' },
-    { id: 'deal-health', label: 'Deal Health', badge: '3 alerts', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  const location = useLocation();
+  const navigate = useNavigate();
+  const currentPath = location.pathname.substring(1) || 'dashboard';
+
+  const role = currentUser?.role || 'sales_rep';
+
+  const allNavItems = [
+    { id: 'dashboard', label: 'Dashboard', roles: ['admin', 'sales_rep', 'manager', 'finance', 'customer'] },
+    { id: 'quotations', label: 'Quotations', roles: ['sales_rep'] },
+    { id: 'approvals', label: 'Approvals', badge: '4 pending', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200', roles: ['manager', 'finance'] },
+    { id: 'catalog', label: 'Catalog & Rules', roles: ['admin'] },
+    { id: 'team', label: 'Team Management', roles: ['admin'] },
+    { id: 'negotiation', label: 'Customer Portal', roles: ['sales_rep', 'customer'] },
+    { id: 'fulfillment', label: 'Fulfillment', roles: ['sales_rep', 'customer'] },
+    { id: 'subscriptions', label: 'Subscriptions', roles: ['finance', 'customer'] },
+    { id: 'invoices', label: 'Invoices', roles: ['finance', 'customer'] },
+    { id: 'deal-health', label: 'Deal Health', badge: '3 alerts', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200', roles: ['manager'] },
   ];
+
+  const navItems = allNavItems.filter(item => item.roles.includes(role));
 
   const notifications = [
     { id: 1, title: 'Quote Q-1042 Flagged', time: '12m ago', desc: '18% hardware discount exceeds 15% tier limit.', type: 'warning' },
@@ -28,9 +37,13 @@ export default function Navbar({ activeTab, setActiveTab, onOpenNewQuote, search
     <header className="fixed top-0 left-0 w-full z-50 bg-[#ffffff] border-b border-[#c6c6cd]/40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="h-20 w-full px-4 lg:px-8 flex items-center justify-between gap-4">
         {/* Brand & Logo */}
-        <div className="flex items-center gap-3 shrink-0 cursor-pointer" onClick={() => setActiveTab('dashboard')}>
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0f172a] via-[#131b2e] to-[#2563eb] flex items-center justify-center text-white shadow-md">
+        <div className="flex items-center gap-3 shrink-0 cursor-pointer" onClick={() => navigate('/dashboard')}>
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0f172a] via-[#131b2e] to-[#2563eb] flex items-center justify-center text-white shadow-md relative">
             <span className="material-symbols-outlined text-[24px]">dataset</span>
+            <div 
+              className={`absolute -bottom-1 -right-1 w-3.5 h-3.5 border-2 border-white rounded-full ${apiStatus ? 'bg-emerald-500' : 'bg-red-500'}`} 
+              title={apiStatus ? 'API Online' : 'API Offline'}
+            ></div>
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-lg text-[#0b1c30] tracking-tight leading-none">Phoen</span>
@@ -41,11 +54,11 @@ export default function Navbar({ activeTab, setActiveTab, onOpenNewQuote, search
         {/* Navigation Links */}
         <nav className="hidden xl:flex items-center h-full gap-1 overflow-x-auto shrink">
           {navItems.map((item) => {
-            const isActive = activeTab === item.id;
+            const isActive = currentPath === item.id;
             return (
-              <button
+              <Link
                 key={item.id}
-                onClick={() => setActiveTab(item.id)}
+                to={`/${item.id}`}
                 className={`h-full flex items-center px-3 text-sm font-semibold whitespace-nowrap transition-colors border-b-2 ${
                   isActive
                     ? 'text-[#2563eb] border-[#2563eb]'
@@ -58,7 +71,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenNewQuote, search
                     {item.badge}
                   </span>
                 )}
-              </button>
+              </Link>
             );
           })}
         </nav>
@@ -137,14 +150,12 @@ export default function Navbar({ activeTab, setActiveTab, onOpenNewQuote, search
               onClick={() => setShowProfileMenu(!showProfileMenu)}
               className="flex items-center gap-2 cursor-pointer p-1 rounded-lg hover:bg-[#eff4ff] transition-colors"
             >
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6eGnNwcM2SWzLN7P5S_9fzAl71lAafDpxahswhQgzYLqqw_UYITDveOBT58W0KmwcQOrX4LYatjjzmk-y6DwcLx5R6RAk3k2dcTlzY52hxYLej98xxzfmBXfxl9rP__hIUR_nV7p524_UzAOEL4XkKSANGLIb6NcLx8gG654E6TSYV8JuaKRPE4Qdpu6MXyn18gJuHb1pLmcnJBQixHFZG3WZUz9Ina6EKZp_uqg8Z0hEccvcG-HL"
-                alt="Sarah Jenkins"
-                className="w-9 h-9 rounded-full object-cover ring-2 ring-[#2563eb]/20"
-              />
+              <div className="w-9 h-9 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold ring-2 ring-[#2563eb]/20">
+                {currentUser?.name?.charAt(0) || 'U'}
+              </div>
               <div className="hidden xl:flex flex-col text-left leading-tight">
-                <span className="text-xs font-bold text-[#0b1c30]">Sarah Jenkins</span>
-                <span className="text-[11px] text-[#45464d]">Sales Ops Lead</span>
+                <span className="text-xs font-bold text-[#0b1c30]">{currentUser?.name || 'User'}</span>
+                <span className="text-[11px] text-[#45464d] capitalize">{currentUser?.role?.replace('_', ' ') || 'Role'}</span>
               </div>
               <span className="material-symbols-outlined text-[18px] text-[#76777d]">expand_more</span>
             </div>
@@ -152,18 +163,24 @@ export default function Navbar({ activeTab, setActiveTab, onOpenNewQuote, search
             {showProfileMenu && (
               <div className="absolute right-0 mt-2 w-56 rounded-xl bg-white border border-[#e2e8f0] shadow-xl z-50 p-2">
                 <div className="px-3 py-2 border-b border-[#e2e8f0]">
-                  <span className="block text-xs font-bold text-[#0b1c30]">Sarah Jenkins</span>
-                  <span className="block text-[11px] text-[#76777d]">sarah.j@phoen.com</span>
+                  <span className="block text-xs font-bold text-[#0b1c30]">{currentUser?.name || 'User'}</span>
+                  <span className="block text-[11px] text-[#76777d]">{currentUser?.email || 'user@example.com'}</span>
                 </div>
                 <div className="py-1">
                   <button className="w-full text-left px-3 py-1.5 text-xs text-[#0b1c30] hover:bg-[#f1f5f9] rounded-md flex items-center gap-2">
                     <span className="material-symbols-outlined text-[16px]">person</span> User Settings
                   </button>
                   <button className="w-full text-left px-3 py-1.5 text-xs text-[#0b1c30] hover:bg-[#f1f5f9] rounded-md flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[16px]">settings</span> CPQ Preferences
+                    <span className="material-symbols-outlined text-[16px]">settings</span> Preferences
                   </button>
-                  <button className="w-full text-left px-3 py-1.5 text-xs text-[#0b1c30] hover:bg-[#f1f5f9] rounded-md flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[16px]">help</span> Help Center
+                  <button 
+                    onClick={() => {
+                      localStorage.removeItem('df360_token');
+                      window.location.reload();
+                    }}
+                    className="w-full text-left px-3 py-1.5 text-xs text-red-600 hover:bg-red-50 rounded-md flex items-center gap-2"
+                  >
+                    <span className="material-symbols-outlined text-[16px]">logout</span> Sign Out
                   </button>
                 </div>
               </div>

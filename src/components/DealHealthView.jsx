@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api';
 
-export default function DealHealthView({ setActiveTab }) {
+export default function DealHealthView({  }) {
+  const navigate = useNavigate();
+
   const [anomalies, setAnomalies] = useState([]);
   const [healthScore, setHealthScore] = useState(0);
 
@@ -97,7 +100,7 @@ export default function DealHealthView({ setActiveTab }) {
               <div className="flex items-center gap-4 shrink-0">
                 <span className="text-xs font-mono font-bold text-rose-700">{an.impact}</span>
                 <button
-                  onClick={() => setActiveTab(an.deal.includes('Q-1042') ? 'approvals' : 'quotations')}
+                  onClick={() => navigate('/' + an.deal.includes('Q-1042') ? 'approvals' : 'quotations')}
                   className="px-3 py-1.5 rounded-lg bg-[#eff4ff] hover:bg-[#e5eeff] text-[#2563eb] font-bold text-xs"
                 >
                   Investigate

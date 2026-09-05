@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function NewQuoteModal({ isOpen, onClose, onCreated }) {
   const [accountName, setAccountName] = useState('');
   const [proposalTitle, setProposalTitle] = useState('');
-  const [salesRep, setSalesRep] = useState('Sarah Jenkins');
+  const [salesRep, setSalesRep] = useState('');
   const [estimatedValue, setEstimatedValue] = useState('');
+  
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    if (isOpen) {
+      api.getAllUsers()
+        .then(data => {
+          setUsers(data);
+          const reps = data.filter(u => u.role === 'sales_rep');
+          if (reps.length > 0) setSalesRep(reps[0].name);
+          const customers = data.filter(u => u.role === 'customer');
+          if (customers.length > 0) setAccountName(customers[0].name);
+        })
+        .catch(err => console.error("Failed to load users for modal", err));
+    }
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -19,6 +36,9 @@ export default function NewQuoteModal({ isOpen, onClose, onCreated }) {
     });
     onClose();
   };
+
+  const customerUsers = users.filter(u => u.role === 'customer');
+  const salesRepUsers = users.filter(u => ['sales_rep', 'manager'].includes(u.role));
 
   return (
     <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
@@ -38,14 +58,17 @@ export default function NewQuoteModal({ isOpen, onClose, onCreated }) {
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
             <label className="text-xs font-bold text-[#0b1c30]">Customer Account Name</label>
-            <input
-              type="text"
+            <select
               required
-              placeholder="e.g. Nexus Technology Partners"
               value={accountName}
               onChange={(e) => setAccountName(e.target.value)}
-              className="p-3 rounded-xl border border-[#e2e8f0] text-sm text-[#0b1c30] placeholder:text-[#76777d] focus:outline-none focus:ring-2 focus:ring-[#2563eb]/20"
-            />
+              className="p-3 rounded-xl border border-[#e2e8f0] text-sm text-[#0b1c30] focus:outline-none focus:ring-2 focus:ring-[#2563eb]/20 bg-white"
+            >
+              {customerUsers.length === 0 && <option value="">No customers available</option>}
+              {customerUsers.map(c => (
+                <option key={c.id} value={c.name}>{c.name}</option>
+              ))}
+            </select>
           </div>
 
           <div className="flex flex-col gap-1">
@@ -67,10 +90,10 @@ export default function NewQuoteModal({ isOpen, onClose, onCreated }) {
               onChange={(e) => setSalesRep(e.target.value)}
               className="p-3 rounded-xl border border-[#e2e8f0] text-sm text-[#0b1c30] focus:outline-none focus:ring-2 focus:ring-[#2563eb]/20 bg-white"
             >
-              <option value="Sarah Jenkins">Sarah Jenkins (Sales Ops Lead)</option>
-              <option value="Marcus Vance">Marcus Vance (Enterprise AE)</option>
-              <option value="Rachel Torres">Rachel Torres (Account Executive)</option>
-              <option value="David Chen">David Chen (Finance Admin)</option>
+              {salesRepUsers.length === 0 && <option value="">No sales reps available</option>}
+              {salesRepUsers.map(s => (
+                <option key={s.id} value={s.name}>{s.name} ({s.role.replace('_', ' ')})</option>
+              ))}
             </select>
           </div>
 

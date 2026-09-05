@@ -50,7 +50,7 @@ export default function AuthView({ mode = 'login', onAuthSuccess, onBackToLandin
           <span className="text-3xl font-extrabold tracking-tight text-slate-900">Phoen</span>
         </div>
         <h2 className="mt-2 text-center text-3xl font-extrabold text-slate-900">
-          {isLogin ? 'Sign in to your account' : 'Start your free trial'}
+          {isLogin ? 'Sign in to your account' : 'Create Admin Workspace'}
         </h2>
         <p className="mt-2 text-center text-sm text-slate-600">
           Or{' '}
@@ -58,7 +58,7 @@ export default function AuthView({ mode = 'login', onAuthSuccess, onBackToLandin
             onClick={() => { setIsLogin(!isLogin); setError(''); }}
             className="font-medium text-blue-600 hover:text-blue-500 transition-colors"
           >
-            {isLogin ? 'create a new workspace' : 'sign in to an existing workspace'}
+            {isLogin ? 'create a new admin workspace' : 'sign in to an existing workspace'}
           </button>
         </p>
       </div>

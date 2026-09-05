@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api';
 
-export default function InvoicesView({ setActiveTab }) {
+export default function InvoicesView({  }) {
+  const navigate = useNavigate();
+
   const [invoices, setInvoices] = useState([]);
 
   useEffect(() => {

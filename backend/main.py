@@ -40,5 +40,9 @@ app.include_router(reports.router, prefix=settings.API_V1_STR + "/reports", tags
 def read_root():
     return {"message": f"Welcome to {settings.PROJECT_NAME} API"}
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

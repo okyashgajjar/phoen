@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api';
 
-export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
+export default function DashboardView({  onOpenNewQuote }) {
+  const navigate = useNavigate();
+
   const [kpis, setKpis] = useState(null);
 
   useEffect(() => {
@@ -124,7 +127,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
             <span>New Quotation</span>
           </button>
           <button
-            onClick={() => setActiveTab('approvals')}
+            onClick={() => navigate('/approvals')}
             className="h-12 px-6 rounded-xl bg-white hover:bg-[#f8fafc] text-[#0b1c30] font-semibold text-sm border border-[#e2e8f0] shadow-sm flex items-center gap-2.5 transition-all active:scale-[0.98]"
           >
             <span className="material-symbols-outlined text-[#76777d] text-[20px]">task_alt</span>
@@ -149,7 +152,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full md:max-w-2xl">
           <div
-            onClick={() => setActiveTab('quotations')}
+            onClick={() => navigate('/quotations')}
             className="flex items-center gap-3 bg-white/90 backdrop-blur-xs p-3 rounded-xl border border-[#e2e8f0] hover:border-[#2563eb] cursor-pointer transition-all shadow-xs"
           >
             <span className="w-7 h-7 rounded-full bg-[#dbe1ff] text-[#00174b] flex items-center justify-center font-mono text-xs font-bold shrink-0">1</span>
@@ -159,7 +162,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
             </div>
           </div>
           <div
-            onClick={() => setActiveTab('approvals')}
+            onClick={() => navigate('/approvals')}
             className="flex items-center gap-3 bg-white/90 backdrop-blur-xs p-3 rounded-xl border border-[#e2e8f0] hover:border-[#2563eb] cursor-pointer transition-all shadow-xs"
           >
             <span className="w-7 h-7 rounded-full bg-[#dbe1ff] text-[#00174b] flex items-center justify-center font-mono text-xs font-bold shrink-0">2</span>
@@ -169,7 +172,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
             </div>
           </div>
           <div
-            onClick={() => setActiveTab('invoices')}
+            onClick={() => navigate('/invoices')}
             className="flex items-center gap-3 bg-white/90 backdrop-blur-xs p-3 rounded-xl border border-[#e2e8f0] hover:border-[#2563eb] cursor-pointer transition-all shadow-xs"
           >
             <span className="w-7 h-7 rounded-full bg-[#dbe1ff] text-[#00174b] flex items-center justify-center font-mono text-xs font-bold shrink-0">3</span>
@@ -185,7 +188,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* KPI 1: Pending Approvals */}
         <div
-          onClick={() => setActiveTab('approvals')}
+          onClick={() => navigate('/approvals')}
           className="group rounded-2xl bg-white p-6 shadow-sm border border-[#e2e8f0] flex flex-col justify-between hover:shadow-md hover:border-[#2563eb]/40 transition-all cursor-pointer"
         >
           <div>
@@ -219,7 +222,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
 
         {/* KPI 2: Open Quotations */}
         <div
-          onClick={() => setActiveTab('quotations')}
+          onClick={() => navigate('/quotations')}
           className="group rounded-2xl bg-white p-6 shadow-sm border border-[#e2e8f0] flex flex-col justify-between hover:shadow-md hover:border-[#2563eb]/40 transition-all cursor-pointer"
         >
           <div>
@@ -255,7 +258,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
 
         {/* KPI 3: At-Risk Deals */}
         <div
-          onClick={() => setActiveTab('deal-health')}
+          onClick={() => navigate('/deal-health')}
           className="group rounded-2xl bg-white p-6 shadow-sm border border-[#e2e8f0] flex flex-col justify-between hover:shadow-md hover:border-rose-400 transition-all cursor-pointer"
         >
           <div>
@@ -300,7 +303,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
           {modules.map((m) => (
             <div
               key={m.id}
-              onClick={() => setActiveTab(m.tab)}
+              onClick={() => navigate('/' + m.tab)}
               className="group rounded-2xl bg-white p-5 shadow-sm border border-[#e2e8f0] hover:shadow-md hover:border-[#2563eb] transition-all cursor-pointer flex flex-col justify-between hover:-translate-y-0.5"
             >
               <div className="flex flex-col gap-3">
@@ -330,7 +333,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
               <h3 className="text-base font-bold text-[#0b1c30]">Recent Commercial Activity</h3>
               <p className="text-xs text-[#76777d]">Live audit trail of quote submissions and rule updates</p>
             </div>
-            <button onClick={() => setActiveTab('quotations')} className="text-xs font-bold text-[#2563eb] hover:underline">
+            <button onClick={() => navigate('/quotations')} className="text-xs font-bold text-[#2563eb] hover:underline">
               View all history
             </button>
           </div>
@@ -344,7 +347,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
                       <span className="text-xs font-bold text-[#0b1c30]">{item.user}</span>
                       <span className="text-xs text-[#45464d]">{item.action}</span>
                     </div>
-                    <span className="text-xs font-semibold text-[#2563eb] cursor-pointer hover:underline" onClick={() => setActiveTab('quote-detail')}>
+                    <span className="text-xs font-semibold text-[#2563eb] cursor-pointer hover:underline" onClick={() => navigate('/quote-detail')}>
                       {item.target}
                     </span>
                   </div>
@@ -367,7 +370,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
             <p className="text-xs text-[#76777d] mb-4">Recommended actions for Sarah Jenkins</p>
             <div className="space-y-3">
               <div
-                onClick={() => setActiveTab('approvals')}
+                onClick={() => navigate('/approvals')}
                 className="p-3 rounded-xl bg-amber-50/70 border border-amber-200 hover:border-amber-400 cursor-pointer transition-all flex items-start gap-3"
               >
                 <span className="material-symbols-outlined text-amber-700 text-[20px] mt-0.5">priority_high</span>
@@ -377,7 +380,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
                 </div>
               </div>
               <div
-                onClick={() => setActiveTab('negotiation')}
+                onClick={() => navigate('/negotiation')}
                 className="p-3 rounded-xl bg-blue-50/70 border border-blue-200 hover:border-blue-400 cursor-pointer transition-all flex items-start gap-3"
               >
                 <span className="material-symbols-outlined text-blue-700 text-[20px] mt-0.5">question_answer</span>
@@ -387,7 +390,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
                 </div>
               </div>
               <div
-                onClick={() => setActiveTab('fulfillment')}
+                onClick={() => navigate('/fulfillment')}
                 className="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 hover:border-emerald-400 cursor-pointer transition-all flex items-start gap-3"
               >
                 <span className="material-symbols-outlined text-emerald-700 text-[20px] mt-0.5">local_shipping</span>
@@ -399,7 +402,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
             </div>
           </div>
           <button
-            onClick={() => setActiveTab('quotations')}
+            onClick={() => navigate('/quotations')}
             className="w-full mt-4 py-2.5 rounded-xl bg-[#eff4ff] hover:bg-[#e5eeff] text-[#2563eb] font-bold text-xs transition-colors flex items-center justify-center gap-1"
           >
             <span>Open All Pipeline Items</span>

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api, setToken } from '../api';
 
-export default function QuotationsView({ setActiveTab, onOpenNewQuote }) {
+export default function QuotationsView({  onOpenNewQuote }) {
+  const navigate = useNavigate();
+
   const [viewMode, setViewMode] = useState('board'); // 'board' or 'table'
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('ALL');
@@ -189,9 +192,9 @@ export default function QuotationsView({ setActiveTab, onOpenNewQuote }) {
                     key={q.id}
                     onClick={() => {
                       if (q.id === 'Q-1042' && q.flagged) {
-                        setActiveTab('approvals');
+                        navigate('/approvals');
                       } else {
-                        setActiveTab('quote-detail');
+                        navigate('/quote-detail');
                       }
                     }}
                     className={`group bg-white p-4 rounded-xl shadow-xs border ${
@@ -255,7 +258,7 @@ export default function QuotationsView({ setActiveTab, onOpenNewQuote }) {
             </thead>
             <tbody className="divide-y divide-[#f1f5f9] text-xs font-medium text-[#0b1c30]">
               {filteredQuotes.map((q) => (
-                <tr key={q.id} className="hover:bg-[#f8fafc] transition-colors cursor-pointer" onClick={() => setActiveTab('quote-detail')}>
+                <tr key={q.id} className="hover:bg-[#f8fafc] transition-colors cursor-pointer" onClick={() => navigate('/quote-detail')}>
                   <td className="py-3.5 px-4 font-mono font-bold text-[#2563eb]">{q.id}</td>
                   <td className="py-3.5 px-4 font-bold">{q.account}</td>
                   <td className="py-3.5 px-4 text-[#45464d]">{q.title}</td>
@@ -278,7 +281,7 @@ export default function QuotationsView({ setActiveTab, onOpenNewQuote }) {
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        setActiveTab(q.flagged ? 'approvals' : 'quote-detail');
+                        navigate('/' + q.flagged ? 'approvals' : 'quote-detail');
                       }}
                       className="px-3 py-1 rounded-lg bg-[#eff4ff] hover:bg-[#e5eeff] text-[#2563eb] font-bold text-xs"
                     >
