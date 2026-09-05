@@ -1,0 +1,23 @@
+plan_id,plan_code,plan_name,billing_frequency,billing_interval,price,setup_fee,proration_enabled,cancellation_policy,refund_policy,status
+SUB-001,AMC-ENT-24X7,Comprehensive 24x7 4-Hour SLA Enterprise Hardware AMC,YEARLY,12,52000.0,5000.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-002,AMC-TRAD-IMM,Mission-Critical Trading Floor 1-Hour Immediate Response AMC,YEARLY,12,85000.0,7500.0,True,30_DAYS_NOTICE,NO_REFUND,ACTIVE
+SUB-003,AMC-NBD-STD,Next-Business-Day (NBD) Standard On-Site Hardware AMC,YEARLY,12,24000.0,2500.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-004,AMC-SVR-PLAT,Platinum Datacenter Server Cluster AMC with Spares Onsite,YEARLY,12,110000.0,10000.0,True,60_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-005,NOC-SW-MON,Cloud Network Operations Center (NOC) Managed Switch Care,MONTHLY,1,1950.0,1200.0,True,IMMEDIATE,PRORATED,ACTIVE
+SUB-006,SOC-FW-MGD,Managed Firewall Security Operations (SOC) & Threat Feeds,MONTHLY,1,9200.0,3000.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-007,MDM-SEAT-ANN,Cloud Endpoint Mobility Management (MDM) Enterprise Seat,YEARLY,12,2600.0,500.0,True,30_DAYS_NOTICE,NO_REFUND,ACTIVE
+SUB-008,MDM-VIP-EXEC,Executive VIP Concierge Mobility Protection & Lost Device SLA,YEARLY,12,5400.0,1000.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-009,SAN-STOR-MON,Proactive All-Flash SAN Storage Telemetry & Capacity Planning,MONTHLY,1,4200.0,2000.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-010,AV-ROOM-MGD,Corporate Boardroom AV & Collaboration Managed Service,MONTHLY,1,4600.0,2500.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-011,BAAS-CLD-1TB,Managed Immutable Cloud Backup & Ransomware Vault (1TB),MONTHLY,1,2800.0,1500.0,True,IMMEDIATE,PRORATED,ACTIVE
+SUB-012,BAAS-CLD-10TB,Enterprise Datacenter Immutable Cloud Backup (10TB Pool),MONTHLY,1,22000.0,5000.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-013,DESK-SEAT-SUP,Enterprise Desk-Side Support & SLA Helpdesk (Per User),MONTHLY,1,750.0,500.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-014,WIFI-MGD-AP,Managed Cloud Wi-Fi Access Point & Guest Portal Service,MONTHLY,1,650.0,500.0,True,IMMEDIATE,PRORATED,ACTIVE
+SUB-015,EDR-MGD-EP,Managed Threat Hunting & EDR Endpoint Protection Seat,YEARLY,12,3200.0,500.0,True,30_DAYS_NOTICE,NO_REFUND,ACTIVE
+SUB-016,UPS-BATT-CARE,UPS Battery Health Assurance & Annual Replacement Program,YEARLY,12,14500.0,2000.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-017,PRN-MGD-MPS,Managed Print Services & Automated Toner Replenishment,MONTHLY,1,3500.0,1500.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-018,SIEM-LOG-BFSI,BFSI Compliant Immutable Log Retention & Audit Archival,MONTHLY,1,16000.0,5000.0,True,60_DAYS_NOTICE,NO_REFUND,ACTIVE
+SUB-019,DNS-SEC-PRO,Enterprise Protective DNS & Anti-Phishing Security Shield,YEARLY,12,1800.0,500.0,True,IMMEDIATE,NO_REFUND,ACTIVE
+SUB-020,DR-HOT-STAND,Hot-Standby Virtual Machine Compute Replication Seat,MONTHLY,1,7800.0,3000.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE
+SUB-021,MAC-JAMF-PRO,Jamf Pro Hosted MDM Subscription & Apple Enterprise Care,YEARLY,12,3600.0,600.0,True,30_DAYS_NOTICE,NO_REFUND,ACTIVE
+SUB-022,NET-AUTO-SDN,Software-Defined Network Fabric Orchestration & Telemetry,MONTHLY,1,6200.0,2500.0,True,30_DAYS_NOTICE,PRORATED,ACTIVE

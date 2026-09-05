@@ -1,9 +1,7 @@
 """
-DealFlow360 Enterprise Data Validation Script
-Validates CSV seed files for relational integrity, pricing consistency,
+DealFlow360 Enterprise Data Validation Script — Bangalore Edition
+Validates all 21 CSV seed files for relational integrity, pricing consistency,
 inventory validity, date formats, SKU uniqueness, margins, and business logic.
-Supports both the Bangalore Enterprise IT Hardware dataset (seed-data-bangalore)
-and legacy datasets.
 """
 
 import os
@@ -14,20 +12,7 @@ from datetime import datetime
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-# Determine dataset directory: CLI arg > seed_data/mumbai > seed-data-mumbai > seed-data-bangalore > seed-data
-if len(sys.argv) > 1 and os.path.exists(sys.argv[1]):
-    SEED_DIR = os.path.abspath(sys.argv[1])
-elif os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed_data", "mumbai")):
-    SEED_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed_data", "mumbai")
-elif os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed-data-mumbai")):
-    SEED_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed-data-mumbai")
-elif os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed-data-bangalore")):
-    SEED_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed-data-bangalore")
-else:
-    SEED_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed-data")
-
-IS_MUMBAI = "mumbai" in SEED_DIR.lower()
-IS_BANGALORE = "bangalore" in SEED_DIR.lower()
+SEED_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_csv(filename):
     filepath = os.path.join(SEED_DIR, filename)
@@ -332,11 +317,10 @@ def validate():
             uprice = float(r[5])
             if uprice < 0:
                 invalid_prices += 1
-            if IS_BANGALORE or IS_MUMBAI:
-                cost = var_costs.get(vid, 0.0)
-                if uprice < cost:
-                    invalid_margins += 1
-                    error_log.append(f"Price list unit price {uprice} below cost {cost} for variant {vid}")
+            cost = var_costs.get(vid, 0.0)
+            if uprice < cost:
+                invalid_margins += 1
+                error_log.append(f"Price list unit price {uprice} below cost {cost} for variant {vid}")
         except ValueError:
             invalid_prices += 1
 
@@ -462,7 +446,7 @@ def validate():
         except ValueError:
             invalid_prices += 1
 
-    # 17. Negotiations (if present)
+    # 17. Negotiations
     neg_head, neg_rows = load_csv("negotiations.csv")
     neg_ids = set()
     for r in neg_rows:
@@ -485,7 +469,7 @@ def validate():
             fk_errors += 1
             error_log.append(f"Broken quotation_line_id {qlid} in negotiation {nid}")
 
-    # 18. Deal Health (if present)
+    # 18. Deal Health
     dh_head, dh_rows = load_csv("deal_health.csv")
     dh_ids = set()
     for r in dh_rows:
@@ -500,7 +484,7 @@ def validate():
             fk_errors += 1
             error_log.append(f"Broken quotation_id {qid} in deal_health {dhid}")
 
-    # 19. Audit Logs (if present)
+    # 19. Audit Logs
     aud_head, aud_rows = load_csv("audit_logs.csv")
     aud_ids = set()
     for r in aud_rows:
@@ -510,7 +494,7 @@ def validate():
             error_log.append(f"Duplicate audit_id: {aid}")
         aud_ids.add(aid)
 
-    # 20. Invoices (if present)
+    # 20. Invoices
     invc_head, invc_rows = load_csv("invoices.csv")
     invc_ids = set()
     invc_nums = set()
@@ -536,7 +520,7 @@ def validate():
             fk_errors += 1
             error_log.append(f"Broken customer_id {cid} in invoice {invid}")
 
-    # 21. Invoice Lines (if present)
+    # 21. Invoice Lines
     invcl_head, invcl_rows = load_csv("invoice_lines.csv")
     invcl_ids = set()
     for r in invcl_rows:
@@ -557,85 +541,29 @@ def validate():
         invalid_taxes + invalid_tiers + invalid_categories + invalid_margins
     )
 
-    if IS_MUMBAI:
-        print("==========================================")
-        print("DEALFLOW360 — MUMBAI DATA VALIDATION")
-        print("==========================================")
-        print(f"Products:                 {len(p_rows):>3}")
-        print(f"Variants:                 {len(pv_rows):>3}")
-        print(f"Customers:                {len(cust_rows):>3}")
-        print(f"Warehouses:               {len(w_rows):>3}")
-        print(f"Inventory Records:        {len(inv_rows):>3}")
-        print(f"Quotations:               {len(q_rows):>3}")
-        print(f"Quotation Lines:          {len(ql_rows):>3}")
-        print(f"Recommendations:          {len(rec_rows):>3}")
-        print(f"Negotiations:             {len(neg_rows):>3}")
-        print("")
-        print(f"Foreign Key Errors:       {fk_errors:>3}")
-        print(f"Duplicate IDs:            {duplicate_ids:>3}")
-        print(f"Duplicate SKUs:           {duplicate_skus:>3}")
-        print(f"Invalid Prices:           {invalid_prices:>3}")
-        print(f"Invalid Inventory:        {invalid_inventory:>3}")
-        print(f"Invalid Margins:          {invalid_margins:>3}")
-        print("")
-        status_str = "PASS" if total_issues == 0 else f"FAIL ({total_issues} issues)"
-        print(f"STATUS: {status_str}")
-        if total_issues == 0:
-            print("DATA QUALITY: 100%")
-        print("==========================================")
-    elif IS_BANGALORE:
-        print("==========================================")
-        print("DEALFLOW360 — BANGALORE DATA VALIDATION")
-        print("==========================================")
-        print(f"Products:                 {len(p_rows):>3}")
-        print(f"Variants:                 {len(pv_rows):>3}")
-        print(f"Customers:                {len(cust_rows):>3}")
-        print(f"Warehouses:               {len(w_rows):>3}")
-        print(f"Inventory Records:        {len(inv_rows):>3}")
-        print(f"Quotations:               {len(q_rows):>3}")
-        print(f"Quotation Lines:          {len(ql_rows):>3}")
-        print(f"Recommendations:          {len(rec_rows):>3}")
-        print(f"Negotiations:             {len(neg_rows):>3}")
-        print("")
-        print(f"Foreign Key Errors:       {fk_errors:>3}")
-        print(f"Duplicate IDs:            {duplicate_ids:>3}")
-        print(f"Duplicate SKUs:           {duplicate_skus:>3}")
-        print(f"Invalid Prices:           {invalid_prices:>3}")
-        print(f"Invalid Inventory:        {invalid_inventory:>3}")
-        print(f"Invalid Margins:          {invalid_margins:>3}")
-        print("")
-        status_str = "PASS" if total_issues == 0 else f"FAIL ({total_issues} issues)"
-        print(f"STATUS: {status_str}")
-        print("==========================================")
-    else:
-        print("========================================")
-        print("DEALFLOW360 DATA VALIDATION")
-        print("========================================")
-        print(f"Products:                 {len(p_rows):>6}")
-        print(f"Variants:                 {len(pv_rows):>6}")
-        print(f"Customers:                {len(cust_rows):>6}")
-        print(f"Warehouses:               {len(w_rows):>6}")
-        print(f"Inventory Records:        {len(inv_rows):>6}")
-        print(f"Recommendations:          {len(rec_rows):>6}")
-        print(f"Quotations:               {len(q_rows):>6}")
-        print(f"Quotation Lines:          {len(ql_rows):>6}")
-        print(f"Price List Entries:       {len(pl_rows):>6}")
-        print(f"Product-Service Rules:    {len(psr_rows):>6}")
-        print("----------------------------------------")
-        print(f"Foreign Key Errors:       {fk_errors:>6}")
-        print(f"Duplicate IDs:            {duplicate_ids:>6}")
-        print(f"Duplicate SKUs:           {duplicate_skus:>6}")
-        print(f"Invalid Prices:           {invalid_prices:>6}")
-        print(f"Invalid Inventory:        {invalid_inventory:>6}")
-        print(f"Invalid Dates:            {invalid_dates:>6}")
-        print(f"Invalid Discount Rules:   {invalid_discounts:>6}")
-        print(f"Invalid Tax Rates:        {invalid_taxes:>6}")
-        print(f"Invalid Customer Tiers:   {invalid_tiers:>6}")
-        print(f"Invalid Categories:       {invalid_categories:>6}")
-        print("----------------------------------------")
-        status_str = "PASS" if total_issues == 0 else f"FAIL ({total_issues} issues)"
-        print(f"STATUS: {status_str}")
-        print("========================================")
+    print("==========================================")
+    print("DEALFLOW360 — BANGALORE DATA VALIDATION")
+    print("==========================================")
+    print(f"Products:                 {len(p_rows):>3}")
+    print(f"Variants:                 {len(pv_rows):>3}")
+    print(f"Customers:                {len(cust_rows):>3}")
+    print(f"Warehouses:               {len(w_rows):>3}")
+    print(f"Inventory Records:        {len(inv_rows):>3}")
+    print(f"Quotations:               {len(q_rows):>3}")
+    print(f"Quotation Lines:          {len(ql_rows):>3}")
+    print(f"Recommendations:          {len(rec_rows):>3}")
+    print(f"Negotiations:             {len(neg_rows):>3}")
+    print("")
+    print(f"Foreign Key Errors:       {fk_errors:>3}")
+    print(f"Duplicate IDs:            {duplicate_ids:>3}")
+    print(f"Duplicate SKUs:           {duplicate_skus:>3}")
+    print(f"Invalid Prices:           {invalid_prices:>3}")
+    print(f"Invalid Inventory:        {invalid_inventory:>3}")
+    print(f"Invalid Margins:          {invalid_margins:>3}")
+    print("")
+    status_str = "PASS" if total_issues == 0 else f"FAIL ({total_issues} issues)"
+    print(f"STATUS: {status_str}")
+    print("==========================================")
 
     if error_log:
         print("\nFIRST 20 DETECTED ISSUES:")

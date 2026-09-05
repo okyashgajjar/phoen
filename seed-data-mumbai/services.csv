@@ -1,0 +1,43 @@
+service_id,service_code,service_name,service_category,description,cost,selling_price,tax_rate,minimum_margin_percent,recurring,billing_frequency,status
+SRV-001,SRV-SRV-INST,Enterprise Server & High-Density Rack Installation,INSTALLATION,"Physical mounting, dual PDU cable management, and POST diagnostics",5000.0,8500.0,18.0,41.2,False,ONE_TIME,ACTIVE
+SRV-002,SRV-STO-ZONE,SAN/NAS Storage Array Commissioning & Zoning,DEPLOYMENT,"LUN creation, RAID-6/10 initialization, and multipath Fibre Channel zoning",9500.0,16500.0,18.0,42.4,False,ONE_TIME,ACTIVE
+SRV-003,SRV-NET-SWL3,L2/L3 Core & Access Network Switch Configuration,CONFIGURATION,"VLAN segmentation, 802.1Q trunking, OSPF/BGP routing, and storm control",7000.0,13500.0,18.0,48.1,False,ONE_TIME,ACTIVE
+SRV-004,SRV-SEC-FWHA,Next-Gen Firewall High-Availability Cluster Deployment,SECURITY,"Active/Passive HA pairing, SSL deep inspection, and perimeter threat policy",11000.0,19500.0,18.0,43.6,False,ONE_TIME,ACTIVE
+SRV-005,SRV-LAP-GOLD,Enterprise Laptop Zero-Touch Imaging & Domain Join,DEPLOYMENT,"Windows 11 Enterprise Autopilot provisioning, BitLocker encryption, CMDB enrollment",750.0,1400.0,18.0,46.4,False,ONE_TIME,ACTIVE
+SRV-006,SRV-WKS-TRAD,Financial Trading Desk Multi-Display & Workstation Setup,DEPLOYMENT,"Quad-display monitor arm alignment, Bloomberg/Refinitiv terminal tuning",1600.0,3200.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-007,SRV-CAB-P24,Structured Cat6A 24-Port Patch Panel Termination,CABLING,"Fluke DSX-8000 certified patch cabling, dressing, and labelling",3800.0,7200.0,18.0,47.2,False,ONE_TIME,ACTIVE
+SRV-008,SRV-UPS-COMM,Online Double-Conversion Rackmount UPS Commissioning,ELECTRICAL,"Battery cold start calibration, external bypass panel wiring, SNMP alert setup",2600.0,5000.0,18.0,48.0,False,ONE_TIME,ACTIVE
+SRV-009,SRV-COL-BRM,Corporate Boardroom Video Conferencing Integration,COLLABORATION,"Acoustic calibration, dual commercial display mounting, touch panel pairing",8500.0,15500.0,18.0,45.2,False,ONE_TIME,ACTIVE
+SRV-010,SRV-AST-RFID,Enterprise Asset Tagging & Tamper-Evident CMDB Enrollment,MANAGED_SERVICE,"Metallic QR barcode affixing, serial logging, and ERP inventory sync",200.0,400.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-011,SRV-MIG-DBDS,Enterprise Data Migration & Database Storage Sync,MIGRATION,"Hot replication, block-level migration, snapshot cutover, and integrity test",6000.0,11000.0,18.0,45.5,False,ONE_TIME,ACTIVE
+SRV-012,SRV-EMG-4HR,Emergency Mumbai Onsite 4-Hour Response IT Support,SUPPORT,Dedicated Tier-3 engineer dispatch for high-priority trading/DC incidents,1800.0,3500.0,18.0,48.6,False,ONE_TIME,ACTIVE
+SRV-013,SRV-MAC-MDM,Apple macOS Corporate Fleet Provisioning & Jamf Enrollment,DEPLOYMENT,"Apple Business Manager (ABM) zero-touch enrollment, FileVault, and compliance",900.0,1600.0,18.0,43.8,False,ONE_TIME,ACTIVE
+SRV-014,SRV-WIFI-SURV,Enterprise Wi-Fi 6E Predictive RF Site Survey & Heatmap,AUDIT,"Spectrum analysis, rogue AP detection, and optimal AP density design",12000.0,22000.0,18.0,45.5,False,ONE_TIME,ACTIVE
+SRV-015,SRV-VM-DEPL,VMware ESXi / Proxmox Virtualization Node Setup,DEPLOYMENT,"Host hardening, vSwitch networking, iSCSI/NFS storage datastore creation",6500.0,12000.0,18.0,45.8,False,ONE_TIME,ACTIVE
+SRV-016,SRV-DESK-DEPL,Corporate Desktop & Micro-PC Desk-Side Rollout,DEPLOYMENT,"Physical placement, peripheral hookup, secure cable conduit, and network testing",600.0,1100.0,18.0,45.5,False,ONE_TIME,ACTIVE
+SRV-017,SRV-SW-MIG,Core Switch Firmware Upgrade & High-Availability Test,MAINTENANCE,"Non-disruptive ISSU upgrade, redundant supervisor failover verification",8000.0,14500.0,18.0,44.8,False,ONE_TIME,ACTIVE
+SRV-018,SRV-FW-AUD,Firewall Rulebase Audit & BFSI Compliance Hardening,AUDIT,"Shadow rule removal, PCI-DSS / RBI compliance verification, audit logging",15000.0,26000.0,18.0,42.3,False,ONE_TIME,ACTIVE
+SRV-019,SRV-PRN-SEC,Secure Pull-Printing & Departmental Badge Reader Setup,DEPLOYMENT,"AD/LDAP user authentication, card reader integration, print quota limits",2500.0,4800.0,18.0,47.9,False,ONE_TIME,ACTIVE
+SRV-020,SRV-BACK-VER,Automated Backup Validation & Disaster Recovery Drill,SECURITY,"Bare-metal restore test, immutable snapshot verification, RTO/RPO report",10000.0,18000.0,18.0,44.4,False,ONE_TIME,ACTIVE
+SRV-021,SRV-OPT-100G,High-Speed 40G/100G Optical Transceiver Link Validation,NETWORK,"OTDR fiber insertion loss testing, transceiver light level verification",4500.0,8500.0,18.0,47.1,False,ONE_TIME,ACTIVE
+SRV-022,SRV-RACK-REOR,Datacenter Rack Re-organization & Cable Remanagement,FACILITY,"Cold-aisle containment dressing, color-coded patch cord restructuring",7500.0,13500.0,18.0,44.4,False,ONE_TIME,ACTIVE
+SRV-023,SRV-SAN-TUNE,All-Flash SAN Array IOPS Tuning & Host Multipath Config,STORAGE,"Queue depth optimization, ALUA multipath policy, tiering performance test",8500.0,15000.0,18.0,43.3,False,ONE_TIME,ACTIVE
+SRV-024,SRV-MOB-KNOX,Samsung Knox Enterprise Mobility Policy Enrollment,MOBILITY,"Secure workspace containerization, remote wipe policy, and kiosk lock",450.0,850.0,18.0,47.1,False,ONE_TIME,ACTIVE
+SRV-025,SRV-DISP-CAL,UltraSharp Color Grading Display Factory-Grade Calibration,DISPLAY,"Hardware LUT colorimeter calibration (sRGB, DCI-P3, Rec. 709 profiling)",900.0,1800.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-026,SRV-UPS-BATT,UPS Hot-Swappable Battery Replacement & Load Bank Test,ELECTRICAL,"Battery module swap, load test under 80% capacity, discharge calibration",3200.0,6000.0,18.0,46.7,False,ONE_TIME,ACTIVE
+SRV-027,SRV-CYB-EDR,Enterprise EDR Endpoint Security Agent Mass Rollout,SECURITY,"CrowdStrike / Defender for Endpoint silent push, sensor health validation",350.0,700.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-028,SRV-TEL-CONF,Executive Desk VoIP Phone Configuration & QoS Mapping,TELECOM,"SIP extension registration, PoE switch voice VLAN, jitter buffer optimization",650.0,1200.0,18.0,45.8,False,ONE_TIME,ACTIVE
+SRV-029,SRV-DOCK-FIRM,Thunderbolt Docking Station Mass Firmware Harmonization,MAINTENANCE,"DisplayPort/USB-C controller firmware flashing, docking reliability patch",400.0,750.0,18.0,46.7,False,ONE_TIME,ACTIVE
+SRV-030,SRV-NAS-REPL,Cross-Site Branch NAS Automated Replication Setup,STORAGE,"Rsync/Btrfs snapshot scheduling, bandwidth throttling, failover testing",4500.0,8500.0,18.0,47.1,False,ONE_TIME,ACTIVE
+SRV-031,SRV-AV-TUNE,Meeting Room Acoustic Echo Cancellation & Mic Array Tuning,COLLABORATION,"Reverberation dampening, beamforming mic polar pattern calibration",4000.0,7500.0,18.0,46.7,False,ONE_TIME,ACTIVE
+SRV-032,SRV-BIOS-LOCK,Corporate BIOS/UEFI Security Lock & TPM 2.0 Hardening,SECURITY,"Custom supervisor password, secure boot enforcement, port lockout",300.0,600.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-033,SRV-ENV-MON,Server Room Thermal & Humidity Sensor Integration,FACILITY,"SNMP environmental probe deployment, SMS/Email temperature threshold alerts",2800.0,5200.0,18.0,46.2,False,ONE_TIME,ACTIVE
+SRV-034,SRV-HDD-SHRED,On-Site Cryptographic Hard Drive Decommissioning & Shred,SECURITY,"NIST 800-88 sanitization, degaussing, certificate of destruction issue",450.0,900.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-035,SRV-EX-ONBRD,Executive White-Glove VIP User IT Onboarding Experience,SUPPORT,"In-person concierge orientation, multi-device sync, personalized hotline",2500.0,5000.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-036,SRV-NOC-TKT,Remote NOC Technical Support Incident Token (5-Pack),SUPPORT,Pack of 5 priority remote remediation tickets with 15-min SLA,3000.0,5800.0,18.0,48.3,False,ONE_TIME,ACTIVE
+SRV-037,SRV-PDU-INST,Intelligent Metered/Switched PDU Integration,ELECTRICAL,"Phase balancing, branch circuit power telemetry, remote outlet reboot",2200.0,4200.0,18.0,47.6,False,ONE_TIME,ACTIVE
+SRV-038,SRV-FIB-SPLC,Single-Mode Fiber Optic Fusion Splicing & OTDR Test,CABLING,"LC duplex fiber core fusion splicing, heat-shrink sleeve, attenuation log",6000.0,11500.0,18.0,47.8,False,ONE_TIME,ACTIVE
+SRV-039,SRV-RAD-SRV,Enterprise 802.1X Network Access Control (NAC) RADIUS,SECURITY,"EAP-TLS certificate authentication, dynamic VLAN steering, guest portal",9000.0,16500.0,18.0,45.5,False,ONE_TIME,ACTIVE
+SRV-040,SRV-TAB-KIOSK,Commercial Tablet Kiosk Mount & POS Lockdown Setup,MOBILITY,"Vandal-resistant enclosure mounting, kiosk application pinning, PoE split",1200.0,2400.0,18.0,50.0,False,ONE_TIME,ACTIVE
+SRV-041,SRV-AUD-POW,Data Center Clean Power Quality & Harmonic Distortion Audit,AUDIT,"Total Harmonic Distortion (THD) logging, ground loop detection",14000.0,25000.0,18.0,44.0,False,ONE_TIME,ACTIVE
+SRV-042,SRV-RELOC-IT,Enterprise Inter-Facility Server Rack Relocation & Re-rack,LOGISTICS,"De-cabling, shock-absorbing transport, re-racking, and cold boot support",18000.0,32000.0,18.0,43.8,False,ONE_TIME,ACTIVE

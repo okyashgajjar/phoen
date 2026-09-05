@@ -1,0 +1,745 @@
+recommendation_id,source_product_id,recommended_product_id,recommendation_type,confidence_score,co_purchase_rate,margin_delta,priority,promotion_active,minimum_margin_percent,reason,status
+REC-0001,PROD-0001,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0002,PROD-0001,PROD-0248,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0003,PROD-0001,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0004,PROD-0001,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0005,PROD-0002,PROD-0347,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0006,PROD-0002,PROD-0263,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0007,PROD-0002,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0008,PROD-0002,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0009,PROD-0003,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0010,PROD-0003,PROD-0239,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0011,PROD-0003,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0012,PROD-0003,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0013,PROD-0004,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0014,PROD-0004,PROD-0241,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0015,PROD-0004,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0016,PROD-0004,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0017,PROD-0005,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0018,PROD-0005,PROD-0241,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0019,PROD-0005,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0020,PROD-0005,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0021,PROD-0006,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0022,PROD-0006,PROD-0255,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0023,PROD-0006,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0024,PROD-0006,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0025,PROD-0007,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0026,PROD-0007,PROD-0263,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0027,PROD-0007,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0028,PROD-0007,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0029,PROD-0008,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0030,PROD-0008,PROD-0253,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0031,PROD-0008,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0032,PROD-0008,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0033,PROD-0009,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0034,PROD-0009,PROD-0266,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0035,PROD-0009,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0036,PROD-0009,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0037,PROD-0010,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0038,PROD-0010,PROD-0260,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0039,PROD-0010,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0040,PROD-0010,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0041,PROD-0011,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0042,PROD-0011,PROD-0243,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0043,PROD-0011,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0044,PROD-0011,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0045,PROD-0012,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0046,PROD-0012,PROD-0241,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0047,PROD-0012,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0048,PROD-0012,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0049,PROD-0013,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0050,PROD-0013,PROD-0252,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0051,PROD-0013,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0052,PROD-0013,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0053,PROD-0014,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0054,PROD-0014,PROD-0255,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0055,PROD-0014,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0056,PROD-0014,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0057,PROD-0015,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0058,PROD-0015,PROD-0238,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0059,PROD-0015,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0060,PROD-0015,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0061,PROD-0016,PROD-0347,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0062,PROD-0016,PROD-0249,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0063,PROD-0016,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0064,PROD-0016,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0065,PROD-0017,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0066,PROD-0017,PROD-0257,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0067,PROD-0017,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0068,PROD-0017,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0069,PROD-0018,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0070,PROD-0018,PROD-0260,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0071,PROD-0018,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0072,PROD-0018,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0073,PROD-0019,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0074,PROD-0019,PROD-0267,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0075,PROD-0019,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0076,PROD-0019,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0077,PROD-0020,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0078,PROD-0020,PROD-0263,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0079,PROD-0020,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0080,PROD-0020,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0081,PROD-0021,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0082,PROD-0021,PROD-0261,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0083,PROD-0021,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0084,PROD-0021,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0085,PROD-0022,PROD-0347,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0086,PROD-0022,PROD-0244,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0087,PROD-0022,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0088,PROD-0022,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0089,PROD-0023,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0090,PROD-0023,PROD-0255,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0091,PROD-0023,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0092,PROD-0023,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0093,PROD-0024,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0094,PROD-0024,PROD-0257,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0095,PROD-0024,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0096,PROD-0024,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0097,PROD-0025,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0098,PROD-0025,PROD-0253,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0099,PROD-0025,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0100,PROD-0025,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0101,PROD-0026,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0102,PROD-0026,PROD-0258,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0103,PROD-0026,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0104,PROD-0026,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0105,PROD-0027,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0106,PROD-0027,PROD-0269,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0107,PROD-0027,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0108,PROD-0027,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0109,PROD-0028,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0110,PROD-0028,PROD-0263,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0111,PROD-0028,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0112,PROD-0028,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0113,PROD-0029,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0114,PROD-0029,PROD-0250,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0115,PROD-0029,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0116,PROD-0029,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0117,PROD-0030,PROD-0347,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0118,PROD-0030,PROD-0252,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0119,PROD-0030,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0120,PROD-0030,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0121,PROD-0031,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0122,PROD-0031,PROD-0257,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0123,PROD-0031,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0124,PROD-0031,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0125,PROD-0032,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0126,PROD-0032,PROD-0249,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0127,PROD-0032,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0128,PROD-0032,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0129,PROD-0033,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0130,PROD-0033,PROD-0246,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0131,PROD-0033,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0132,PROD-0033,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0133,PROD-0034,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0134,PROD-0034,PROD-0249,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0135,PROD-0034,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0136,PROD-0034,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0137,PROD-0035,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0138,PROD-0035,PROD-0252,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0139,PROD-0035,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0140,PROD-0035,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0141,PROD-0036,PROD-0347,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0142,PROD-0036,PROD-0257,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0143,PROD-0036,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0144,PROD-0036,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0145,PROD-0037,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0146,PROD-0037,PROD-0254,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0147,PROD-0037,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0148,PROD-0037,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0149,PROD-0038,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0150,PROD-0038,PROD-0268,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0151,PROD-0038,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0152,PROD-0038,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0153,PROD-0039,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0154,PROD-0039,PROD-0242,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0155,PROD-0039,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0156,PROD-0039,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0157,PROD-0040,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0158,PROD-0040,PROD-0245,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0159,PROD-0040,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0160,PROD-0040,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0161,PROD-0041,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0162,PROD-0041,PROD-0264,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0163,PROD-0041,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0164,PROD-0041,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0165,PROD-0042,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0166,PROD-0042,PROD-0250,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0167,PROD-0042,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0168,PROD-0042,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0169,PROD-0043,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0170,PROD-0043,PROD-0267,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0171,PROD-0043,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0172,PROD-0043,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0173,PROD-0044,PROD-0347,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0174,PROD-0044,PROD-0249,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0175,PROD-0044,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0176,PROD-0044,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0177,PROD-0045,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0178,PROD-0045,PROD-0249,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0179,PROD-0045,PROD-0355,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0180,PROD-0045,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0181,PROD-0046,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0182,PROD-0046,PROD-0238,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0183,PROD-0046,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0184,PROD-0046,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0185,PROD-0047,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0186,PROD-0047,PROD-0248,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0187,PROD-0047,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0188,PROD-0047,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0189,PROD-0048,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0190,PROD-0048,PROD-0246,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0191,PROD-0048,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0192,PROD-0048,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0193,PROD-0049,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0194,PROD-0049,PROD-0263,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0195,PROD-0049,PROD-0356,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0196,PROD-0049,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0197,PROD-0050,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0198,PROD-0050,PROD-0238,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0199,PROD-0050,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0200,PROD-0050,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0201,PROD-0051,PROD-0343,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0202,PROD-0051,PROD-0261,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0203,PROD-0051,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0204,PROD-0051,PROD-0359,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0205,PROD-0052,PROD-0346,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0206,PROD-0052,PROD-0250,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0207,PROD-0052,PROD-0353,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0208,PROD-0052,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0209,PROD-0053,PROD-0342,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0210,PROD-0053,PROD-0253,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0211,PROD-0053,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0212,PROD-0053,PROD-0360,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0213,PROD-0054,PROD-0344,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0214,PROD-0054,PROD-0257,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0215,PROD-0054,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0216,PROD-0054,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0217,PROD-0055,PROD-0345,CROSS_SELL,0.94,0.85,8.5,1,True,20.0,Essential docking station enabling multi-monitor financial desk productivity,ACTIVE
+REC-0218,PROD-0055,PROD-0257,ATTACHMENT,0.89,0.76,6.5,2,True,20.0,Recommended high-resolution display for corporate spreadsheet analysis,ACTIVE
+REC-0219,PROD-0055,PROD-0354,ATTACHMENT,0.86,0.71,9.5,3,True,20.0,Noise-cancelling wireless headset for executive Zoom/Teams conferences,ACTIVE
+REC-0220,PROD-0055,PROD-0358,ATTACHMENT,0.92,0.84,14.0,4,True,20.0,Protective corporate ballistic nylon backpack for executive travel,ACTIVE
+REC-0221,PROD-0056,PROD-0240,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0222,PROD-0056,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0223,PROD-0056,PROD-0279,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0224,PROD-0057,PROD-0267,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0225,PROD-0057,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0226,PROD-0057,PROD-0283,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0227,PROD-0058,PROD-0246,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0228,PROD-0058,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0229,PROD-0058,PROD-0285,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0230,PROD-0059,PROD-0260,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0231,PROD-0059,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0232,PROD-0059,PROD-0275,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0233,PROD-0060,PROD-0263,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0234,PROD-0060,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0235,PROD-0060,PROD-0277,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0236,PROD-0061,PROD-0252,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0237,PROD-0061,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0238,PROD-0061,PROD-0276,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0239,PROD-0062,PROD-0239,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0240,PROD-0062,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0241,PROD-0062,PROD-0273,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0242,PROD-0063,PROD-0261,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0243,PROD-0063,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0244,PROD-0063,PROD-0282,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0245,PROD-0064,PROD-0254,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0246,PROD-0064,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0247,PROD-0064,PROD-0289,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0248,PROD-0065,PROD-0241,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0249,PROD-0065,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0250,PROD-0065,PROD-0270,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0251,PROD-0066,PROD-0241,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0252,PROD-0066,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0253,PROD-0066,PROD-0283,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0254,PROD-0067,PROD-0266,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0255,PROD-0067,PROD-0361,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0256,PROD-0067,PROD-0273,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0257,PROD-0068,PROD-0254,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0258,PROD-0068,PROD-0361,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0259,PROD-0068,PROD-0274,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0260,PROD-0069,PROD-0251,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0261,PROD-0069,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0262,PROD-0069,PROD-0279,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0263,PROD-0070,PROD-0264,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0264,PROD-0070,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0265,PROD-0070,PROD-0286,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0266,PROD-0071,PROD-0255,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0267,PROD-0071,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0268,PROD-0071,PROD-0283,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0269,PROD-0072,PROD-0244,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0270,PROD-0072,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0271,PROD-0072,PROD-0279,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0272,PROD-0073,PROD-0245,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0273,PROD-0073,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0274,PROD-0073,PROD-0285,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0275,PROD-0074,PROD-0250,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0276,PROD-0074,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0277,PROD-0074,PROD-0278,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0278,PROD-0075,PROD-0250,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0279,PROD-0075,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0280,PROD-0075,PROD-0283,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0281,PROD-0076,PROD-0256,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0282,PROD-0076,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0283,PROD-0076,PROD-0271,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0284,PROD-0077,PROD-0269,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0285,PROD-0077,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0286,PROD-0077,PROD-0285,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0287,PROD-0078,PROD-0259,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0288,PROD-0078,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0289,PROD-0078,PROD-0270,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0290,PROD-0079,PROD-0238,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0291,PROD-0079,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0292,PROD-0079,PROD-0273,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0293,PROD-0080,PROD-0269,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0294,PROD-0080,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0295,PROD-0080,PROD-0272,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0296,PROD-0081,PROD-0242,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0297,PROD-0081,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0298,PROD-0081,PROD-0278,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0299,PROD-0082,PROD-0252,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0300,PROD-0082,PROD-0361,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0301,PROD-0082,PROD-0279,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0302,PROD-0083,PROD-0254,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0303,PROD-0083,PROD-0361,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0304,PROD-0083,PROD-0271,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0305,PROD-0084,PROD-0244,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0306,PROD-0084,PROD-0351,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0307,PROD-0084,PROD-0271,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0308,PROD-0085,PROD-0256,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0309,PROD-0085,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0310,PROD-0085,PROD-0280,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0311,PROD-0086,PROD-0265,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0312,PROD-0086,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0313,PROD-0086,PROD-0273,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0314,PROD-0087,PROD-0240,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0315,PROD-0087,PROD-0350,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0316,PROD-0087,PROD-0274,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0317,PROD-0088,PROD-0248,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0318,PROD-0088,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0319,PROD-0088,PROD-0281,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0320,PROD-0089,PROD-0266,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0321,PROD-0089,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0322,PROD-0089,PROD-0272,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0323,PROD-0090,PROD-0261,ATTACHMENT,0.93,0.86,8.0,1,True,20.0,Ergonomic dual-monitor pairing expands multi-tasking workspace,ACTIVE
+REC-0324,PROD-0090,PROD-0352,CROSS_SELL,0.95,0.9,12.0,2,True,20.0,Enterprise wireless keyboard and silent mouse combo,ACTIVE
+REC-0325,PROD-0090,PROD-0275,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Line-interactive desktop UPS safeguards corporate desktop sessions,ACTIVE
+REC-0326,PROD-0091,PROD-0243,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0327,PROD-0091,PROD-0282,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0328,PROD-0092,PROD-0249,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0329,PROD-0092,PROD-0284,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0330,PROD-0093,PROD-0247,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0331,PROD-0093,PROD-0282,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0332,PROD-0094,PROD-0263,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0333,PROD-0094,PROD-0285,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0334,PROD-0095,PROD-0264,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0335,PROD-0095,PROD-0283,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0336,PROD-0096,PROD-0262,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0337,PROD-0096,PROD-0275,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0338,PROD-0097,PROD-0243,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0339,PROD-0097,PROD-0274,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0340,PROD-0098,PROD-0263,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0341,PROD-0098,PROD-0271,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0342,PROD-0099,PROD-0265,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0343,PROD-0099,PROD-0275,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0344,PROD-0100,PROD-0243,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0345,PROD-0100,PROD-0283,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0346,PROD-0101,PROD-0268,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0347,PROD-0101,PROD-0288,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0348,PROD-0102,PROD-0254,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0349,PROD-0102,PROD-0288,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0350,PROD-0103,PROD-0262,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0351,PROD-0103,PROD-0284,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0352,PROD-0104,PROD-0244,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0353,PROD-0104,PROD-0289,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0354,PROD-0105,PROD-0249,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0355,PROD-0105,PROD-0281,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0356,PROD-0106,PROD-0261,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0357,PROD-0106,PROD-0270,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0358,PROD-0107,PROD-0265,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0359,PROD-0107,PROD-0274,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0360,PROD-0108,PROD-0254,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0361,PROD-0108,PROD-0285,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0362,PROD-0109,PROD-0243,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0363,PROD-0109,PROD-0283,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0364,PROD-0110,PROD-0254,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0365,PROD-0110,PROD-0271,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0366,PROD-0111,PROD-0243,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0367,PROD-0111,PROD-0278,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0368,PROD-0112,PROD-0262,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0369,PROD-0112,PROD-0280,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0370,PROD-0113,PROD-0242,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0371,PROD-0113,PROD-0286,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0372,PROD-0114,PROD-0264,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0373,PROD-0114,PROD-0288,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0374,PROD-0115,PROD-0263,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0375,PROD-0115,PROD-0288,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0376,PROD-0116,PROD-0245,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0377,PROD-0116,PROD-0280,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0378,PROD-0117,PROD-0258,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0379,PROD-0117,PROD-0286,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0380,PROD-0118,PROD-0263,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0381,PROD-0118,PROD-0289,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0382,PROD-0119,PROD-0243,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0383,PROD-0119,PROD-0283,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0384,PROD-0120,PROD-0262,UPSELL,0.96,0.89,10.5,1,True,20.0,Factory color-calibrated high-density display required for algorithmic modeling,ACTIVE
+REC-0385,PROD-0120,PROD-0277,ATTACHMENT,0.92,0.78,8.0,2,True,20.0,Pure sine-wave power backup prevents computational workstation data corruption,ACTIVE
+REC-0386,PROD-0121,PROD-0277,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0387,PROD-0121,PROD-0204,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0388,PROD-0121,PROD-0200,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0389,PROD-0122,PROD-0272,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0390,PROD-0122,PROD-0207,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0391,PROD-0122,PROD-0179,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0392,PROD-0123,PROD-0270,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0393,PROD-0123,PROD-0209,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0394,PROD-0123,PROD-0185,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0395,PROD-0124,PROD-0278,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0396,PROD-0124,PROD-0206,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0397,PROD-0124,PROD-0204,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0398,PROD-0125,PROD-0283,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0399,PROD-0125,PROD-0188,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0400,PROD-0125,PROD-0181,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0401,PROD-0126,PROD-0282,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0402,PROD-0126,PROD-0206,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0403,PROD-0126,PROD-0191,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0404,PROD-0127,PROD-0273,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0405,PROD-0127,PROD-0204,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0406,PROD-0127,PROD-0189,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0407,PROD-0128,PROD-0270,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0408,PROD-0128,PROD-0207,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0409,PROD-0128,PROD-0188,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0410,PROD-0129,PROD-0278,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0411,PROD-0129,PROD-0209,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0412,PROD-0129,PROD-0200,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0413,PROD-0130,PROD-0276,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0414,PROD-0130,PROD-0189,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0415,PROD-0130,PROD-0181,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0416,PROD-0131,PROD-0277,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0417,PROD-0131,PROD-0206,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0418,PROD-0131,PROD-0203,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0419,PROD-0132,PROD-0271,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0420,PROD-0132,PROD-0206,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0421,PROD-0132,PROD-0203,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0422,PROD-0133,PROD-0275,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0423,PROD-0133,PROD-0187,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0424,PROD-0133,PROD-0204,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0425,PROD-0134,PROD-0281,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0426,PROD-0134,PROD-0209,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0427,PROD-0134,PROD-0178,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0428,PROD-0135,PROD-0271,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0429,PROD-0135,PROD-0205,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0430,PROD-0135,PROD-0202,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0431,PROD-0136,PROD-0270,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0432,PROD-0136,PROD-0207,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0433,PROD-0136,PROD-0210,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0434,PROD-0137,PROD-0270,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0435,PROD-0137,PROD-0187,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0436,PROD-0137,PROD-0190,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0437,PROD-0138,PROD-0284,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0438,PROD-0138,PROD-0207,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0439,PROD-0138,PROD-0210,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0440,PROD-0139,PROD-0273,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0441,PROD-0139,PROD-0209,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0442,PROD-0139,PROD-0203,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0443,PROD-0140,PROD-0275,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0444,PROD-0140,PROD-0204,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0445,PROD-0140,PROD-0179,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0446,PROD-0141,PROD-0283,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0447,PROD-0141,PROD-0189,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0448,PROD-0141,PROD-0203,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0449,PROD-0142,PROD-0275,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0450,PROD-0142,PROD-0207,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0451,PROD-0142,PROD-0204,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0452,PROD-0143,PROD-0281,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0453,PROD-0143,PROD-0209,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0454,PROD-0143,PROD-0195,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0455,PROD-0144,PROD-0281,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0456,PROD-0144,PROD-0206,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0457,PROD-0144,PROD-0182,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0458,PROD-0145,PROD-0271,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0459,PROD-0145,PROD-0209,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0460,PROD-0145,PROD-0188,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0461,PROD-0146,PROD-0270,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0462,PROD-0146,PROD-0204,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0463,PROD-0146,PROD-0195,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0464,PROD-0147,PROD-0283,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0465,PROD-0147,PROD-0209,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0466,PROD-0147,PROD-0190,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0467,PROD-0148,PROD-0278,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0468,PROD-0148,PROD-0207,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0469,PROD-0148,PROD-0195,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0470,PROD-0149,PROD-0281,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0471,PROD-0149,PROD-0187,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0472,PROD-0149,PROD-0179,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0473,PROD-0150,PROD-0284,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0474,PROD-0150,PROD-0188,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0475,PROD-0150,PROD-0204,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0476,PROD-0151,PROD-0272,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0477,PROD-0151,PROD-0210,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0478,PROD-0151,PROD-0202,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0479,PROD-0152,PROD-0271,ATTACHMENT,0.97,0.92,9.0,1,True,20.0,Online double-conversion UPS guarantees zero-downtime power for mission-critical server nodes,ACTIVE
+REC-0480,PROD-0152,PROD-0196,CROSS_SELL,0.91,0.82,15.0,2,True,20.0,10G/25G SFP28 optical transceivers for high-throughput top-of-rack leaf-spine links,ACTIVE
+REC-0481,PROD-0152,PROD-0187,ATTACHMENT,0.88,0.75,12.0,3,True,20.0,Dedicated Top-of-Rack management and SAN interconnect switch,ACTIVE
+REC-0482,PROD-0153,PROD-0189,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0483,PROD-0153,PROD-0273,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0484,PROD-0154,PROD-0205,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0485,PROD-0154,PROD-0276,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0486,PROD-0155,PROD-0206,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0487,PROD-0155,PROD-0276,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0488,PROD-0156,PROD-0210,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0489,PROD-0156,PROD-0280,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0490,PROD-0157,PROD-0187,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0491,PROD-0157,PROD-0283,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0492,PROD-0158,PROD-0185,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0493,PROD-0158,PROD-0288,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0494,PROD-0159,PROD-0187,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0495,PROD-0159,PROD-0284,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0496,PROD-0160,PROD-0206,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0497,PROD-0160,PROD-0288,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0498,PROD-0161,PROD-0207,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0499,PROD-0161,PROD-0274,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0500,PROD-0162,PROD-0206,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0501,PROD-0162,PROD-0270,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0502,PROD-0163,PROD-0207,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0503,PROD-0163,PROD-0271,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0504,PROD-0164,PROD-0207,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0505,PROD-0164,PROD-0283,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0506,PROD-0165,PROD-0208,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0507,PROD-0165,PROD-0285,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0508,PROD-0166,PROD-0207,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0509,PROD-0166,PROD-0275,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0510,PROD-0167,PROD-0210,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0511,PROD-0167,PROD-0288,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0512,PROD-0168,PROD-0188,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0513,PROD-0168,PROD-0274,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0514,PROD-0169,PROD-0187,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0515,PROD-0169,PROD-0282,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0516,PROD-0170,PROD-0209,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0517,PROD-0170,PROD-0289,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0518,PROD-0171,PROD-0208,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0519,PROD-0171,PROD-0280,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0520,PROD-0172,PROD-0207,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0521,PROD-0172,PROD-0282,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0522,PROD-0173,PROD-0205,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0523,PROD-0173,PROD-0289,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0524,PROD-0174,PROD-0210,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0525,PROD-0174,PROD-0277,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0526,PROD-0175,PROD-0196,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0527,PROD-0175,PROD-0282,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0528,PROD-0176,PROD-0204,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0529,PROD-0176,PROD-0279,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0530,PROD-0177,PROD-0206,CROSS_SELL,0.94,0.88,16.0,1,True,20.0,16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0531,PROD-0177,PROD-0274,ATTACHMENT,0.96,0.9,12.0,2,True,20.0,Online double-conversion UPS prevents cache write-back corruption,ACTIVE
+REC-0532,PROD-0178,PROD-0188,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0533,PROD-0178,PROD-0283,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0534,PROD-0179,PROD-0208,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0535,PROD-0179,PROD-0286,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0536,PROD-0180,PROD-0196,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0537,PROD-0180,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0538,PROD-0181,PROD-0204,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0539,PROD-0181,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0540,PROD-0182,PROD-0209,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0541,PROD-0182,PROD-0276,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0542,PROD-0183,PROD-0189,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0543,PROD-0183,PROD-0276,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0544,PROD-0184,PROD-0208,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0545,PROD-0184,PROD-0279,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0546,PROD-0185,PROD-0209,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0547,PROD-0185,PROD-0281,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0548,PROD-0186,PROD-0209,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0549,PROD-0186,PROD-0274,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0550,PROD-0187,PROD-0210,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0551,PROD-0187,PROD-0275,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0552,PROD-0188,PROD-0207,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0553,PROD-0188,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0554,PROD-0189,PROD-0210,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0555,PROD-0189,PROD-0280,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0556,PROD-0190,PROD-0210,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0557,PROD-0190,PROD-0273,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0558,PROD-0191,PROD-0204,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0559,PROD-0191,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0560,PROD-0192,PROD-0206,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0561,PROD-0192,PROD-0288,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0562,PROD-0193,PROD-0208,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0563,PROD-0193,PROD-0283,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0564,PROD-0194,PROD-0209,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0565,PROD-0194,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0566,PROD-0195,PROD-0196,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0567,PROD-0195,PROD-0283,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0568,PROD-0196,PROD-0185,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0569,PROD-0196,PROD-0286,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0570,PROD-0197,PROD-0187,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0571,PROD-0197,PROD-0270,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0572,PROD-0198,PROD-0205,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0573,PROD-0198,PROD-0274,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0574,PROD-0199,PROD-0185,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0575,PROD-0199,PROD-0271,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0576,PROD-0200,PROD-0189,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0577,PROD-0200,PROD-0278,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0578,PROD-0201,PROD-0188,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0579,PROD-0201,PROD-0279,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0580,PROD-0202,PROD-0209,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0581,PROD-0202,PROD-0278,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0582,PROD-0203,PROD-0188,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0583,PROD-0203,PROD-0271,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0584,PROD-0204,PROD-0210,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0585,PROD-0204,PROD-0279,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0586,PROD-0205,PROD-0189,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0587,PROD-0205,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0588,PROD-0206,PROD-0185,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0589,PROD-0206,PROD-0281,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0590,PROD-0207,PROD-0206,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0591,PROD-0207,PROD-0273,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0592,PROD-0208,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0593,PROD-0209,PROD-0189,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0594,PROD-0209,PROD-0287,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0595,PROD-0210,PROD-0205,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0596,PROD-0210,PROD-0277,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0597,PROD-0211,PROD-0207,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0598,PROD-0211,PROD-0279,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0599,PROD-0212,PROD-0210,ATTACHMENT,0.97,0.93,18.0,1,True,20.0,Certified high-speed optical transceivers for fiber backbone uplink,ACTIVE
+REC-0600,PROD-0212,PROD-0271,ATTACHMENT,0.91,0.8,10.0,2,True,20.0,Rackmount power backup prevents packet loss and switch reboots,ACTIVE
+REC-0601,PROD-0213,PROD-0205,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0602,PROD-0213,PROD-0200,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0603,PROD-0214,PROD-0205,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0604,PROD-0214,PROD-0191,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0605,PROD-0215,PROD-0207,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0606,PROD-0215,PROD-0179,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0607,PROD-0216,PROD-0185,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0608,PROD-0216,PROD-0189,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0609,PROD-0217,PROD-0189,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0610,PROD-0217,PROD-0203,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0611,PROD-0218,PROD-0189,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0612,PROD-0218,PROD-0195,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0613,PROD-0219,PROD-0208,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0614,PROD-0219,PROD-0210,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0615,PROD-0220,PROD-0210,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0616,PROD-0220,PROD-0187,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0617,PROD-0221,PROD-0210,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0618,PROD-0221,PROD-0187,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0619,PROD-0222,PROD-0196,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0620,PROD-0222,PROD-0203,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0621,PROD-0223,PROD-0188,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0622,PROD-0223,PROD-0181,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0623,PROD-0224,PROD-0188,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0624,PROD-0224,PROD-0185,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0625,PROD-0225,PROD-0210,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0626,PROD-0225,PROD-0205,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0627,PROD-0226,PROD-0187,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0628,PROD-0226,PROD-0200,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0629,PROD-0227,PROD-0185,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0630,PROD-0227,PROD-0202,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0631,PROD-0228,PROD-0196,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0632,PROD-0228,PROD-0210,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0633,PROD-0229,PROD-0196,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0634,PROD-0229,PROD-0184,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0635,PROD-0230,PROD-0188,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0636,PROD-0230,PROD-0189,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0637,PROD-0231,PROD-0185,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0638,PROD-0231,PROD-0191,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0639,PROD-0232,PROD-0206,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0640,PROD-0232,PROD-0184,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0641,PROD-0233,PROD-0185,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0642,PROD-0233,PROD-0184,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0643,PROD-0234,PROD-0204,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0644,PROD-0234,PROD-0179,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0645,PROD-0235,PROD-0209,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0646,PROD-0235,PROD-0190,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0647,PROD-0236,PROD-0206,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0648,PROD-0236,PROD-0210,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0649,PROD-0237,PROD-0204,ATTACHMENT,0.95,0.89,15.0,1,True,20.0,10G SFP+ optical interfaces for high-throughput perimeter inspection ports,ACTIVE
+REC-0650,PROD-0237,PROD-0181,CROSS_SELL,0.9,0.81,14.0,2,True,20.0,Dedicated DMZ distribution switch for isolated security zones,ACTIVE
+REC-0651,PROD-0238,PROD-0347,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0652,PROD-0239,PROD-0344,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0653,PROD-0240,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0654,PROD-0241,PROD-0343,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0655,PROD-0242,PROD-0343,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0656,PROD-0243,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0657,PROD-0244,PROD-0342,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0658,PROD-0245,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0659,PROD-0246,PROD-0343,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0660,PROD-0247,PROD-0345,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0661,PROD-0248,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0662,PROD-0249,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0663,PROD-0250,PROD-0345,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0664,PROD-0251,PROD-0342,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0665,PROD-0252,PROD-0344,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0666,PROD-0253,PROD-0343,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0667,PROD-0254,PROD-0343,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0668,PROD-0255,PROD-0347,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0669,PROD-0256,PROD-0344,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0670,PROD-0257,PROD-0344,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0671,PROD-0258,PROD-0344,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0672,PROD-0259,PROD-0344,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0673,PROD-0260,PROD-0343,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0674,PROD-0261,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0675,PROD-0262,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0676,PROD-0263,PROD-0345,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0677,PROD-0264,PROD-0346,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0678,PROD-0265,PROD-0347,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0679,PROD-0266,PROD-0342,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0680,PROD-0267,PROD-0342,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0681,PROD-0268,PROD-0347,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0682,PROD-0269,PROD-0344,CROSS_SELL,0.89,0.8,10.0,1,True,20.0,"Thunderbolt docking station streamlines single-cable video, data and 100W charging",ACTIVE
+REC-0683,PROD-0290,PROD-0349,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0684,PROD-0290,PROD-0354,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0685,PROD-0291,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0686,PROD-0291,PROD-0353,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0687,PROD-0292,PROD-0349,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0688,PROD-0292,PROD-0356,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0689,PROD-0293,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0690,PROD-0293,PROD-0356,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0691,PROD-0294,PROD-0349,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0692,PROD-0294,PROD-0355,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0693,PROD-0295,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0694,PROD-0295,PROD-0355,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0695,PROD-0296,PROD-0349,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0696,PROD-0296,PROD-0356,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0697,PROD-0297,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0698,PROD-0297,PROD-0355,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0699,PROD-0298,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0700,PROD-0298,PROD-0355,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0701,PROD-0299,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0702,PROD-0299,PROD-0353,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0703,PROD-0300,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0704,PROD-0300,PROD-0353,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0705,PROD-0301,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0706,PROD-0301,PROD-0354,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0707,PROD-0302,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0708,PROD-0302,PROD-0356,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0709,PROD-0303,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0710,PROD-0303,PROD-0354,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0711,PROD-0304,PROD-0349,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0712,PROD-0304,PROD-0353,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0713,PROD-0305,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0714,PROD-0305,PROD-0353,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0715,PROD-0306,PROD-0349,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0716,PROD-0306,PROD-0355,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0717,PROD-0307,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0718,PROD-0307,PROD-0353,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0719,PROD-0308,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0720,PROD-0308,PROD-0353,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0721,PROD-0309,PROD-0348,CROSS_SELL,0.93,0.86,16.5,1,True,20.0,120W GaN multi-port fast charger powers phone and executive laptop simultaneously,ACTIVE
+REC-0722,PROD-0309,PROD-0355,ATTACHMENT,0.88,0.77,12.0,2,True,20.0,Bluetooth ANC headset for corporate executive mobile communications,ACTIVE
+REC-0723,PROD-0310,PROD-0348,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0724,PROD-0311,PROD-0348,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0725,PROD-0312,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0726,PROD-0313,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0727,PROD-0314,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0728,PROD-0315,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0729,PROD-0316,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0730,PROD-0317,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0731,PROD-0318,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0732,PROD-0319,PROD-0348,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0733,PROD-0320,PROD-0349,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0734,PROD-0321,PROD-0348,CROSS_SELL,0.89,0.81,15.0,1,True,20.0,Fast USB-C power adapter ensures quick device turnaround for field personnel,ACTIVE
+REC-0735,PROD-0332,PROD-0238,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0736,PROD-0333,PROD-0242,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0737,PROD-0334,PROD-0240,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0738,PROD-0335,PROD-0242,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0739,PROD-0336,PROD-0260,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0740,PROD-0337,PROD-0244,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0741,PROD-0338,PROD-0256,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0742,PROD-0339,PROD-0257,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0743,PROD-0340,PROD-0243,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE
+REC-0744,PROD-0341,PROD-0256,ATTACHMENT,0.92,0.84,10.0,1,True,20.0,Commercial dual displays complete corporate executive boardroom setup,ACTIVE

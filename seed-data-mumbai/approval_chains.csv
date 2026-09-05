@@ -1,0 +1,6 @@
+chain_id,approval_level,role_name,min_discount_percent,max_discount_percent,min_margin_percent,approver_role,description
+AC-001,L0_AUTO,Standard Auto-Approval,0.0,8.0,15.0,None,Quote within pre-approved sales rep threshold
+AC-002,L1_SALES_MANAGER,Regional Sales Manager Review,8.1,13.0,12.0,Sales Manager,Discounts exceeding standard baseline up to 13.0%
+AC-003,L2_FINANCE_DIRECTOR,Commercial Finance Review,13.1,17.0,10.0,Finance Director,Significant enterprise concession requiring gross margin validation
+AC-004,L3_COMMERCIAL_VP,Commercial VP & Country Head Approval,17.1,22.0,8.0,Commercial VP,Large strategic account concession with multi-year volume commitments
+AC-005,L4_EXECUTIVE_BOARD,Executive Board Special Approval,22.1,35.0,5.0,Executive Committee,Exceptional mega-deal discount below standard enterprise margin floor

@@ -1,0 +1,166 @@
+audit_id,entity_type,entity_id,action,old_value,new_value,performed_by,reason,timestamp
+AUD-00001,Quotation,QT-MUM-0001,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00002,Quotation,QT-MUM-0001,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00003,Quotation,QT-MUM-0001,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00004,Quotation,QT-MUM-0001,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00005,Quotation,QT-MUM-0002,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00006,Quotation,QT-MUM-0002,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00007,Quotation,QT-MUM-0003,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00008,Quotation,QT-MUM-0003,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00009,Quotation,QT-MUM-0003,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00010,Quotation,QT-MUM-0003,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00011,Invoice,QT-MUM-0004,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00012,Quotation,QT-MUM-0004,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00013,Quotation,QT-MUM-0004,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00014,Quotation,QT-MUM-0005,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00015,Quotation,QT-MUM-0005,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00016,Invoice,QT-MUM-0005,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00017,Quotation,QT-MUM-0006,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00018,Quotation,QT-MUM-0006,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00019,Quotation,QT-MUM-0006,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00020,Quotation,QT-MUM-0006,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00021,Invoice,QT-MUM-0007,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00022,Quotation,QT-MUM-0007,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00023,Invoice,QT-MUM-0008,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00024,Quotation,QT-MUM-0008,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00025,Quotation,QT-MUM-0008,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00026,Quotation,QT-MUM-0009,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00027,Quotation,QT-MUM-0009,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00028,Quotation,QT-MUM-0010,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00029,Quotation,QT-MUM-0010,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00030,Invoice,QT-MUM-0011,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00031,Quotation,QT-MUM-0011,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00032,Invoice,QT-MUM-0012,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00033,Quotation,QT-MUM-0012,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00034,Quotation,QT-MUM-0012,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00035,Quotation,QT-MUM-0013,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00036,Quotation,QT-MUM-0013,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00037,Quotation,QT-MUM-0013,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00038,Quotation,QT-MUM-0013,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00039,Quotation,QT-MUM-0014,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00040,Quotation,QT-MUM-0014,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00041,Quotation,QT-MUM-0014,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00042,Quotation,QT-MUM-0014,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00043,Invoice,QT-MUM-0015,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00044,Quotation,QT-MUM-0015,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00045,Quotation,QT-MUM-0015,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00046,Invoice,QT-MUM-0016,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00047,Quotation,QT-MUM-0016,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00048,Quotation,QT-MUM-0016,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00049,Quotation,QT-MUM-0017,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00050,Quotation,QT-MUM-0017,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00051,Quotation,QT-MUM-0017,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00052,Quotation,QT-MUM-0017,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00053,Quotation,QT-MUM-0018,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00054,Quotation,QT-MUM-0018,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00055,Quotation,QT-MUM-0018,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00056,Quotation,QT-MUM-0019,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00057,Invoice,QT-MUM-0019,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00058,Quotation,QT-MUM-0019,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00059,Quotation,QT-MUM-0019,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00060,Quotation,QT-MUM-0020,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00061,Quotation,QT-MUM-0020,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00062,Quotation,QT-MUM-0020,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00063,Quotation,QT-MUM-0021,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00064,Quotation,QT-MUM-0021,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00065,Quotation,QT-MUM-0021,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00066,Quotation,QT-MUM-0022,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00067,Quotation,QT-MUM-0022,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00068,Quotation,QT-MUM-0023,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00069,Quotation,QT-MUM-0023,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00070,Invoice,QT-MUM-0023,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00071,Quotation,QT-MUM-0024,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00072,Invoice,QT-MUM-0024,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00073,Quotation,QT-MUM-0024,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00074,Quotation,QT-MUM-0025,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00075,Quotation,QT-MUM-0025,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00076,Quotation,QT-MUM-0025,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00077,Quotation,QT-MUM-0025,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00078,Quotation,QT-MUM-0026,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00079,Quotation,QT-MUM-0026,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00080,Quotation,QT-MUM-0027,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00081,Quotation,QT-MUM-0027,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00082,Quotation,QT-MUM-0028,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00083,Quotation,QT-MUM-0028,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00084,Invoice,QT-MUM-0028,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00085,Quotation,QT-MUM-0029,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00086,Invoice,QT-MUM-0029,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00087,Quotation,QT-MUM-0030,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00088,Invoice,QT-MUM-0030,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00089,Quotation,QT-MUM-0030,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00090,Quotation,QT-MUM-0031,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00091,Quotation,QT-MUM-0031,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00092,Quotation,QT-MUM-0031,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00093,Quotation,QT-MUM-0031,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00094,Quotation,QT-MUM-0032,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00095,Quotation,QT-MUM-0032,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00096,Invoice,QT-MUM-0032,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00097,Quotation,QT-MUM-0032,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00098,Quotation,QT-MUM-0033,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00099,Quotation,QT-MUM-0033,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00100,Quotation,QT-MUM-0034,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00101,Quotation,QT-MUM-0034,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00102,Quotation,QT-MUM-0034,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00103,Invoice,QT-MUM-0035,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00104,Quotation,QT-MUM-0035,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00105,Quotation,QT-MUM-0035,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00106,Quotation,QT-MUM-0036,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00107,Quotation,QT-MUM-0036,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00108,Quotation,QT-MUM-0036,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00109,Quotation,QT-MUM-0036,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00110,Quotation,QT-MUM-0037,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00111,Quotation,QT-MUM-0037,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00112,Quotation,QT-MUM-0037,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00113,Quotation,QT-MUM-0037,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00114,Quotation,QT-MUM-0038,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00115,Quotation,QT-MUM-0038,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00116,Quotation,QT-MUM-0038,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00117,Quotation,QT-MUM-0039,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00118,Quotation,QT-MUM-0039,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00119,Quotation,QT-MUM-0039,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00120,Invoice,QT-MUM-0039,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00121,Quotation,QT-MUM-0040,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00122,Quotation,QT-MUM-0040,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00123,Quotation,QT-MUM-0040,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00124,Quotation,QT-MUM-0041,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00125,Quotation,QT-MUM-0041,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00126,Quotation,QT-MUM-0042,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00127,Invoice,QT-MUM-0042,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00128,Quotation,QT-MUM-0042,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00129,Quotation,QT-MUM-0043,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00130,Quotation,QT-MUM-0043,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00131,Quotation,QT-MUM-0043,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00132,Quotation,QT-MUM-0044,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00133,Quotation,QT-MUM-0044,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00134,Quotation,QT-MUM-0045,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00135,Quotation,QT-MUM-0045,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00136,Quotation,QT-MUM-0046,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00137,Quotation,QT-MUM-0046,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00138,Quotation,QT-MUM-0046,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00139,Invoice,QT-MUM-0046,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00140,Quotation,QT-MUM-0047,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00141,Invoice,QT-MUM-0047,Invoice generated,None,INV-MUM-2026-0001,Vikramaditya Singhania,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00142,Quotation,QT-MUM-0047,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00143,Quotation,QT-MUM-0047,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00144,Quotation,QT-MUM-0048,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00145,Quotation,QT-MUM-0048,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00146,Quotation,QT-MUM-0049,Approval approved,Pending Approval,Approved,Vikramaditya Singhania,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00147,Quotation,QT-MUM-0049,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00148,Quotation,QT-MUM-0049,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00149,Quotation,QT-MUM-0049,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00150,Quotation,QT-MUM-0050,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00151,Quotation,QT-MUM-0050,Backorder created,0,8 Units,Vikramaditya Singhania,Factory backorder registered directly with OEM manufacturing supply chain,2026-02-28T16:00:00Z
+AUD-00152,Quotation,QT-MUM-0051,Approval requested,Draft,Pending Approval,Vikramaditya Singhania,Concession exceeded standard rule threshold; escalated to L2 Finance,2026-02-28T16:00:00Z
+AUD-00153,Quotation,QT-MUM-0051,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00154,Quotation,QT-MUM-0051,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00155,Quotation,QT-MUM-0051,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00156,Quotation,QT-MUM-0052,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00157,Quotation,QT-MUM-0052,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00158,Quotation,QT-MUM-0052,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00159,Quotation,QT-MUM-0053,Quote confirmed,Approved,Confirmed,Vikramaditya Singhania,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00160,Quotation,QT-MUM-0053,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00161,Quotation,QT-MUM-0054,Warehouse allocation changed,WH-001 (Mumbai),WH-001 + WH-003 Split,Vikramaditya Singhania,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00162,Quotation,QT-MUM-0054,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00163,Quotation,QT-MUM-0054,Discount changed,8.0%,22.0%,Vikramaditya Singhania,Account Director applied special competitive concession,2026-02-28T16:00:00Z
+AUD-00164,Quotation,QT-MUM-0055,Customer counter-offer submitted,Approved,Under Negotiation,Vikramaditya Singhania,Customer requested 3.5% additional volume discount,2026-02-28T16:00:00Z
+AUD-00165,Quotation,QT-MUM-0055,Quote created,,Draft,Vikramaditya Singhania,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z

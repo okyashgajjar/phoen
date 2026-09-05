@@ -1,9 +1,12 @@
+import os
 import sqlite3
 from datetime import datetime
 
+DEFAULT_DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "phoen.db")
+
 class SQLiteMockDB:
-    def __init__(self, db_path="phoen.db"):
-        self.db_path = db_path
+    def __init__(self, db_path=None):
+        self.db_path = db_path or DEFAULT_DB_PATH
         self._memory = {}
 
     def _init_memory(self):

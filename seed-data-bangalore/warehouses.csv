@@ -1,0 +1,6 @@
+warehouse_id,warehouse_code,warehouse_name,city,state,country,warehouse_type,manager_name,capacity_units,status
+WH-001,BLR-DC-01,Bangalore Enterprise Technology Distribution Center,Bangalore,Karnataka,India,Enterprise Distribution Center,Kiran Murthy,100000,ACTIVE
+WH-002,AMD-DC-01,Ahmedabad Enterprise Logistics Depot,Ahmedabad,Gujarat,India,REGIONAL_WAREHOUSE,Rajesh Patel,75000,ACTIVE
+WH-003,MUM-DC-01,Mumbai Western Logistics Hub,Mumbai,Maharashtra,India,REGIONAL_WAREHOUSE,Vikram Deshmukh,90000,ACTIVE
+WH-004,DEL-DC-01,Delhi NCR Tech Supply Hub,Gurugram,Haryana,India,REGIONAL_WAREHOUSE,Amit Sharma,80000,ACTIVE
+WH-005,HYD-DC-01,Hyderabad Tech Logistics Center,Hyderabad,Telangana,India,REGIONAL_WAREHOUSE,Srinivas Reddy,60000,ACTIVE

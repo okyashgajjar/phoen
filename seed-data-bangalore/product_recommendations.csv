@@ -1,0 +1,422 @@
+recommendation_id,source_product_id,recommended_product_id,recommendation_type,confidence_score,co_purchase_rate,margin_delta,priority,promotion_active,minimum_margin_percent,reason,status
+REC-0001,PROD-0001,PROD-0152,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0002,PROD-0001,PROD-0252,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0003,PROD-0001,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0004,PROD-0001,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0005,PROD-0002,PROD-0084,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0006,PROD-0002,PROD-0262,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0007,PROD-0002,PROD-0089,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0008,PROD-0002,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0009,PROD-0003,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0010,PROD-0003,PROD-0069,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0011,PROD-0003,PROD-0088,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0012,PROD-0003,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0013,PROD-0004,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0014,PROD-0004,PROD-0074,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0015,PROD-0004,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0016,PROD-0004,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0017,PROD-0005,PROD-0153,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0018,PROD-0005,PROD-0146,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0019,PROD-0005,PROD-0090,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0020,PROD-0005,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0021,PROD-0006,PROD-0081,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0022,PROD-0006,PROD-0069,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0023,PROD-0006,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0024,PROD-0006,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0025,PROD-0007,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0026,PROD-0007,PROD-0069,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0027,PROD-0007,PROD-0090,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0028,PROD-0007,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0029,PROD-0008,PROD-0084,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0030,PROD-0008,PROD-0070,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0031,PROD-0008,PROD-0090,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0032,PROD-0008,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0033,PROD-0009,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0034,PROD-0009,PROD-0071,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0035,PROD-0009,PROD-0088,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0036,PROD-0009,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0037,PROD-0010,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0038,PROD-0010,PROD-0212,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0039,PROD-0010,PROD-0090,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0040,PROD-0010,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0041,PROD-0011,PROD-0084,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0042,PROD-0011,PROD-0247,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0043,PROD-0011,PROD-0088,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0044,PROD-0011,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0045,PROD-0012,PROD-0084,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0046,PROD-0012,PROD-0187,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0047,PROD-0012,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0048,PROD-0012,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0049,PROD-0013,PROD-0081,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0050,PROD-0013,PROD-0212,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0051,PROD-0013,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0052,PROD-0013,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0053,PROD-0014,PROD-0083,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0054,PROD-0014,PROD-0252,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0055,PROD-0014,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0056,PROD-0014,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0057,PROD-0015,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0058,PROD-0015,PROD-0182,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0059,PROD-0015,PROD-0088,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0060,PROD-0015,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0061,PROD-0016,PROD-0182,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0062,PROD-0016,PROD-0154,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0063,PROD-0016,PROD-0179,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0064,PROD-0017,PROD-0075,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0065,PROD-0017,PROD-0087,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0066,PROD-0017,PROD-0229,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0067,PROD-0018,PROD-0069,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0068,PROD-0018,PROD-0086,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0069,PROD-0018,PROD-0259,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0070,PROD-0019,PROD-0222,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0071,PROD-0019,PROD-0085,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0072,PROD-0019,PROD-0065,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0073,PROD-0020,PROD-0217,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0074,PROD-0020,PROD-0087,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0075,PROD-0020,PROD-0264,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0076,PROD-0021,PROD-0197,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0077,PROD-0021,PROD-0154,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0078,PROD-0021,PROD-0259,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0079,PROD-0022,PROD-0071,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0080,PROD-0022,PROD-0224,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0081,PROD-0023,PROD-0070,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0082,PROD-0023,PROD-0199,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0083,PROD-0024,PROD-0149,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0084,PROD-0024,PROD-0224,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0085,PROD-0025,PROD-0149,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0086,PROD-0025,PROD-0229,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0087,PROD-0026,PROD-0071,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0088,PROD-0026,PROD-0214,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0089,PROD-0027,PROD-0065,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0090,PROD-0027,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0091,PROD-0027,PROD-0170,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0092,PROD-0028,PROD-0066,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0093,PROD-0028,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0094,PROD-0028,PROD-0171,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0095,PROD-0029,PROD-0066,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0096,PROD-0029,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0097,PROD-0029,PROD-0099,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0098,PROD-0030,PROD-0065,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0099,PROD-0030,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0100,PROD-0030,PROD-0100,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0101,PROD-0031,PROD-0064,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0102,PROD-0031,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0103,PROD-0031,PROD-0100,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0104,PROD-0032,PROD-0064,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0105,PROD-0032,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0106,PROD-0032,PROD-0099,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0107,PROD-0033,PROD-0160,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0108,PROD-0033,PROD-0089,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0109,PROD-0034,PROD-0158,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0110,PROD-0034,PROD-0090,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0111,PROD-0035,PROD-0159,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0112,PROD-0035,PROD-0088,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0113,PROD-0036,PROD-0094,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0114,PROD-0036,PROD-0156,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0115,PROD-0037,PROD-0160,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0116,PROD-0037,PROD-0090,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0117,PROD-0038,PROD-0159,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0118,PROD-0038,PROD-0156,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0119,PROD-0039,PROD-0094,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0120,PROD-0039,PROD-0156,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0121,PROD-0040,PROD-0094,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0122,PROD-0040,PROD-0156,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0123,PROD-0041,PROD-0158,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0124,PROD-0041,PROD-0089,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0125,PROD-0042,PROD-0094,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0126,PROD-0042,PROD-0088,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0127,PROD-0043,PROD-0094,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0128,PROD-0043,PROD-0090,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0129,PROD-0044,PROD-0159,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0130,PROD-0045,PROD-0160,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0131,PROD-0046,PROD-0159,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0132,PROD-0047,PROD-0160,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0133,PROD-0048,PROD-0160,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0134,PROD-0049,PROD-0171,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0135,PROD-0049,PROD-0175,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0136,PROD-0049,PROD-0064,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0137,PROD-0050,PROD-0100,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0138,PROD-0050,PROD-0172,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0139,PROD-0050,PROD-0199,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0140,PROD-0051,PROD-0100,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0141,PROD-0051,PROD-0175,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0142,PROD-0051,PROD-0064,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0143,PROD-0052,PROD-0170,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0144,PROD-0052,PROD-0172,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0145,PROD-0052,PROD-0249,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0146,PROD-0053,PROD-0100,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0147,PROD-0053,PROD-0100,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0148,PROD-0053,PROD-0254,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0149,PROD-0054,PROD-0170,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0150,PROD-0054,PROD-0172,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0151,PROD-0054,PROD-0194,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0152,PROD-0055,PROD-0099,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0153,PROD-0055,PROD-0172,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0154,PROD-0055,PROD-0264,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0155,PROD-0056,PROD-0169,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0156,PROD-0056,PROD-0172,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0157,PROD-0056,PROD-0179,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0158,PROD-0057,PROD-0170,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0159,PROD-0057,PROD-0100,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0160,PROD-0057,PROD-0145,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0161,PROD-0058,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0162,PROD-0058,PROD-0169,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0163,PROD-0059,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0164,PROD-0059,PROD-0169,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0165,PROD-0060,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0166,PROD-0060,PROD-0172,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0167,PROD-0061,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0168,PROD-0061,PROD-0171,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0169,PROD-0062,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0170,PROD-0062,PROD-0100,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0171,PROD-0068,PROD-0084,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0172,PROD-0069,PROD-0082,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0173,PROD-0070,PROD-0084,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0174,PROD-0071,PROD-0153,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0175,PROD-0072,PROD-0084,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0176,PROD-0073,PROD-0152,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0177,PROD-0074,PROD-0083,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0178,PROD-0075,PROD-0081,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0179,PROD-0076,PROD-0152,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0180,PROD-0077,PROD-0100,ATTACHMENT,0.86,0.74,20.0,1,True,30.0,Shielded Gigabit Ethernet cabling ensures uninterrupted network print queue flow,ACTIVE
+REC-0181,PROD-0078,PROD-0100,ATTACHMENT,0.86,0.74,20.0,1,True,30.0,Shielded Gigabit Ethernet cabling ensures uninterrupted network print queue flow,ACTIVE
+REC-0182,PROD-0079,PROD-0100,ATTACHMENT,0.86,0.74,20.0,1,True,30.0,Shielded Gigabit Ethernet cabling ensures uninterrupted network print queue flow,ACTIVE
+REC-0183,PROD-0080,PROD-0100,ATTACHMENT,0.86,0.74,20.0,1,True,30.0,Shielded Gigabit Ethernet cabling ensures uninterrupted network print queue flow,ACTIVE
+REC-0184,PROD-0095,PROD-0237,ATTACHMENT,0.91,0.82,10.0,1,True,20.0,Large format commercial display completes the meeting room video conference setup,ACTIVE
+REC-0185,PROD-0096,PROD-0073,ATTACHMENT,0.91,0.82,10.0,1,True,20.0,Large format commercial display completes the meeting room video conference setup,ACTIVE
+REC-0186,PROD-0098,PROD-0070,ATTACHMENT,0.91,0.82,10.0,1,True,20.0,Large format commercial display completes the meeting room video conference setup,ACTIVE
+REC-0187,PROD-0099,PROD-0169,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0188,PROD-0099,PROD-0175,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0189,PROD-0100,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0190,PROD-0100,PROD-0100,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0191,PROD-0101,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0192,PROD-0101,PROD-0074,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0193,PROD-0101,PROD-0089,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0194,PROD-0101,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0195,PROD-0102,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0196,PROD-0102,PROD-0069,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0197,PROD-0102,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0198,PROD-0102,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0199,PROD-0103,PROD-0083,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0200,PROD-0103,PROD-0222,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0201,PROD-0103,PROD-0089,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0202,PROD-0103,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0203,PROD-0104,PROD-0083,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0204,PROD-0104,PROD-0242,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0205,PROD-0104,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0206,PROD-0104,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0207,PROD-0105,PROD-0153,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0208,PROD-0105,PROD-0257,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0209,PROD-0105,PROD-0088,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0210,PROD-0105,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0211,PROD-0106,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0212,PROD-0106,PROD-0148,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0213,PROD-0106,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0214,PROD-0106,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0215,PROD-0107,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0216,PROD-0107,PROD-0262,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0217,PROD-0107,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0218,PROD-0107,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0219,PROD-0108,PROD-0083,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0220,PROD-0108,PROD-0073,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0221,PROD-0108,PROD-0090,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0222,PROD-0108,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0223,PROD-0109,PROD-0083,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0224,PROD-0109,PROD-0068,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0225,PROD-0109,PROD-0156,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0226,PROD-0109,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0227,PROD-0110,PROD-0082,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0228,PROD-0110,PROD-0247,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0229,PROD-0110,PROD-0089,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0230,PROD-0110,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0231,PROD-0111,PROD-0153,CROSS_SELL,0.92,0.82,8.5,1,True,20.0,Frequently purchased with corporate laptops to enable multi-display workstation connectivity,ACTIVE
+REC-0232,PROD-0111,PROD-0075,ATTACHMENT,0.88,0.74,6.2,2,True,18.0,Recommended dual-display pairing for software development productivity enhancement,ACTIVE
+REC-0233,PROD-0111,PROD-0089,ATTACHMENT,0.85,0.69,9.5,3,True,22.0,Essential noise-cancelling headset for open-office and hybrid remote communication,ACTIVE
+REC-0234,PROD-0111,PROD-0092,ATTACHMENT,0.94,0.88,14.0,4,True,25.0,Durable business travel backpack protects mobile workstation assets during Bangalore transit,ACTIVE
+REC-0235,PROD-0112,PROD-0212,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0236,PROD-0112,PROD-0154,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0237,PROD-0112,PROD-0219,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0238,PROD-0113,PROD-0068,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0239,PROD-0113,PROD-0085,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0240,PROD-0113,PROD-0214,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0241,PROD-0114,PROD-0257,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0242,PROD-0114,PROD-0086,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0243,PROD-0114,PROD-0239,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0244,PROD-0115,PROD-0073,ATTACHMENT,0.92,0.85,8.0,1,True,20.0,Dual desktop displays significantly expand operational workspace for productivity,ACTIVE
+REC-0245,PROD-0115,PROD-0155,CROSS_SELL,0.94,0.89,12.0,2,True,25.0,Commercial wireless keyboard and mouse combo with quiet keys and long battery life,ACTIVE
+REC-0246,PROD-0115,PROD-0264,ATTACHMENT,0.89,0.78,10.5,3,True,20.0,Line-interactive desktop UPS provides uninterrupted clean power during campus grid spikes,ACTIVE
+REC-0247,PROD-0116,PROD-0070,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0248,PROD-0116,PROD-0145,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0249,PROD-0117,PROD-0072,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0250,PROD-0117,PROD-0234,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0251,PROD-0118,PROD-0072,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0252,PROD-0118,PROD-0249,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0253,PROD-0119,PROD-0072,UPSELL,0.95,0.88,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization, and ML simulation",ACTIVE
+REC-0254,PROD-0119,PROD-0204,ATTACHMENT,0.91,0.75,8.0,2,True,18.0,Pure sine-wave power backup protects high-value compute workstations against brownouts,ACTIVE
+REC-0255,PROD-0120,PROD-0065,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0256,PROD-0120,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0257,PROD-0120,PROD-0170,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0258,PROD-0121,PROD-0065,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0259,PROD-0121,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0260,PROD-0121,PROD-0170,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0261,PROD-0122,PROD-0065,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0262,PROD-0122,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0263,PROD-0122,PROD-0171,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0264,PROD-0123,PROD-0064,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0265,PROD-0123,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0266,PROD-0123,PROD-0171,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0267,PROD-0124,PROD-0066,ATTACHMENT,0.96,0.9,8.5,1,True,18.0,Mission-critical online double-conversion power required for enterprise server SLA compliance,ACTIVE
+REC-0268,PROD-0124,PROD-0173,ATTACHMENT,0.98,0.93,14.0,2,True,25.0,Toolless sliding rail kit and cable arm required for mounting in standard 19-inch racks,ACTIVE
+REC-0269,PROD-0124,PROD-0171,CROSS_SELL,0.89,0.79,15.0,3,True,25.0,High-speed 10G/25G optical transceiver for top-of-rack leaf-spine switch uplinks,ACTIVE
+REC-0270,PROD-0125,PROD-0159,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0271,PROD-0125,PROD-0090,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0272,PROD-0126,PROD-0094,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0273,PROD-0126,PROD-0156,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0274,PROD-0127,PROD-0094,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0275,PROD-0127,PROD-0090,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0276,PROD-0128,PROD-0159,CROSS_SELL,0.92,0.84,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and laptop,ACTIVE
+REC-0277,PROD-0128,PROD-0090,ATTACHMENT,0.87,0.75,12.0,2,True,22.0,Enterprise wireless bluetooth headset for mobile executive communications,ACTIVE
+REC-0278,PROD-0129,PROD-0159,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0279,PROD-0130,PROD-0159,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0280,PROD-0131,PROD-0159,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0281,PROD-0132,PROD-0158,CROSS_SELL,0.88,0.8,15.0,1,True,25.0,Fast USB-C wall charger supports quick turnaround for field service workforce,ACTIVE
+REC-0282,PROD-0133,PROD-0100,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0283,PROD-0133,PROD-0170,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0284,PROD-0133,PROD-0064,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0285,PROD-0134,PROD-0171,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0286,PROD-0134,PROD-0175,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0287,PROD-0134,PROD-0244,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0288,PROD-0135,PROD-0169,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0289,PROD-0135,PROD-0170,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0290,PROD-0135,PROD-0254,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0291,PROD-0136,PROD-0099,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0292,PROD-0136,PROD-0175,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0293,PROD-0136,PROD-0184,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0294,PROD-0137,PROD-0169,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0295,PROD-0137,PROD-0175,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0296,PROD-0137,PROD-0199,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0297,PROD-0138,PROD-0170,ATTACHMENT,0.96,0.91,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution interconnect,ACTIVE
+REC-0298,PROD-0138,PROD-0100,CROSS_SELL,0.93,0.86,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel patching,ACTIVE
+REC-0299,PROD-0138,PROD-0229,ATTACHMENT,0.9,0.78,10.0,3,True,20.0,Rackmount power backup prevents network downtime and packet loss during power fluctuations,ACTIVE
+REC-0300,PROD-0139,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0301,PROD-0139,PROD-0169,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0302,PROD-0140,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0303,PROD-0140,PROD-0172,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0304,PROD-0141,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0305,PROD-0141,PROD-0172,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0306,PROD-0142,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0307,PROD-0142,PROD-0171,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0308,PROD-0146,PROD-0083,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0309,PROD-0147,PROD-0082,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0310,PROD-0148,PROD-0153,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0311,PROD-0149,PROD-0152,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0312,PROD-0150,PROD-0100,ATTACHMENT,0.86,0.74,20.0,1,True,30.0,Shielded Gigabit Ethernet cabling ensures uninterrupted network print queue flow,ACTIVE
+REC-0313,PROD-0151,PROD-0100,ATTACHMENT,0.86,0.74,20.0,1,True,30.0,Shielded Gigabit Ethernet cabling ensures uninterrupted network print queue flow,ACTIVE
+REC-0314,PROD-0164,PROD-0073,ATTACHMENT,0.91,0.82,10.0,1,True,20.0,Large format commercial display completes the meeting room video conference setup,ACTIVE
+REC-0315,PROD-0165,PROD-0146,ATTACHMENT,0.91,0.82,10.0,1,True,20.0,Large format commercial display completes the meeting room video conference setup,ACTIVE
+REC-0316,PROD-0167,PROD-0071,ATTACHMENT,0.91,0.82,10.0,1,True,20.0,Large format commercial display completes the meeting room video conference setup,ACTIVE
+REC-0317,PROD-0168,PROD-0187,ATTACHMENT,0.91,0.82,10.0,1,True,20.0,Large format commercial display completes the meeting room video conference setup,ACTIVE
+REC-0318,PROD-0169,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0319,PROD-0169,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0320,PROD-0170,PROD-0172,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0321,PROD-0170,PROD-0170,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0322,PROD-0171,PROD-0172,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0323,PROD-0171,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0324,PROD-0172,PROD-0172,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0325,PROD-0172,PROD-0100,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0326,PROD-0173,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0327,PROD-0173,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0328,PROD-0174,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0329,PROD-0174,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0330,PROD-0175,PROD-0170,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0331,PROD-0175,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0332,PROD-0176,PROD-0169,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0333,PROD-0176,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0334,PROD-0177,PROD-0152,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0335,PROD-0178,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0336,PROD-0178,PROD-0170,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0337,PROD-0181,PROD-0099,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0338,PROD-0181,PROD-0175,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0339,PROD-0182,PROD-0081,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0340,PROD-0183,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0341,PROD-0183,PROD-0170,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0342,PROD-0186,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0343,PROD-0186,PROD-0100,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0344,PROD-0187,PROD-0153,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0345,PROD-0188,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0346,PROD-0188,PROD-0171,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0347,PROD-0191,PROD-0169,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0348,PROD-0191,PROD-0175,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0349,PROD-0192,PROD-0081,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0350,PROD-0193,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0351,PROD-0193,PROD-0100,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0352,PROD-0196,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0353,PROD-0196,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0354,PROD-0197,PROD-0084,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0355,PROD-0198,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0356,PROD-0198,PROD-0100,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0357,PROD-0201,PROD-0169,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0358,PROD-0201,PROD-0170,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0359,PROD-0202,PROD-0081,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0360,PROD-0203,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0361,PROD-0203,PROD-0169,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0362,PROD-0206,PROD-0172,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0363,PROD-0206,PROD-0170,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0364,PROD-0207,PROD-0083,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0365,PROD-0208,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0366,PROD-0208,PROD-0099,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0367,PROD-0211,PROD-0170,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0368,PROD-0211,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0369,PROD-0212,PROD-0082,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0370,PROD-0213,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0371,PROD-0213,PROD-0171,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0372,PROD-0216,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0373,PROD-0216,PROD-0175,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0374,PROD-0217,PROD-0081,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0375,PROD-0218,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0376,PROD-0218,PROD-0171,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0377,PROD-0221,PROD-0170,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0378,PROD-0221,PROD-0175,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0379,PROD-0222,PROD-0084,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0380,PROD-0223,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0381,PROD-0223,PROD-0170,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0382,PROD-0226,PROD-0170,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0383,PROD-0226,PROD-0100,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0384,PROD-0227,PROD-0081,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0385,PROD-0228,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0386,PROD-0228,PROD-0172,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0387,PROD-0231,PROD-0169,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0388,PROD-0231,PROD-0100,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0389,PROD-0232,PROD-0083,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0390,PROD-0233,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0391,PROD-0233,PROD-0099,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0392,PROD-0236,PROD-0172,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0393,PROD-0236,PROD-0100,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0394,PROD-0237,PROD-0153,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0395,PROD-0238,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0396,PROD-0238,PROD-0100,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0397,PROD-0241,PROD-0172,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0398,PROD-0241,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0399,PROD-0242,PROD-0083,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0400,PROD-0243,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0401,PROD-0243,PROD-0099,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0402,PROD-0246,PROD-0170,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0403,PROD-0246,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0404,PROD-0247,PROD-0082,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0405,PROD-0248,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0406,PROD-0248,PROD-0099,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0407,PROD-0251,PROD-0169,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0408,PROD-0251,PROD-0172,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0409,PROD-0252,PROD-0084,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0410,PROD-0253,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0411,PROD-0253,PROD-0170,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0412,PROD-0256,PROD-0172,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0413,PROD-0256,PROD-0170,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0414,PROD-0257,PROD-0083,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0415,PROD-0258,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0416,PROD-0258,PROD-0169,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE
+REC-0417,PROD-0261,PROD-0100,ATTACHMENT,0.94,0.87,14.5,1,True,25.0,Certified 10G SFP+ optical transceivers for wire-speed perimeter firewall inspection ports,ACTIVE
+REC-0418,PROD-0261,PROD-0170,CROSS_SELL,0.91,0.82,19.0,2,True,30.0,Category 6A shielded patch cabling ensures interference-free security appliance uplinks,ACTIVE
+REC-0419,PROD-0262,PROD-0084,CROSS_SELL,0.88,0.78,10.0,1,True,20.0,"Thunderbolt/USB-C docking hub connects monitor, ethernet, and high-wattage charging",ACTIVE
+REC-0420,PROD-0263,PROD-0173,ATTACHMENT,0.95,0.88,12.0,1,True,22.0,Enterprise sliding rail kit engineered for heavy SAN/NAS storage chassis installations,ACTIVE
+REC-0421,PROD-0263,PROD-0100,CROSS_SELL,0.91,0.83,16.0,2,True,25.0,Short-wave 16Gb/32Gb Fibre Channel optical transceivers for low-latency SAN fabric,ACTIVE

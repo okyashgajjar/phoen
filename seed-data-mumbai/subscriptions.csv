@@ -1,0 +1,27 @@
+subscription_contract_id,customer_id,quotation_id,plan_id,plan_name,annual_rate,billing_cycle,start_date,next_renewal_date,contract_status
+SUBREC-0001,CUST-002,QT-MUM-0002,SUB-001,Comprehensive 24x7 4-Hour SLA Enterprise Hardware AMC (Annual),52000.00,YEARLY,2026-02-27,2027-02-27,ACTIVE
+SUBREC-0002,CUST-005,QT-MUM-0005,SUB-007,Cloud Endpoint Mobility Management (MDM) Enterprise Seat (Annual),2600.00,YEARLY,2026-02-22,2027-02-22,ACTIVE
+SUBREC-0003,CUST-007,QT-MUM-0007,SUB-008,Executive VIP Concierge Mobility Protection (Annual),5400.00,YEARLY,2026-02-26,2027-02-26,ACTIVE
+SUBREC-0004,CUST-012,QT-MUM-0012,SUB-013,Enterprise Desk-Side Support & SLA Helpdesk (Per User) (Monthly),750.00,YEARLY,2026-01-09,2027-01-09,ACTIVE
+SUBREC-0005,CUST-016,QT-MUM-0016,SUB-011,Managed Immutable Cloud Backup & Ransomware Vault (1TB) (Monthly),2800.00,YEARLY,2026-01-21,2027-01-21,ACTIVE
+SUBREC-0006,CUST-020,QT-MUM-0020,SUB-012,Enterprise Datacenter Immutable Cloud Backup (10TB Pool) (Monthly),22000.00,YEARLY,2026-01-05,2027-01-05,ACTIVE
+SUBREC-0007,CUST-024,QT-MUM-0024,SUB-017,Managed Print Services & Automated Toner Replenishment (Monthly),3500.00,YEARLY,2026-01-17,2027-01-17,ACTIVE
+SUBREC-0008,CUST-028,QT-MUM-0028,SUB-006,Managed Firewall Security Operations (SOC) & Threat Feeds (Monthly),9200.00,YEARLY,2026-01-01,2027-01-01,ACTIVE
+SUBREC-0009,CUST-032,QT-MUM-0032,SUB-013,Enterprise Desk-Side Support & SLA Helpdesk (Per User) (Monthly),750.00,YEARLY,2026-01-13,2027-01-13,ACTIVE
+SUBREC-0010,CUST-036,QT-MUM-0036,SUB-001,Comprehensive 24x7 4-Hour SLA Enterprise Hardware AMC (Yearly),52000.00,YEARLY,2026-01-25,2027-01-25,ACTIVE
+SUBREC-0011,CUST-040,QT-MUM-0040,SUB-018,BFSI Compliant Immutable Log Retention & Audit Archival (Monthly),16000.00,YEARLY,2026-01-09,2027-01-09,ACTIVE
+SUBREC-0012,CUST-044,QT-MUM-0044,SUB-013,Enterprise Desk-Side Support & SLA Helpdesk (Per User) (Monthly),750.00,YEARLY,2026-01-21,2027-01-21,ACTIVE
+SUBREC-0013,CUST-048,QT-MUM-0048,SUB-009,Proactive All-Flash SAN Storage Telemetry & Capacity Planning (Monthly),4200.00,YEARLY,2026-02-05,2027-02-05,ACTIVE
+SUBREC-0014,CUST-052,QT-MUM-0052,SUB-004,Platinum Datacenter Server Cluster AMC with Spares Onsite (Yearly),110000.00,YEARLY,2026-02-17,2027-02-17,ACTIVE
+SUBREC-0015,CUST-056,QT-MUM-0056,SUB-006,Managed Firewall Security Operations (SOC) & Threat Feeds (Monthly),9200.00,YEARLY,2026-02-01,2027-02-01,ACTIVE
+SUBREC-0016,CUST-060,QT-MUM-0060,SUB-004,Platinum Datacenter Server Cluster AMC with Spares Onsite (Yearly),110000.00,YEARLY,2026-02-13,2027-02-13,ACTIVE
+SUBREC-0017,CUST-064,QT-MUM-0064,SUB-021,Jamf Pro Hosted MDM Subscription & Apple Enterprise Care (Yearly),3600.00,YEARLY,2026-02-25,2027-02-25,ACTIVE
+SUBREC-0018,CUST-068,QT-MUM-0068,SUB-022,Software-Defined Network Fabric Orchestration & Telemetry (Monthly),6200.00,YEARLY,2026-02-09,2027-02-09,ACTIVE
+SUBREC-0019,CUST-072,QT-MUM-0072,SUB-018,BFSI Compliant Immutable Log Retention & Audit Archival (Monthly),16000.00,YEARLY,2026-02-21,2027-02-21,ACTIVE
+SUBREC-0020,CUST-076,QT-MUM-0076,SUB-012,Enterprise Datacenter Immutable Cloud Backup (10TB Pool) (Monthly),22000.00,YEARLY,2026-02-05,2027-02-05,ACTIVE
+SUBREC-0021,CUST-080,QT-MUM-0080,SUB-007,Cloud Endpoint Mobility Management (MDM) Enterprise Seat (Yearly),2600.00,YEARLY,2026-02-17,2027-02-17,ACTIVE
+SUBREC-0022,CUST-084,QT-MUM-0084,SUB-007,Cloud Endpoint Mobility Management (MDM) Enterprise Seat (Yearly),2600.00,YEARLY,2026-02-01,2027-02-01,ACTIVE
+SUBREC-0023,CUST-088,QT-MUM-0088,SUB-005,Cloud Network Operations Center (NOC) Managed Switch Care (Monthly),1950.00,YEARLY,2026-02-13,2027-02-13,ACTIVE
+SUBREC-0024,CUST-092,QT-MUM-0092,SUB-004,Platinum Datacenter Server Cluster AMC with Spares Onsite (Yearly),110000.00,YEARLY,2026-02-25,2027-02-25,ACTIVE
+SUBREC-0025,CUST-096,QT-MUM-0096,SUB-001,Comprehensive 24x7 4-Hour SLA Enterprise Hardware AMC (Yearly),52000.00,YEARLY,2026-02-09,2027-02-09,ACTIVE
+SUBREC-0026,CUST-100,QT-MUM-0100,SUB-013,Enterprise Desk-Side Support & SLA Helpdesk (Per User) (Monthly),750.00,YEARLY,2026-02-21,2027-02-21,ACTIVE

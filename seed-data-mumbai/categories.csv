@@ -1,0 +1,19 @@
+category_id,category_name,parent_category_id,description,status
+CAT-COMP,Enterprise Computing Systems,,"Commercial Laptops, Desktops, Financial Workstations and Servers",ACTIVE
+CAT-INFRA,Data Center & Network Infrastructure,,"Enterprise Storage Arrays, Switches, Routers, and Firewalls",ACTIVE
+CAT-WORK,"Workplace, Displays & Mobility",,"Displays, Mobile Devices, Tablets, and Corporate Peripherals",ACTIVE
+CAT-PWR,"Enterprise Power, Print & Collaboration",,"Online UPS, Meeting Room Hardware, and Document Solutions",ACTIVE
+CAT-LAP,Commercial & Executive Laptops,CAT-COMP,"Enterprise ultrabooks, executive notebooks, and developer laptops",ACTIVE
+CAT-DSK,Enterprise Desktops & Mini PCs,CAT-COMP,"Compact corporate desktops, micro form factors, and all-in-ones",ACTIVE
+CAT-WKS,Financial & Engineering Workstations,CAT-COMP,"Multi-GPU trading workstations, CAD engineering, and AI compute",ACTIVE
+CAT-SRV,Enterprise Rack & Blade Servers,CAT-COMP,"High-density compute, database servers, and virtualization nodes",ACTIVE
+CAT-STO,Enterprise SAN/NAS Storage Arrays,CAT-INFRA,"All-flash SAN arrays, enterprise NAS, and high-capacity storage",ACTIVE
+CAT-NET,Enterprise Core & Access Networking,CAT-INFRA,"Managed Layer 2/3 switches, PoE+ edge switches, and wireless APs",ACTIVE
+CAT-SEC,Cybersecurity & Perimeter Firewalls,CAT-INFRA,"Next-Gen firewalls, secure SD-WAN, and threat defense appliances",ACTIVE
+CAT-MON,Financial Trading & Professional Displays,CAT-WORK,"Multi-monitor trading screens, color-calibrated 4K, and ultrawide",ACTIVE
+CAT-UPS,Mission-Critical Online UPS,CAT-PWR,"Online double-conversion UPS, rackmount batteries, and PDUs",ACTIVE
+CAT-SMP,Enterprise Smartphones & Mobility,CAT-WORK,Secure corporate mobile devices for executives and field operations,ACTIVE
+CAT-TAB,Enterprise Tablets,CAT-WORK,Rugged and commercial tablets for executive and audit workflows,ACTIVE
+CAT-PRN,Enterprise Document & Print Solutions,CAT-PWR,High-volume departmental laser printers and secure multifunction MFPs,ACTIVE
+CAT-COL,Corporate Video Collaboration,CAT-PWR,"Boardroom video bars, conferencing bundles, and digital whiteboards",ACTIVE
+CAT-ACC,Enterprise Docks & Accessories,CAT-WORK,"Thunderbolt docks, GaN fast chargers, headsets, and ergonomics",ACTIVE

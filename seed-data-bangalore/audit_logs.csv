@@ -1,0 +1,157 @@
+audit_id,entity_type,entity_id,action,old_value,new_value,performed_by,reason,timestamp
+AUD-00001,Quotation,QT-0001,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00002,Quotation,QT-0001,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00003,Quotation,QT-0002,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00004,Quotation,QT-0002,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00005,Quotation,QT-0002,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00006,Quotation,QT-0002,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00007,Quotation,QT-0003,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00008,Quotation,QT-0003,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00009,Quotation,QT-0004,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00010,Quotation,QT-0004,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00011,Quotation,QT-0004,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00012,Quotation,QT-0005,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00013,Quotation,QT-0005,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00014,Quotation,QT-0006,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00015,Quotation,QT-0006,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00016,Quotation,QT-0007,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00017,Quotation,QT-0007,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00018,Quotation,QT-0008,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00019,Invoice,QT-0008,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00020,Quotation,QT-0009,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00021,Quotation,QT-0009,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00022,Quotation,QT-0009,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00023,Quotation,QT-0009,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00024,Quotation,QT-0010,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00025,Quotation,QT-0010,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00026,Invoice,QT-0010,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00027,Quotation,QT-0010,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00028,Quotation,QT-0011,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00029,Quotation,QT-0011,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00030,Quotation,QT-0011,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00031,Invoice,QT-0012,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00032,Quotation,QT-0012,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00033,Quotation,QT-0013,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00034,Quotation,QT-0013,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00035,Quotation,QT-0013,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00036,Quotation,QT-0013,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00037,Quotation,QT-0014,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00038,Invoice,QT-0014,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00039,Quotation,QT-0014,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00040,Quotation,QT-0015,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00041,Quotation,QT-0015,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00042,Quotation,QT-0015,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00043,Quotation,QT-0016,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00044,Quotation,QT-0016,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00045,Quotation,QT-0016,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00046,Quotation,QT-0016,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00047,Invoice,QT-0017,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00048,Quotation,QT-0017,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00049,Quotation,QT-0017,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00050,Quotation,QT-0017,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00051,Quotation,QT-0018,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00052,Quotation,QT-0018,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00053,Quotation,QT-0018,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00054,Quotation,QT-0018,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00055,Quotation,QT-0019,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00056,Invoice,QT-0019,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00057,Quotation,QT-0019,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00058,Quotation,QT-0020,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00059,Quotation,QT-0020,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00060,Quotation,QT-0020,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00061,Invoice,QT-0020,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00062,Quotation,QT-0021,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00063,Invoice,QT-0021,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00064,Quotation,QT-0021,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00065,Quotation,QT-0022,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00066,Quotation,QT-0022,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00067,Quotation,QT-0022,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00068,Invoice,QT-0023,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00069,Quotation,QT-0023,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00070,Quotation,QT-0023,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00071,Quotation,QT-0023,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00072,Quotation,QT-0024,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00073,Quotation,QT-0024,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00074,Quotation,QT-0024,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00075,Quotation,QT-0025,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00076,Quotation,QT-0025,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00077,Quotation,QT-0025,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00078,Quotation,QT-0026,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00079,Quotation,QT-0026,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00080,Invoice,QT-0026,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00081,Quotation,QT-0027,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00082,Quotation,QT-0027,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00083,Quotation,QT-0027,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00084,Quotation,QT-0028,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00085,Quotation,QT-0028,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00086,Quotation,QT-0028,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00087,Quotation,QT-0029,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00088,Quotation,QT-0029,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00089,Quotation,QT-0029,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00090,Quotation,QT-0029,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00091,Quotation,QT-0030,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00092,Quotation,QT-0030,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00093,Invoice,QT-0030,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00094,Quotation,QT-0030,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00095,Quotation,QT-0031,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00096,Quotation,QT-0031,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00097,Quotation,QT-0031,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00098,Quotation,QT-0032,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00099,Quotation,QT-0032,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00100,Quotation,QT-0033,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00101,Quotation,QT-0033,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00102,Quotation,QT-0033,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00103,Quotation,QT-0033,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00104,Quotation,QT-0034,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00105,Quotation,QT-0034,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00106,Invoice,QT-0035,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00107,Quotation,QT-0035,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00108,Quotation,QT-0035,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00109,Quotation,QT-0036,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00110,Quotation,QT-0036,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00111,Invoice,QT-0037,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00112,Quotation,QT-0037,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00113,Quotation,QT-0037,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00114,Quotation,QT-0037,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00115,Quotation,QT-0038,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00116,Quotation,QT-0038,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00117,Quotation,QT-0038,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00118,Quotation,QT-0039,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00119,Quotation,QT-0039,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00120,Quotation,QT-0039,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00121,Quotation,QT-0040,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00122,Quotation,QT-0040,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00123,Quotation,QT-0040,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00124,Invoice,QT-0040,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00125,Invoice,QT-0041,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00126,Quotation,QT-0041,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00127,Quotation,QT-0041,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00128,Quotation,QT-0042,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00129,Invoice,QT-0042,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00130,Quotation,QT-0042,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00131,Quotation,QT-0042,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00132,Quotation,QT-0043,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00133,Quotation,QT-0043,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00134,Quotation,QT-0044,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00135,Invoice,QT-0044,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00136,Quotation,QT-0044,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00137,Quotation,QT-0044,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00138,Quotation,QT-0045,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00139,Quotation,QT-0045,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00140,Quotation,QT-0045,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00141,Quotation,QT-0046,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00142,Invoice,QT-0046,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00143,Quotation,QT-0046,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00144,Quotation,QT-0046,Approval approved,Pending Approval,Approved,Kavita Sharma,Commercial approval granted after executive review,2026-02-28T16:00:00Z
+AUD-00145,Quotation,QT-0047,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00146,Invoice,QT-0047,Invoice generated,None,INV-2026-0001,Kavita Sharma,Finance generated tax invoice against confirmed deal,2026-02-28T16:00:00Z
+AUD-00147,Quotation,QT-0047,Discount changed,10.0%,24.0%,Kavita Sharma,Sales Lead applied competitive strategic discount,2026-02-28T16:00:00Z
+AUD-00148,Quotation,QT-0048,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00149,Quotation,QT-0048,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z
+AUD-00150,Quotation,QT-0048,Backorder created,0,2 Units,Kavita Sharma,Factory backorder created with OEM supply chain,2026-02-28T16:00:00Z
+AUD-00151,Quotation,QT-0049,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00152,Quotation,QT-0049,Warehouse allocation changed,WH-001 (Bangalore),WH-001 + WH-003 Split,Kavita Sharma,Multi-warehouse split allocated due to local inventory balance,2026-02-28T16:00:00Z
+AUD-00153,Quotation,QT-0049,Customer counter-offer submitted,Approved,Under Negotiation,Kavita Sharma,Customer requested 3% additional concession,2026-02-28T16:00:00Z
+AUD-00154,Quotation,QT-0050,Approval requested,Draft,Pending Approval,Kavita Sharma,Discount exceeded category limit; routed to L2 Sales Director,2026-02-28T16:00:00Z
+AUD-00155,Quotation,QT-0050,Quote confirmed,Approved,Confirmed,Kavita Sharma,Customer issued formal Purchase Order,2026-02-28T16:00:00Z
+AUD-00156,Quotation,QT-0050,Quote created,,Draft,Kavita Sharma,Sales Rep created initial commercial draft proposal,2026-02-28T16:00:00Z

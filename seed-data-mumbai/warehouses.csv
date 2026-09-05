@@ -1,0 +1,6 @@
+warehouse_id,warehouse_code,warehouse_name,city,state,country,warehouse_type,manager_name,capacity_units,status
+WH-001,MUM-DC-01,Mumbai Enterprise Technology Distribution Center,Mumbai,Maharashtra,India,DISTRIBUTION_CENTER,Vikramaditya Singhania,180000,ACTIVE
+WH-002,NAVI-MUM-DC-01,Navi Mumbai Logistics & Staging Hub,Navi Mumbai,Maharashtra,India,LOGISTICS_HUB,Sunil Deshmukh,100000,ACTIVE
+WH-003,BLR-DC-01,Bangalore Central Technology Hub,Bengaluru,Karnataka,India,REGIONAL_HUB,Kavita Sharma,120000,ACTIVE
+WH-004,DEL-DC-01,Delhi NCR Enterprise Logistics Center,Gurugram,Haryana,India,REGIONAL_HUB,Rajiv Khanna,90000,ACTIVE
+WH-005,AMD-DC-01,Ahmedabad Commercial Distribution Center,Ahmedabad,Gujarat,India,REGIONAL_HUB,Nilesh Patel,60000,ACTIVE

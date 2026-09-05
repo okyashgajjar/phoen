@@ -1,0 +1,101 @@
+deal_health_id,quotation_id,days_inactive,discount_anomaly_score,delivery_risk_score,approval_delay_score,inventory_risk_score,overall_health_score,health_status,recommended_action,last_evaluated_at
+DH-0001,QT-MUM-0001,16,0.8,0.76,0.73,0.75,0.26,Critical,Escalate immediately to Commercial VP; schedule pricing governance review with Finance,2026-03-01T12:00:00Z
+DH-0002,QT-MUM-0002,3,0.1,0.07,0.12,0.05,0.84,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0003,QT-MUM-0003,5,0.03,0.13,0.16,0.13,0.91,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0004,QT-MUM-0004,7,0.24,0.33,0.28,0.38,0.68,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0005,QT-MUM-0005,3,0.03,0.09,0.17,0.14,0.81,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0006,QT-MUM-0006,5,0.11,0.33,0.33,0.38,0.65,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0007,QT-MUM-0007,1,0.0,0.18,0.15,0.08,0.87,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0008,QT-MUM-0008,1,0.14,0.12,0.14,0.06,0.84,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0009,QT-MUM-0009,50,0.29,0.59,0.3,0.35,0.48,At Risk,Re-engage executive sponsor; schedule in-person review at client Mumbai HQ,2026-03-01T12:00:00Z
+DH-0010,QT-MUM-0010,25,0.85,0.79,0.7,0.71,0.27,Critical,Escalate immediately to Commercial VP; schedule pricing governance review with Finance,2026-03-01T12:00:00Z
+DH-0011,QT-MUM-0011,3,0.04,0.2,0.13,0.17,0.91,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0012,QT-MUM-0012,4,0.13,0.17,0.05,0.13,0.85,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0013,QT-MUM-0013,2,0.05,0.11,0.07,0.16,0.89,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0014,QT-MUM-0014,5,0.13,0.15,0.11,0.14,0.88,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0015,QT-MUM-0015,3,0.14,0.1,0.13,0.08,0.82,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0016,QT-MUM-0016,5,0.1,0.08,0.07,0.15,0.96,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0017,QT-MUM-0017,2,0.06,0.19,0.17,0.15,0.9,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0018,QT-MUM-0018,2,0.05,0.13,0.19,0.07,0.86,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0019,QT-MUM-0019,2,0.11,0.16,0.18,0.11,0.87,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0020,QT-MUM-0020,4,0.11,0.17,0.15,0.16,0.83,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0021,QT-MUM-0021,2,0.02,0.08,0.16,0.14,0.85,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0022,QT-MUM-0022,5,0.09,0.14,0.08,0.05,0.81,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0023,QT-MUM-0023,4,0.02,0.18,0.12,0.15,0.83,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0024,QT-MUM-0024,4,0.07,0.07,0.08,0.05,0.94,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0025,QT-MUM-0025,1,0.14,0.19,0.08,0.15,0.84,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0026,QT-MUM-0026,2,0.01,0.19,0.2,0.18,0.89,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0027,QT-MUM-0027,3,0.13,0.18,0.11,0.17,0.91,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0028,QT-MUM-0028,4,0.11,0.11,0.19,0.14,0.9,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0029,QT-MUM-0029,1,0.08,0.12,0.17,0.06,0.98,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0030,QT-MUM-0030,5,0.08,0.2,0.06,0.11,0.94,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0031,QT-MUM-0031,1,0.03,0.12,0.18,0.17,0.85,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0032,QT-MUM-0032,2,0.06,0.14,0.06,0.13,0.83,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0033,QT-MUM-0033,4,0.01,0.13,0.08,0.14,0.96,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0034,QT-MUM-0034,5,0.02,0.11,0.12,0.08,0.91,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0035,QT-MUM-0035,2,0.13,0.06,0.1,0.15,0.93,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0036,QT-MUM-0036,2,0.11,0.07,0.07,0.12,0.87,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0037,QT-MUM-0037,5,0.11,0.16,0.2,0.14,0.83,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0038,QT-MUM-0038,5,0.06,0.17,0.19,0.13,0.92,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0039,QT-MUM-0039,2,0.02,0.07,0.17,0.06,0.86,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0040,QT-MUM-0040,4,0.04,0.08,0.18,0.19,0.8,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0041,QT-MUM-0041,3,0.0,0.12,0.12,0.17,0.91,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0042,QT-MUM-0042,4,0.04,0.14,0.12,0.11,0.81,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0043,QT-MUM-0043,5,0.0,0.18,0.09,0.14,0.95,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0044,QT-MUM-0044,2,0.01,0.07,0.15,0.06,0.95,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0045,QT-MUM-0045,5,0.13,0.09,0.19,0.06,0.88,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0046,QT-MUM-0046,2,0.02,0.09,0.15,0.15,0.9,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0047,QT-MUM-0047,5,0.03,0.12,0.14,0.19,0.82,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0048,QT-MUM-0048,3,0.05,0.18,0.17,0.16,0.95,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0049,QT-MUM-0049,1,0.04,0.07,0.15,0.09,0.89,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0050,QT-MUM-0050,5,0.03,0.08,0.06,0.14,0.98,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0051,QT-MUM-0051,5,0.15,0.12,0.15,0.19,0.98,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0052,QT-MUM-0052,3,0.06,0.18,0.09,0.14,0.91,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0053,QT-MUM-0053,2,0.09,0.12,0.16,0.12,0.95,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0054,QT-MUM-0054,5,0.03,0.09,0.08,0.07,0.88,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0055,QT-MUM-0055,1,0.11,0.08,0.14,0.11,0.81,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0056,QT-MUM-0056,3,0.08,0.15,0.05,0.08,0.85,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0057,QT-MUM-0057,1,0.05,0.13,0.1,0.05,0.92,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0058,QT-MUM-0058,3,0.06,0.14,0.19,0.17,0.83,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0059,QT-MUM-0059,3,0.14,0.12,0.12,0.06,0.82,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0060,QT-MUM-0060,2,0.09,0.18,0.13,0.1,0.94,Healthy,Proceed with standard order processing and warehouse dispatch scheduling,2026-03-01T12:00:00Z
+DH-0061,QT-MUM-0061,11,0.29,0.21,0.3,0.31,0.7,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0062,QT-MUM-0062,13,0.21,0.24,0.34,0.36,0.73,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0063,QT-MUM-0063,10,0.11,0.23,0.37,0.27,0.66,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0064,QT-MUM-0064,13,0.27,0.31,0.28,0.32,0.73,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0065,QT-MUM-0065,9,0.24,0.26,0.21,0.28,0.67,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0066,QT-MUM-0066,8,0.17,0.37,0.26,0.31,0.63,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0067,QT-MUM-0067,10,0.26,0.36,0.38,0.29,0.6,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0068,QT-MUM-0068,12,0.28,0.23,0.27,0.3,0.73,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0069,QT-MUM-0069,9,0.26,0.23,0.37,0.36,0.74,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0070,QT-MUM-0070,7,0.14,0.21,0.28,0.37,0.62,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0071,QT-MUM-0071,9,0.29,0.34,0.32,0.22,0.67,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0072,QT-MUM-0072,5,0.12,0.35,0.35,0.2,0.71,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0073,QT-MUM-0073,8,0.16,0.24,0.26,0.26,0.67,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0074,QT-MUM-0074,6,0.15,0.23,0.22,0.39,0.68,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0075,QT-MUM-0075,6,0.14,0.27,0.26,0.23,0.71,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0076,QT-MUM-0076,9,0.21,0.23,0.26,0.38,0.68,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0077,QT-MUM-0077,5,0.13,0.29,0.34,0.22,0.61,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0078,QT-MUM-0078,11,0.18,0.34,0.38,0.33,0.7,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0079,QT-MUM-0079,12,0.22,0.26,0.36,0.34,0.7,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0080,QT-MUM-0080,13,0.12,0.38,0.35,0.31,0.61,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0081,QT-MUM-0081,12,0.12,0.26,0.33,0.35,0.67,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0082,QT-MUM-0082,8,0.13,0.38,0.25,0.27,0.63,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0083,QT-MUM-0083,10,0.26,0.38,0.29,0.21,0.67,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0084,QT-MUM-0084,10,0.2,0.37,0.26,0.27,0.69,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0085,QT-MUM-0085,13,0.12,0.36,0.36,0.27,0.7,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0086,QT-MUM-0086,9,0.21,0.28,0.28,0.32,0.68,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0087,QT-MUM-0087,12,0.18,0.27,0.36,0.32,0.72,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0088,QT-MUM-0088,11,0.21,0.27,0.34,0.23,0.7,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0089,QT-MUM-0089,14,0.27,0.22,0.32,0.27,0.61,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0090,QT-MUM-0090,12,0.14,0.39,0.21,0.22,0.72,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0091,QT-MUM-0091,11,0.17,0.33,0.21,0.24,0.62,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0092,QT-MUM-0092,14,0.28,0.33,0.2,0.23,0.62,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0093,QT-MUM-0093,13,0.16,0.32,0.29,0.24,0.73,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0094,QT-MUM-0094,9,0.21,0.38,0.26,0.39,0.67,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0095,QT-MUM-0095,10,0.3,0.32,0.32,0.3,0.73,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0096,QT-MUM-0096,9,0.11,0.38,0.39,0.2,0.68,Watch,Follow up with account manager regarding expected Purchase Order release date,2026-03-01T12:00:00Z
+DH-0097,QT-MUM-0097,31,0.22,0.46,0.31,0.39,0.49,At Risk,Re-engage executive sponsor; schedule in-person review at client Mumbai HQ,2026-03-01T12:00:00Z
+DH-0098,QT-MUM-0098,40,0.26,0.48,0.38,0.41,0.5,At Risk,Re-engage executive sponsor; schedule in-person review at client Mumbai HQ,2026-03-01T12:00:00Z
+DH-0099,QT-MUM-0099,30,0.78,0.74,0.87,0.61,0.28,Critical,Escalate immediately to Commercial VP; schedule pricing governance review with Finance,2026-03-01T12:00:00Z
+DH-0100,QT-MUM-0100,24,0.95,0.77,0.73,0.52,0.2,Critical,Escalate immediately to Commercial VP; schedule pricing governance review with Finance,2026-03-01T12:00:00Z

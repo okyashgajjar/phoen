@@ -1,0 +1,35 @@
+brand_id,brand_name,brand_code,country,support_level,status
+BRD-001,Dell Technologies,DELL,United States,TIER_1_OEM,ACTIVE
+BRD-002,Hewlett Packard Enterprise,HPE,United States,TIER_1_OEM,ACTIVE
+BRD-003,HP Inc.,HP,United States,TIER_1_OEM,ACTIVE
+BRD-004,Lenovo Enterprise,LENOVO,Hong Kong,TIER_1_OEM,ACTIVE
+BRD-005,Apple Inc.,APPLE,United States,TIER_1_OEM,ACTIVE
+BRD-006,Cisco Systems,CISCO,United States,TIER_1_OEM,ACTIVE
+BRD-007,Fortinet,FORTINET,United States,TIER_1_OEM,ACTIVE
+BRD-008,Palo Alto Networks,PALO_ALTO,United States,TIER_1_OEM,ACTIVE
+BRD-009,Aruba Networks,ARUBA,United States,TIER_1_OEM,ACTIVE
+BRD-010,Ubiquiti Networks,UBIQUITI,United States,TIER_2_OEM,ACTIVE
+BRD-011,Synology Inc.,SYNOLOGY,Taiwan,TIER_1_OEM,ACTIVE
+BRD-012,QNAP Systems,QNAP,Taiwan,TIER_1_OEM,ACTIVE
+BRD-013,Western Digital,WD,United States,TIER_1_OEM,ACTIVE
+BRD-014,Seagate Technology,SEAGATE,United States,TIER_1_OEM,ACTIVE
+BRD-015,Samsung Electronics,SAMSUNG,South Korea,TIER_1_OEM,ACTIVE
+BRD-016,Kingston Technology,KINGSTON,United States,TIER_2_OEM,ACTIVE
+BRD-017,LG Electronics,LG,South Korea,TIER_1_OEM,ACTIVE
+BRD-018,ViewSonic,VIEWSONIC,United States,TIER_2_OEM,ACTIVE
+BRD-019,ASUS Commercial,ASUS,Taiwan,TIER_1_OEM,ACTIVE
+BRD-020,Acer Enterprise,ACER,Taiwan,TIER_2_OEM,ACTIVE
+BRD-021,Microsoft Surface,MICROSOFT,United States,TIER_1_OEM,ACTIVE
+BRD-022,Google Enterprise,GOOGLE,United States,TIER_1_OEM,ACTIVE
+BRD-023,OnePlus Technology,ONEPLUS,China,TIER_2_OEM,ACTIVE
+BRD-024,Motorola Business,MOTOROLA,United States,TIER_2_OEM,ACTIVE
+BRD-025,Schneider Electric / APC,APC,France,TIER_1_OEM,ACTIVE
+BRD-026,Eaton Corporation,EATON,Ireland,TIER_1_OEM,ACTIVE
+BRD-027,Vertiv Holdings,VERTIV,United States,TIER_1_OEM,ACTIVE
+BRD-028,Brother International,BROTHER,Japan,TIER_2_OEM,ACTIVE
+BRD-029,Canon Inc.,CANON,Japan,TIER_1_OEM,ACTIVE
+BRD-030,Epson Commercial,EPSON,Japan,TIER_2_OEM,ACTIVE
+BRD-031,Logitech Enterprise,LOGITECH,Switzerland,TIER_1_OEM,ACTIVE
+BRD-032,Poly (HP Poly),POLY,United States,TIER_1_OEM,ACTIVE
+BRD-033,Jabra GN,JABRA,Denmark,TIER_1_OEM,ACTIVE
+BRD-034,Sophos Technologies,SOPHOS,United Kingdom,TIER_1_OEM,ACTIVE
