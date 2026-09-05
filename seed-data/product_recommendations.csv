@@ -1,0 +1,175 @@
+recommendation_id,source_product_id,recommended_product_id,recommendation_type,confidence_score,co_purchase_rate,margin_delta,priority,promotion_active,minimum_margin_percent,reason,status
+REC-0001,PROD-0001,PROD-0149,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0002,PROD-0001,PROD-0079,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0003,PROD-0001,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0004,PROD-0002,PROD-0149,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0005,PROD-0002,PROD-0080,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0006,PROD-0002,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0007,PROD-0003,PROD-0148,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0008,PROD-0003,PROD-0086,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0009,PROD-0003,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0010,PROD-0004,PROD-0145,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0011,PROD-0004,PROD-0084,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0012,PROD-0004,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0013,PROD-0005,PROD-0145,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0014,PROD-0005,PROD-0089,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0015,PROD-0005,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0016,PROD-0006,PROD-0149,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0017,PROD-0006,PROD-0088,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0018,PROD-0006,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0019,PROD-0007,PROD-0148,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0020,PROD-0007,PROD-0088,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0021,PROD-0007,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0022,PROD-0008,PROD-0148,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0023,PROD-0008,PROD-0091,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0024,PROD-0008,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0025,PROD-0009,PROD-0147,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0026,PROD-0009,PROD-0088,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0027,PROD-0009,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0028,PROD-0010,PROD-0149,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0029,PROD-0010,PROD-0081,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0030,PROD-0010,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0031,PROD-0011,PROD-0148,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0032,PROD-0011,PROD-0080,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0033,PROD-0011,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0034,PROD-0012,PROD-0150,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0035,PROD-0012,PROD-0080,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0036,PROD-0012,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0037,PROD-0013,PROD-0145,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0038,PROD-0013,PROD-0082,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0039,PROD-0013,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0040,PROD-0014,PROD-0148,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0041,PROD-0014,PROD-0087,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0042,PROD-0014,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0043,PROD-0015,PROD-0147,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0044,PROD-0015,PROD-0084,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0045,PROD-0015,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0046,PROD-0016,PROD-0148,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0047,PROD-0016,PROD-0085,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0048,PROD-0016,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0049,PROD-0017,PROD-0150,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0050,PROD-0017,PROD-0088,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0051,PROD-0017,PROD-0159,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0052,PROD-0018,PROD-0150,CROSS_SELL,0.88,0.74,8.5,1,True,20.0,Frequently purchased together with corporate laptops to enable multi-display desktop workstations,ACTIVE
+REC-0053,PROD-0018,PROD-0089,ATTACHMENT,0.82,0.65,6.2,2,True,18.0,Recommended dual-display pairing for corporate productivity enhancement,ACTIVE
+REC-0054,PROD-0018,PROD-0160,CROSS_SELL,0.91,0.82,12.0,3,True,25.0,Essential protective transport gear for distributed enterprise workforce,ACTIVE
+REC-0055,PROD-0033,PROD-0082,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0056,PROD-0033,PROD-0124,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0057,PROD-0034,PROD-0082,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0058,PROD-0034,PROD-0125,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0059,PROD-0035,PROD-0091,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0060,PROD-0035,PROD-0124,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0061,PROD-0036,PROD-0088,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0062,PROD-0036,PROD-0125,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0063,PROD-0037,PROD-0083,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0064,PROD-0037,PROD-0124,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0065,PROD-0038,PROD-0082,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0066,PROD-0038,PROD-0125,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0067,PROD-0039,PROD-0083,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0068,PROD-0039,PROD-0124,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0069,PROD-0040,PROD-0088,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0070,PROD-0040,PROD-0125,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0071,PROD-0041,PROD-0091,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0072,PROD-0041,PROD-0123,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0073,PROD-0042,PROD-0082,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0074,PROD-0042,PROD-0124,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0075,PROD-0043,PROD-0091,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0076,PROD-0043,PROD-0125,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0077,PROD-0044,PROD-0088,UPSELL,0.94,0.86,9.4,1,True,22.0,"Factory color-calibrated display essential for CAD, 3D visualization and simulation workloads",ACTIVE
+REC-0078,PROD-0044,PROD-0123,ATTACHMENT,0.89,0.71,7.8,2,True,18.0,Pure sine-wave power backup protects high-power compute rigs against power spikes and brownouts,ACTIVE
+REC-0079,PROD-0045,PROD-0127,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0080,PROD-0045,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0081,PROD-0045,PROD-0178,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0082,PROD-0046,PROD-0127,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0083,PROD-0046,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0084,PROD-0046,PROD-0175,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0085,PROD-0047,PROD-0126,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0086,PROD-0047,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0087,PROD-0047,PROD-0176,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0088,PROD-0048,PROD-0125,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0089,PROD-0048,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0090,PROD-0048,PROD-0178,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0091,PROD-0049,PROD-0125,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0092,PROD-0049,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0093,PROD-0049,PROD-0176,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0094,PROD-0050,PROD-0125,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0095,PROD-0050,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0096,PROD-0050,PROD-0177,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0097,PROD-0051,PROD-0125,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0098,PROD-0051,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0099,PROD-0051,PROD-0177,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0100,PROD-0052,PROD-0127,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0101,PROD-0052,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0102,PROD-0052,PROD-0178,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0103,PROD-0053,PROD-0125,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0104,PROD-0053,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0105,PROD-0053,PROD-0176,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0106,PROD-0054,PROD-0127,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0107,PROD-0054,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0108,PROD-0054,PROD-0178,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0109,PROD-0055,PROD-0125,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0110,PROD-0055,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0111,PROD-0055,PROD-0177,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0112,PROD-0056,PROD-0127,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0113,PROD-0056,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0114,PROD-0056,PROD-0178,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0115,PROD-0057,PROD-0127,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0116,PROD-0057,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0117,PROD-0057,PROD-0178,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0118,PROD-0058,PROD-0125,ATTACHMENT,0.95,0.88,8.0,1,True,18.0,Mission-critical online double-conversion power conditioning required for enterprise SLA compliance,ACTIVE
+REC-0119,PROD-0058,PROD-0181,ATTACHMENT,0.98,0.92,14.5,2,True,25.0,Toolless sliding rail kit required for mounting in standard 19-inch 4-post enterprise server racks,ACTIVE
+REC-0120,PROD-0058,PROD-0177,CROSS_SELL,0.87,0.76,15.0,3,True,25.0,High-speed 10Gbps optical uplink connectivity for top-of-rack switch integration,ACTIVE
+REC-0121,PROD-0059,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0122,PROD-0060,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0123,PROD-0061,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0124,PROD-0062,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0125,PROD-0063,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0126,PROD-0064,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0127,PROD-0065,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0128,PROD-0066,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0129,PROD-0067,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0130,PROD-0068,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0131,PROD-0069,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0132,PROD-0070,PROD-0163,CROSS_SELL,0.89,0.81,16.5,1,True,25.0,120W multi-device fast charger simultaneously powers executive smartphone and ultrabook,ACTIVE
+REC-0133,PROD-0093,PROD-0178,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0134,PROD-0093,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0135,PROD-0094,PROD-0177,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0136,PROD-0094,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0137,PROD-0095,PROD-0178,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0138,PROD-0095,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0139,PROD-0096,PROD-0178,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0140,PROD-0096,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0141,PROD-0097,PROD-0176,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0142,PROD-0097,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0143,PROD-0098,PROD-0176,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0144,PROD-0098,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0145,PROD-0099,PROD-0175,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0146,PROD-0099,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0147,PROD-0100,PROD-0177,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0148,PROD-0100,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0149,PROD-0101,PROD-0175,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0150,PROD-0101,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0151,PROD-0102,PROD-0175,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0152,PROD-0102,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0153,PROD-0103,PROD-0177,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0154,PROD-0103,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0155,PROD-0104,PROD-0176,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0156,PROD-0104,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0157,PROD-0105,PROD-0175,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0158,PROD-0105,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0159,PROD-0106,PROD-0178,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0160,PROD-0106,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0161,PROD-0107,PROD-0175,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0162,PROD-0107,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0163,PROD-0108,PROD-0175,ATTACHMENT,0.96,0.9,18.0,1,True,30.0,Certified SFP+ optical transceiver or DAC cable for core distribution and stack interconnect,ACTIVE
+REC-0164,PROD-0108,PROD-0179,CROSS_SELL,0.92,0.85,22.0,2,True,35.0,Snagless 10-Gigabit certified patch cords for high-density patch panel to switch patching,ACTIVE
+REC-0165,PROD-0135,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0166,PROD-0136,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0167,PROD-0137,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0168,PROD-0138,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0169,PROD-0139,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0170,PROD-0140,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0171,PROD-0141,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0172,PROD-0142,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0173,PROD-0143,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
+REC-0174,PROD-0144,PROD-0179,ATTACHMENT,0.85,0.72,20.0,1,True,30.0,Shielded Ethernet cabling ensures stable Gigabit network print queue communication,ACTIVE
