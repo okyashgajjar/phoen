@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
+  const [kpis, setKpis] = useState(null);
+
+  useEffect(() => {
+    async function loadKPIs() {
+      try {
+        const data = await api.getDashboardKPIs();
+        setKpis(data);
+      } catch (err) {
+        console.error('Failed to load KPIs:', err);
+      }
+    }
+    loadKPIs();
+  }, []);
   const modules = [
     {
       id: 'quote-detail',
       title: 'Quotation Builder',
       desc: 'Configure line items, volume discount schedules, and contract terms.',
       icon: 'calculate',
-      badge: '12 drafts',
+      badge: kpis ? `${kpis.total_active_deals} drafts` : '...',
       tab: 'quote-detail',
     },
     {
@@ -15,7 +29,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
       title: 'Approval Cockpit',
       desc: 'Review margin exceptions, multi-tier approvals, and policy overrides.',
       icon: 'verified_user',
-      badge: '4 pending',
+      badge: kpis ? `${kpis.pending_review_count} pending` : '...',
       badgeColor: 'bg-amber-100 text-amber-800',
       tab: 'approvals',
     },
@@ -116,7 +130,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
             <span className="material-symbols-outlined text-[#76777d] text-[20px]">task_alt</span>
             <span>View Approvals</span>
             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 font-bold text-xs">
-              4 awaiting review
+              {kpis ? kpis.pending_review_count : '...'} awaiting review
             </span>
           </button>
         </div>
@@ -185,7 +199,7 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
               </div>
             </div>
             <div className="flex items-baseline gap-2 mb-2">
-              <span className="text-4xl font-extrabold text-[#0b1c30]">4</span>
+              <span className="text-4xl font-extrabold text-[#0b1c30]">{kpis ? kpis.pending_review_count : '...'}</span>
               <span className="text-sm text-[#45464d]">quotations awaiting sign-off</span>
             </div>
             <div className="flex items-center gap-2 mb-4">
@@ -219,11 +233,13 @@ export default function DashboardView({ setActiveTab, onOpenNewQuote }) {
               </div>
             </div>
             <div className="flex items-baseline gap-2 mb-2">
-              <span className="text-4xl font-extrabold text-[#0b1c30]">12</span>
+              <span className="text-4xl font-extrabold text-[#0b1c30]">{kpis ? kpis.total_active_deals : '...'}</span>
               <span className="text-sm text-[#45464d]">active proposals</span>
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-xl font-bold text-[#0b1c30] font-mono">$284,500</span>
+              <span className="text-xl font-bold text-[#0b1c30] font-mono">
+                {kpis ? `$${kpis.total_pipeline.toLocaleString()}` : '...'}
+              </span>
               <span className="inline-flex items-center gap-0.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold">
                 <span className="material-symbols-outlined text-[14px]">trending_up</span> +18% vs last mo
               </span>

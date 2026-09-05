@@ -1,41 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function FulfillmentView({ setActiveTab }) {
-  const [orders, setOrders] = useState([
-    {
-      id: 'ORD-8821',
-      account: 'Acme Corp',
-      quoteId: 'Q-1042',
-      date: 'Sept 05, 2026',
-      itemsCount: 3,
-      warehouse: 'US-East Central Hub (Virginia)',
-      status: 'STOCK_RESERVED',
-      statusLabel: 'Stock Reserved',
-      serials: ['SN-HW-99401', 'SN-HW-99402', 'SN-HW-99403', 'SN-HW-99404'],
-    },
-    {
-      id: 'ORD-8819',
-      account: 'TechCorp Industries',
-      quoteId: 'Q-1039',
-      date: 'Sept 04, 2026',
-      itemsCount: 8,
-      warehouse: 'EU-West Hub (Frankfurt)',
-      status: 'DISPATCHED',
-      statusLabel: 'Dispatched & Tracking Enabled',
-      serials: ['SN-HW-88102', 'SN-HW-88103'],
-    },
-    {
-      id: 'ORD-8818',
-      account: 'Apex Dynamics',
-      quoteId: 'Q-1041',
-      date: 'Sept 02, 2026',
-      itemsCount: 6,
-      warehouse: 'US-West Hub (Oregon)',
-      status: 'DELIVERED',
-      statusLabel: 'Delivered to Site',
-      serials: ['SN-HW-77120'],
-    },
-  ]);
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const data = await api.getFulfillmentOrders();
+        setOrders(data);
+      } catch (err) {
+        console.error('Failed to load fulfillment orders:', err);
+      }
+    }
+    loadData();
+  }, []);
 
   const dispatchOrder = (id) => {
     setOrders((oList) =>

@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function SubscriptionsView({ setActiveTab }) {
-  const subscriptions = [
-    { id: 'SUB-9021', account: 'TechCorp Industries', plan: 'Enterprise Cloud Platform (1,000 Seats)', mrr: '$11,833/mo', arr: '$142,000/yr', renewal: 'Sept 04, 2027', status: 'ACTIVE' },
-    { id: 'SUB-9018', account: 'Acme Corp', plan: 'Cloud Ops Annual License (100 Seats)', mrr: '$900/mo', arr: '$10,800/yr', renewal: 'Oct 05, 2027', status: 'PENDING_ONBOARDING' },
-    { id: 'SUB-8994', account: 'Apex Dynamics', plan: 'Automation ERP Suite & API Nodes', mrr: '$5,229/mo', arr: '$62,750/yr', renewal: 'Nov 12, 2026', status: 'ACTIVE' },
-    { id: 'SUB-8950', account: 'Cyberdyne Inc', plan: 'AI Analytics Data Warehouse', mrr: '$4,166/mo', arr: '$50,000/yr', renewal: 'Dec 01, 2026', status: 'UPCOMING_RENEWAL' },
-  ];
+  const [subscriptions, setSubscriptions] = useState([]);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const data = await api.getSubscriptions();
+        setSubscriptions(data);
+      } catch (err) {
+        console.error('Failed to load subscriptions:', err);
+      }
+    }
+    loadData();
+  }, []);
 
   return (
     <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-8 py-8 flex flex-col gap-6">

@@ -1,16 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function ApprovalCockpitView({ setActiveTab }) {
   const [approvalState, setApprovalState] = useState('PENDING'); // PENDING, APPROVED, REJECTED
   const [comment, setComment] = useState('');
   const [overrideChecked, setOverrideChecked] = useState(false);
+  const [chainData, setChainData] = useState(null);
 
-  const handleApprove = () => {
-    setApprovalState('APPROVED');
+  useEffect(() => {
+    async function loadChain() {
+      try {
+        const data = await api.getApprovalChain('Q-1042');
+        setChainData(data);
+      } catch (err) {
+        console.error('Failed to load approval chain:', err);
+      }
+    }
+    loadChain();
+  }, []);
+
+  const handleApprove = async () => {
+    try {
+      await api.approveQuotation('Q-1042', comment);
+      setApprovalState('APPROVED');
+    } catch (err) {
+      console.error('Failed to approve:', err);
+    }
   };
 
-  const handleReject = () => {
-    setApprovalState('REJECTED');
+  const handleReject = async () => {
+    try {
+      await api.rejectQuotation('Q-1042', comment);
+      setApprovalState('REJECTED');
+    } catch (err) {
+      console.error('Failed to reject:', err);
+    }
   };
 
   return (

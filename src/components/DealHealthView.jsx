@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function DealHealthView({ setActiveTab }) {
-  const anomalies = [
-    { id: 'ANOM-101', deal: 'Q-1042 (Acme Corp)', issue: 'Hardware discount 18.0% exceeds 15.0% rep cap', severity: 'HIGH', impact: '-6.8% Margin', time: '12m ago' },
-    { id: 'ANOM-098', deal: 'Q-1040 (Cyberdyne Inc)', issue: 'Stagnant in Negotiation state > 16 days without activity', severity: 'MEDIUM', impact: 'Churn Risk', time: '1 day ago' },
-    { id: 'ANOM-094', deal: 'Q-1035 (Starlight Ltd)', issue: 'Invoice INV-2035 overdue by 5 days', severity: 'MEDIUM', impact: 'Delayed Receivables', time: '2 days ago' },
-  ];
+  const [anomalies, setAnomalies] = useState([]);
+  const [healthScore, setHealthScore] = useState(0);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const data = await api.getDealHealth();
+        setAnomalies(data.anomalies || []);
+        setHealthScore(data.health_score || 0);
+      } catch (err) {
+        console.error('Failed to load deal health:', err);
+      }
+    }
+    loadData();
+  }, []);
 
   return (
     <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-8 py-8 flex flex-col gap-6">

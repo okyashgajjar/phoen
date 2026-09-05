@@ -1,145 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { api, setToken } from '../api';
 
 export default function QuotationsView({ setActiveTab, onOpenNewQuote }) {
   const [viewMode, setViewMode] = useState('board'); // 'board' or 'table'
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('ALL');
+  const [quotesData, setQuotesData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const quotesData = [
-    {
-      id: 'Q-1045',
-      account: 'Acme Corp',
-      title: 'Enterprise Cloud Migration Bundle',
-      amount: 12400,
-      status: 'DRAFT',
-      statusLabel: 'Draft',
-      rep: 'Marcus Vance',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPPCmZWSHv5-hqsV8B7a1ZAECPiQItn-WV9xogMiJF9w-Wwv0lW7nz_la1neL_umllylkeWsgu_7FSD2pOWnm8q6XPvfiKqQhyu7j1xzouHlH_s2STTn1V9JHHdo0Eu0j3SAECmMOP6qrMR_PrChQgZgSVqVy4tyYNOMJUlvjFrvny8XcszlX1_cJIy-5LvL05M6wWURQqleEiw4-DcrpFqbL078c-3nWaf7c9-9c1r63DGe_rRAUQ',
-      items: 2,
-      time: '2h ago',
-      margin: '42.5%',
-    },
-    {
-      id: 'Q-1048',
-      account: 'Zenith Co',
-      title: 'Hardware Bundle & Rack Systems',
-      amount: 30800,
-      status: 'DRAFT',
-      statusLabel: 'Draft',
-      rep: 'Rachel Torres',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDDy3o_lnWgGPSUoB6P7Lp4hkbJFgtCgcakv09lYBTZEbeu45LrPMl-4j7D0fkePZHXv0SFP1ARMob5zvodbhlCTX9_i_ZNXVUl4gOB_g-RzHoTv_zqTypCWZyAlVCatqoMEUNzUaJds22kANc4-RQ4UwSK9Du9ZPIAiPkL-Q40vCvfw9YyzywdZ9NKDCgjYbrQatymSh81iyvilkTl4OuioHwk3E6wEqqj5gaJi_EYElr5UK2kTIkQ',
-      items: 4,
-      time: '5h ago',
-      margin: '38.0%',
-    },
-    {
-      id: 'Q-1042',
-      account: 'Acme Corp',
-      title: 'Hardware & SLA Tier Expansion',
-      amount: 28600,
-      status: 'PENDING_APPROVAL',
-      statusLabel: 'Pending Approval',
-      flagged: true,
-      flagReason: '18% Hardware discount (Limit 15%)',
-      rep: 'Marcus Vance',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPPCmZWSHv5-hqsV8B7a1ZAECPiQItn-WV9xogMiJF9w-Wwv0lW7nz_la1neL_umllylkeWsgu_7FSD2pOWnm8q6XPvfiKqQhyu7j1xzouHlH_s2STTn1V9JHHdo0Eu0j3SAECmMOP6qrMR_PrChQgZgSVqVy4tyYNOMJUlvjFrvny8XcszlX1_cJIy-5LvL05M6wWURQqleEiw4-DcrpFqbL078c-3nWaf7c9-9c1r63DGe_rRAUQ',
-      items: 3,
-      time: '12m ago',
-      margin: '28.2%',
-    },
-    {
-      id: 'Q-1046',
-      account: 'Global Logistics',
-      title: 'Fleet Tracking API Platform',
-      amount: 54000,
-      status: 'PENDING_APPROVAL',
-      statusLabel: 'Pending Approval',
-      rep: 'David Chen',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD6eGnNwcM2SWzLN7P5S_9fzAl71lAafDpxahswhQgzYLqqw_UYITDveOBT58W0KmwcQOrX4LYatjjzmk-y6DwcLx5R6RAk3k2dcTlzY52hxYLej98xxzfmBXfxl9rP__hIUR_nV7p524_UzAOEL4XkKSANGLIb6NcLx8gG654E6TSYV8JuaKRPE4Qdpu6MXyn18gJuHb1pLmcnJBQixHFZG3WZUz9Ina6EKZp_uqg8Z0hEccvcG-HL',
-      items: 5,
-      time: '1h ago',
-      margin: '35.4%',
-    },
-    {
-      id: 'Q-1049',
-      account: 'Starlight Ltd',
-      title: 'Cybersecurity Compliance Audit',
-      amount: 46000,
-      status: 'PENDING_APPROVAL',
-      statusLabel: 'Pending Approval',
-      rep: 'Sarah Jenkins',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD6eGnNwcM2SWzLN7P5S_9fzAl71lAafDpxahswhQgzYLqqw_UYITDveOBT58W0KmwcQOrX4LYatjjzmk-y6DwcLx5R6RAk3k2dcTlzY52hxYLej98xxzfmBXfxl9rP__hIUR_nV7p524_UzAOEL4XkKSANGLIb6NcLx8gG654E6TSYV8JuaKRPE4Qdpu6MXyn18gJuHb1pLmcnJBQixHFZG3WZUz9Ina6EKZp_uqg8Z0hEccvcG-HL',
-      items: 2,
-      time: '3h ago',
-      margin: '40.1%',
-    },
-    {
-      id: 'Q-1041',
-      account: 'Apex Dynamics',
-      title: 'Automation & ERP Integration',
-      amount: 62750,
-      status: 'READY',
-      statusLabel: 'Ready to Send',
-      rep: 'Rachel Torres',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDDy3o_lnWgGPSUoB6P7Lp4hkbJFgtCgcakv09lYBTZEbeu45LrPMl-4j7D0fkePZHXv0SFP1ARMob5zvodbhlCTX9_i_ZNXVUl4gOB_g-RzHoTv_zqTypCWZyAlVCatqoMEUNzUaJds22kANc4-RQ4UwSK9Du9ZPIAiPkL-Q40vCvfw9YyzywdZ9NKDCgjYbrQatymSh81iyvilkTl4OuioHwk3E6wEqqj5gaJi_EYElr5UK2kTIkQ',
-      items: 6,
-      time: 'Yesterday',
-      margin: '44.8%',
-    },
-    {
-      id: 'Q-1044',
-      account: 'Nova Systems',
-      title: 'Cloud Infrastructure Upgrade',
-      amount: 32000,
-      status: 'READY',
-      statusLabel: 'Ready to Send',
-      rep: 'Marcus Vance',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPPCmZWSHv5-hqsV8B7a1ZAECPiQItn-WV9xogMiJF9w-Wwv0lW7nz_la1neL_umllylkeWsgu_7FSD2pOWnm8q6XPvfiKqQhyu7j1xzouHlH_s2STTn1V9JHHdo0Eu0j3SAECmMOP6qrMR_PrChQgZgSVqVy4tyYNOMJUlvjFrvny8XcszlX1_cJIy-5LvL05M6wWURQqleEiw4-DcrpFqbL078c-3nWaf7c9-9c1r63DGe_rRAUQ',
-      items: 3,
-      time: '2 days ago',
-      margin: '41.2%',
-    },
-    {
-      id: 'Q-1040',
-      account: 'Cyberdyne Inc',
-      title: 'AI Analytics & Data Warehouse',
-      amount: 62000,
-      status: 'NEGOTIATION',
-      statusLabel: 'In Negotiation',
-      portalActive: true,
-      rep: 'David Chen',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD6eGnNwcM2SWzLN7P5S_9fzAl71lAafDpxahswhQgzYLqqw_UYITDveOBT58W0KmwcQOrX4LYatjjzmk-y6DwcLx5R6RAk3k2dcTlzY52hxYLej98xxzfmBXfxl9rP__hIUR_nV7p524_UzAOEL4XkKSANGLIb6NcLx8gG654E6TSYV8JuaKRPE4Qdpu6MXyn18gJuHb1pLmcnJBQixHFZG3WZUz9Ina6EKZp_uqg8Z0hEccvcG-HL',
-      items: 4,
-      time: '18m ago',
-      margin: '36.8%',
-    },
-    {
-      id: 'Q-1039',
-      account: 'TechCorp Industries',
-      title: 'Global SaaS Enterprise License',
-      amount: 142000,
-      status: 'WON',
-      statusLabel: 'Won / Signed',
-      rep: 'Rachel Torres',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDDy3o_lnWgGPSUoB6P7Lp4hkbJFgtCgcakv09lYBTZEbeu45LrPMl-4j7D0fkePZHXv0SFP1ARMob5zvodbhlCTX9_i_ZNXVUl4gOB_g-RzHoTv_zqTypCWZyAlVCatqoMEUNzUaJds22kANc4-RQ4UwSK9Du9ZPIAiPkL-Q40vCvfw9YyzywdZ9NKDCgjYbrQatymSh81iyvilkTl4OuioHwk3E6wEqqj5gaJi_EYElr5UK2kTIkQ',
-      items: 8,
-      time: '1h ago',
-      margin: '46.5%',
-    },
-    {
-      id: 'Q-1038',
-      account: 'Enterprise Solutions',
-      title: 'Annual Security Suite Renewal',
-      amount: 85000,
-      status: 'WON',
-      statusLabel: 'Won / Signed',
-      rep: 'Marcus Vance',
-      repAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPPCmZWSHv5-hqsV8B7a1ZAECPiQItn-WV9xogMiJF9w-Wwv0lW7nz_la1neL_umllylkeWsgu_7FSD2pOWnm8q6XPvfiKqQhyu7j1xzouHlH_s2STTn1V9JHHdo0Eu0j3SAECmMOP6qrMR_PrChQgZgSVqVy4tyYNOMJUlvjFrvny8XcszlX1_cJIy-5LvL05M6wWURQqleEiw4-DcrpFqbL078c-3nWaf7c9-9c1r63DGe_rRAUQ',
-      items: 4,
-      time: '3 days ago',
-      margin: '48.1%',
-    },
-  ];
+  useEffect(() => {
+    // Auto-login as sales rep for demo
+    async function loadData() {
+      try {
+        let token = localStorage.getItem('df360_token');
+        if (!token) {
+          const loginRes = await api.login('marcus@phoen.io', 'password');
+          token = loginRes.access_token;
+          setToken(token);
+        }
+        const data = await api.getQuotations();
+        setQuotesData(data);
+      } catch (err) {
+        console.error('Failed to load quotations:', err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadData();
+  }, []);
 
   const filteredQuotes = quotesData.filter((q) => {
     const matchesSearch =

@@ -1,39 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function QuotationDetailView({ setActiveTab }) {
-  const [lineItems, setLineItems] = useState([
-    {
-      id: 1,
-      sku: 'SKU-HW-709',
-      name: 'Server Rack Ultra 2U Enterprise Edition',
-      category: 'Hardware',
-      qty: 4,
-      unitPrice: 4500,
-      discount: 18, // Flagged because > 15%
-      flagged: true,
-      flagReason: 'Exceeds 15% hardware discount threshold',
-    },
-    {
-      id: 2,
-      sku: 'SKU-SW-ENT',
-      name: 'Cloud Ops Platform Annual Seat License',
-      category: 'Software / SaaS',
-      qty: 100,
-      unitPrice: 120,
-      discount: 10,
-      flagged: false,
-    },
-    {
-      id: 3,
-      sku: 'SKU-SLA-PREM',
-      name: '24/7 Dedicated Support SLA & Technical Account Manager',
-      category: 'Services',
-      qty: 1,
-      unitPrice: 3040,
-      discount: 0,
-      flagged: false,
-    },
-  ]);
+  const [quotation, setQuotation] = useState(null);
+  const [lineItems, setLineItems] = useState([]);
+  const [status, setStatus] = useState('DRAFT');
+
+  useEffect(() => {
+    async function loadQuote() {
+      try {
+        const data = await api.getQuotation('Q-1042');
+        setQuotation(data);
+        setLineItems(data.lines || []);
+        setStatus(data.status);
+      } catch (err) {
+        console.error('Failed to load quotation Q-1042:', err);
+      }
+    }
+    loadQuote();
+  }, []);
 
   const updateQuantity = (id, delta) => {
     setLineItems((items) =>

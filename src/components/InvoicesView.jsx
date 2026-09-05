@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function InvoicesView({ setActiveTab }) {
-  const invoices = [
-    { id: 'INV-2042', account: 'Acme Corp', quoteId: 'Q-1042', amount: '$28,600.00', dueDate: 'Oct 05, 2026', status: 'UNPAID', statusLabel: 'Unpaid (Net 30)', paymentMethod: 'ACH / Wire Transfer' },
-    { id: 'INV-2039', account: 'TechCorp Industries', quoteId: 'Q-1039', amount: '$142,000.00', dueDate: 'Sept 15, 2026', status: 'PAID', statusLabel: 'Paid & Cleared', paymentMethod: 'Wire Direct (#TX-99402)' },
-    { id: 'INV-2038', account: 'Enterprise Solutions', quoteId: 'Q-1038', amount: '$85,000.00', dueDate: 'Sept 01, 2026', status: 'PAID', statusLabel: 'Paid & Cleared', paymentMethod: 'Corporate Credit Card' },
-    { id: 'INV-2035', account: 'Starlight Ltd', quoteId: 'Q-1035', amount: '$46,000.00', dueDate: 'Aug 20, 2026', status: 'OVERDUE', statusLabel: 'Overdue (5 Days)', paymentMethod: 'ACH Wire' },
-  ];
+  const [invoices, setInvoices] = useState([]);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const data = await api.getInvoices();
+        setInvoices(data);
+      } catch (err) {
+        console.error('Failed to load invoices:', err);
+      }
+    }
+    loadData();
+  }, []);
 
   return (
     <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-8 py-8 flex flex-col gap-6">

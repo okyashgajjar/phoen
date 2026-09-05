@@ -1,27 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../api';
 
 export default function CatalogRulesView({ setActiveTab }) {
-  const [rules, setRules] = useState([
-    { id: 'RULE-104', name: 'Hardware Maximum Discount Cap', category: 'Hardware', threshold: '15.0%', role: 'Sales Manager', active: true },
-    { id: 'RULE-105', name: 'Software Tier 2 Volume Discount', category: 'Software', threshold: '25.0%', role: 'Auto-Approved', active: true },
-    { id: 'RULE-208', name: 'Blended Contract Margin Floor', category: 'Global CPQ', threshold: '35.0%', role: 'Finance VP', active: true },
-    { id: 'RULE-302', name: 'Multi-Year SLA Price Lock Guarantee', category: 'Services', threshold: '10.0%', role: 'Sales Ops Lead', active: true },
-    { id: 'RULE-401', name: 'Non-Standard SLA Payment Terms (> 60 Days)', category: 'Billing', threshold: '60 Days', role: 'Treasury Admin', active: false },
-  ]);
+  const [rules, setRules] = useState([]);
+  const [catalogProducts, setCatalogProducts] = useState([]);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const data = await api.getCatalogRules();
+        setRules(data.rules || []);
+        setCatalogProducts(data.products || []);
+      } catch (err) {
+        console.error('Failed to load catalog rules:', err);
+      }
+    }
+    loadData();
+  }, []);
 
   const toggleRule = (id) => {
     setRules((rList) =>
       rList.map((r) => (r.id === id ? { ...r, active: !r.active } : r))
     );
   };
-
-  const catalogProducts = [
-    { sku: 'SKU-HW-709', name: 'Server Rack Ultra 2U Enterprise', category: 'Hardware', listPrice: '$4,500', costBasis: '$3,150', tierDiscount: 'Up to 15%' },
-    { sku: 'SKU-SW-ENT', name: 'Cloud Ops Platform License', category: 'Software', listPrice: '$120/yr', costBasis: '$45/yr', tierDiscount: 'Up to 25%' },
-    { sku: 'SKU-SLA-PREM', name: '24/7 Priority Support SLA', category: 'Services', listPrice: '$3,040', costBasis: '$1,200', tierDiscount: 'Up to 10%' },
-    { sku: 'SKU-SEC-AUD', name: 'Cybersecurity Compliance Audit', category: 'Services', listPrice: '$15,000', costBasis: '$7,500', tierDiscount: 'Up to 12%' },
-    { sku: 'SKU-NET-[#0051d5]', name: 'Fiber Optical Router Edge 10G', category: 'Hardware', listPrice: '$8,200', costBasis: '$5,900', tierDiscount: 'Up to 15%' },
-  ];
 
   return (
     <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-8 py-8 flex flex-col gap-6">
