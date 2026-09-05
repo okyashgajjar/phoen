@@ -1,0 +1,6 @@
+warehouse_id,warehouse_code,warehouse_name,city,state,country,warehouse_type,manager_name,capacity_units,status
+WH-001,AMD-DC-01,Ahmedabad Enterprise Distribution Center,Ahmedabad,Gujarat,India,CENTRAL_DISTRIBUTION_CENTER,Rajesh Patel,75000,ACTIVE
+WH-002,BOM-DC-01,Mumbai Western Regional Logistics Hub,Mumbai,Maharashtra,India,REGIONAL_WAREHOUSE,Vikram Deshmukh,90000,ACTIVE
+WH-003,BLR-DC-01,Bengaluru Tech Fulfillment Depot,Bengaluru,Karnataka,India,REGIONAL_WAREHOUSE,Ananya Rao,65000,ACTIVE
+WH-004,DEL-DC-01,Delhi NCR Enterprise Supply Hub,Gurugram,Haryana,India,REGIONAL_WAREHOUSE,Amit Sharma,80000,ACTIVE
+WH-005,HYD-DC-01,Hyderabad Cyber Logistics Center,Hyderabad,Telangana,India,REGIONAL_WAREHOUSE,Srinivas Reddy,50000,ACTIVE
