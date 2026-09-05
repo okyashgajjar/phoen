@@ -7,3 +7,6 @@ passlib[bcrypt]
 python-multipart
 pytest
 httpx
+SQLAlchemy>=2.0.0
+aiosqlite
+pandas

@@ -26,9 +26,11 @@ dist-ssr
 # .mycli
 .mycli/
 .mycli-fts/
+
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .pytest_cache/
+scratch/

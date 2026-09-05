@@ -11,16 +11,32 @@ import SubscriptionsView from './components/SubscriptionsView';
 import InvoicesView from './components/InvoicesView';
 import DealHealthView from './components/DealHealthView';
 import NewQuoteModal from './components/NewQuoteModal';
+import LandingView from './components/LandingView';
+import AuthView from './components/AuthView';
 
 export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [authMode, setAuthMode] = useState(null); // 'login' or 'signup'
   const [activeTab, setActiveTab] = useState('dashboard');
   const [searchQuery, setSearchQuery] = useState('');
   const [isNewQuoteModalOpen, setIsNewQuoteModalOpen] = useState(false);
 
   const handleCreateQuote = (newQuote) => {
-    // Navigate to Quotation Detail after creating draft
     setActiveTab('quote-detail');
   };
+
+  if (!isAuthenticated) {
+    if (authMode) {
+      return (
+        <AuthView 
+          mode={authMode} 
+          onAuthSuccess={() => setIsAuthenticated(true)} 
+          onBackToLanding={() => setAuthMode(null)} 
+        />
+      );
+    }
+    return <LandingView onNavigateToAuth={(mode) => setAuthMode(mode)} />;
+  }
 
   return (
     <div className="min-h-screen bg-[#f8f9ff] text-[#0b1c30] flex flex-col antialiased">

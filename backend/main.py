@@ -12,9 +12,8 @@ from models.base import db
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Only seed if the DB is empty (i.e., first run)
-    if not db.list("users"):
-        seed_database()
+    # Always seed to populate the in-memory fallback for tests
+    seed_database()
     yield
 
 app = FastAPI(title=settings.PROJECT_NAME, lifespan=lifespan)

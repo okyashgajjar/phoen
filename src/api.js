@@ -33,24 +33,42 @@ async function request(path, options = {}) {
   });
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: res.statusText }));
-    throw new Error(err.detail || 'API Error');
+    let errorMessage = 'API Error';
+    if (err.detail) {
+      if (typeof err.detail === 'string') {
+        errorMessage = err.detail;
+      } else if (Array.isArray(err.detail)) {
+        errorMessage = err.detail.map(e => e.msg || JSON.stringify(e)).join(', ');
+      } else {
+        errorMessage = JSON.stringify(err.detail);
+      }
+    }
+    throw new Error(errorMessage);
   }
   return res.json();
 }
 
 // ─── Auth ───
 export const api = {
-  login: (email, password) =>
-    request('/auth/login', {
+  login: async (email, password) => {
+    const res = await request('/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
-    }),
+    });
+    if (res.access_token) {
+      setToken(res.access_token);
+    }
+    return res;
+  },
 
-  signup: (data) =>
-    request('/auth/signup', {
+  signup: async (email, password, name) => {
+    const res = await request('/auth/signup', {
       method: 'POST',
-      body: JSON.stringify(data),
-    }),
+      body: JSON.stringify({ email, password, name, role: 'admin' }),
+    });
+    // The backend doesn't return an access_token on signup, so we login directly
+    return api.login(email, password);
+  },
 
   getMe: () => request('/auth/me'),
 

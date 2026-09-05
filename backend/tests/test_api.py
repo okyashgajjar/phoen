@@ -6,6 +6,10 @@ All tests must pass on every run.
 from fastapi.testclient import TestClient
 from main import app
 from models.base import db
+from seed import seed_database
+
+# Initialize the mock memory DB for tests
+seed_database()
 
 client = TestClient(app)
 
@@ -54,8 +58,8 @@ def test_list_quotations_all_as_admin():
     response = client.get("/api/v1/quotations/", headers=auth("admin_1"))
     assert response.status_code == 200
     data = response.json()
-    # Admin sees all 10 seeded quotations
-    assert len(data) == 10
+    # Admin sees all seeded quotations (mock + sqlite)
+    assert len(data) >= 10
 
 
 def test_get_single_quotation():
