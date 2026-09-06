@@ -46,8 +46,7 @@ export default function Navbar({
   onOpenNewQuote, 
   onSwitchRole, 
   searchQuery, 
-  setSearchQuery,
-  onOpenArchitecture
+  setSearchQuery
 }) {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -125,7 +124,7 @@ export default function Navbar({
   const canCreateQuote = ['sales_rep', 'admin'].includes(role);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#ffffff] border-b border-[#CED4DA]/40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <header className="sticky top-0 left-0 w-full z-50 bg-[#ffffff] border-b border-[#CED4DA]/40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="h-20 w-full px-4 lg:px-8 flex items-center justify-between gap-4">
         {/* Brand & Logo */}
         <div className="flex items-center gap-3 shrink-0 cursor-pointer" onClick={() => navigate('/dashboard')}>
@@ -198,18 +197,6 @@ export default function Navbar({
               {currentPersona.title}
             </span>
           </div>
-
-          {/* Architecture Dossier Trigger */}
-          {onOpenArchitecture && (
-            <button
-              onClick={onOpenArchitecture}
-              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F6F1F5] hover:bg-[#ebdce7] text-[#714B67] font-bold text-xs border border-[#714B67]/30 transition-all shadow-xs"
-              title="View Architecture Benchmark & 16-Table Schema"
-            >
-              <span className="material-symbols-outlined text-[16px]">account_tree</span>
-              <span>Architecture</span>
-            </button>
-          )}
 
           {/* Notification Button */}
           <div className="relative">

@@ -19,7 +19,6 @@ import DiscountGovernanceView from './components/DiscountGovernanceView';
 import ReportsView from './components/ReportsView';
 import ProductCatalogView from './components/ProductCatalogView';
 import RoleGuard from './components/RoleGuard';
-import ArchitectureModal from './components/ArchitectureModal';
 import { api, getToken, setToken } from './api';
 
 function AppContent() {
@@ -27,7 +26,6 @@ function AppContent() {
   const [authMode, setAuthMode] = useState(null); // 'login' or 'signup'
   const [searchQuery, setSearchQuery] = useState('');
   const [isNewQuoteModalOpen, setIsNewQuoteModalOpen] = useState(false);
-  const [isArchitectureModalOpen, setIsArchitectureModalOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const [apiStatus, setApiStatus] = useState(true);
 
@@ -111,11 +109,10 @@ function AppContent() {
         onSwitchRole={handleSwitchRole}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
-        onOpenArchitecture={() => setIsArchitectureModalOpen(true)}
       />
 
       {/* Main Content View Container */}
-      <main className="flex-1 w-full pb-16">
+      <main className="flex-1 w-full pt-2 pb-16">
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route 
@@ -272,12 +269,6 @@ function AppContent() {
         isOpen={isNewQuoteModalOpen}
         onClose={() => setIsNewQuoteModalOpen(false)}
         onCreated={handleCreateQuote}
-      />
-
-      {/* Evaluator Architecture & Benchmark Modal */}
-      <ArchitectureModal
-        isOpen={isArchitectureModalOpen}
-        onClose={() => setIsArchitectureModalOpen(false)}
       />
 
       {/* Global Footer */}
