@@ -1,17 +1,47 @@
 @import "tailwindcss";
 
+/* =====================================================================
+   Phoen — Odoo design tokens
+   Palette taken from the Odoo brand: plum primary, teal secondary,
+   near-black body text on a soft grey ground.
+   ===================================================================== */
+:root {
+  --odoo-primary: #714B67;
+  --odoo-primary-dark: #5C3D54;
+  --odoo-primary-light: #8A6280;
+  --odoo-primary-tint: #EFE6ED;
+  --odoo-primary-wash: #F8F4F7;
+
+  --odoo-secondary: #017E84;
+  --odoo-secondary-tint: #DCEDEE;
+
+  --odoo-success: #28A745;
+  --odoo-warning: #E9A227;
+  --odoo-danger: #E04F4F;
+  --odoo-info: #017E84;
+
+  --odoo-ink: #212529;
+  --odoo-muted: #6C757D;
+  --odoo-subtle: #4A4A4A;
+
+  --odoo-surface: #FFFFFF;
+  --odoo-ground: #F9F9F9;
+  --odoo-border: #DEE2E6;
+}
+
 @layer base {
   html {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
   }
 
   body {
-    background-color: #f8f9ff;
-    color: #0b1c30;
+    background-color: var(--odoo-ground);
+    color: var(--odoo-ink);
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
@@ -25,12 +55,43 @@
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: #c6c6cd;
+    background: #CED4DA;
     border-radius: 9999px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #76777d;
+    background: var(--odoo-muted);
   }
+
+  /* Odoo uses a plum focus ring rather than the browser default blue. */
+  :focus-visible {
+    outline: 2px solid var(--odoo-primary);
+    outline-offset: 2px;
+  }
+}
+
+/* Odoo's signature filled primary button */
+.odoo-btn-primary {
+  background-color: var(--odoo-primary);
+  color: #fff;
+  border: 1px solid var(--odoo-primary);
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 120ms ease;
+}
+.odoo-btn-primary:hover {
+  background-color: var(--odoo-primary-dark);
+  border-color: var(--odoo-primary-dark);
+}
+
+.odoo-btn-secondary {
+  background-color: #fff;
+  color: var(--odoo-primary);
+  border: 1px solid var(--odoo-primary);
+  border-radius: 4px;
+  font-weight: 500;
+}
+.odoo-btn-secondary:hover {
+  background-color: var(--odoo-primary-wash);
 }
 
 .material-symbols-outlined {

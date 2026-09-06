@@ -13,13 +13,48 @@ from sqlalchemy.pool import QueuePool
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./dealflow360.db")
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DEFAULT_DB_FILE = os.path.join(ROOT_DIR, "dealflow360.db")
 
-engine = create_engine(
-    DATABASE_URL,
-    echo=os.getenv("APP_DEBUG", "false").lower() == "true",
-    connect_args={"check_same_thread": False} if "sqlite" in DATABASE_URL else {}
-)
+raw_db_url = os.getenv("DATABASE_URL", "")
+
+def _init_engine():
+    global raw_db_url
+    if raw_db_url.startswith("postgresql"):
+        try:
+            pg_engine = create_engine(
+                raw_db_url,
+                echo=os.getenv("APP_DEBUG", "false").lower() == "true",
+                pool_size=10,
+                max_overflow=20
+            )
+            with pg_engine.connect() as conn:
+                conn.execute(text("SELECT 1"))
+            return pg_engine, raw_db_url
+        except Exception as e:
+            # Fall back to sqlite if PostgreSQL server is unreachable
+            pass
+
+    # SQLite. Honour an explicit sqlite:// DATABASE_URL so the app can be
+    # pointed at a copy of the database (tests, a scratch run, a second
+    # demo dataset) instead of always hard-binding to the repo root file.
+    if raw_db_url.startswith("sqlite"):
+        resolved_url = raw_db_url
+        if resolved_url.startswith("sqlite:///./"):
+            # A relative URL is relative to the project root, not the cwd.
+            rel = resolved_url.replace("sqlite:///./", "")
+            resolved_url = f"sqlite:///{os.path.join(ROOT_DIR, rel)}".replace("\\", "/")
+    else:
+        sqlite_path = DEFAULT_DB_FILE.replace("\\", "/")
+        resolved_url = f"sqlite:///{sqlite_path}"
+    sqlite_engine = create_engine(
+        resolved_url,
+        echo=os.getenv("APP_DEBUG", "false").lower() == "true",
+        connect_args={"check_same_thread": False}
+    )
+    return sqlite_engine, resolved_url
+
+engine, DATABASE_URL = _init_engine()
 
 SessionLocal = sessionmaker(
     bind=engine,

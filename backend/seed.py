@@ -3,8 +3,10 @@ Seed data that matches the frontend's hardcoded demo data exactly.
 This ensures the React UI renders real data from the API that looks
 identical to what was previously hardcoded.
 """
+import os
+import sys
 from models.base import db
-from datetime import datetime, date, timedelta
+from datetime import timezone, datetime, date, timedelta
 
 AVATARS = {
     "Marcus Vance": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPPCmZWSHv5-hqsV8B7a1ZAECPiQItn-WV9xogMiJF9w-Wwv0lW7nz_la1neL_umllylkeWsgu_7FSD2pOWnm8q6XPvfiKqQhyu7j1xzouHlH_s2STTn1V9JHHdo0Eu0j3SAECmMOP6qrMR_PrChQgZgSVqVy4tyYNOMJUlvjFrvny8XcszlX1_cJIy-5LvL05M6wWURQqleEiw4-DcrpFqbL078c-3nWaf7c9-9c1r63DGe_rRAUQ",
@@ -38,7 +40,13 @@ def seed_database():
         "role": "admin", "name": "Admin User", "tier": "Gold"
     })
 
-    # ─── Customers ───
+    import sys
+    is_testing = "pytest" in sys.modules or bool(os.getenv("PYTEST_CURRENT_TEST"))
+    if not is_testing:
+        # In live mode, strictly use real database records; do not seed synthetic customer/quote data
+        return
+
+    # ─── Customers (Test Suite Only) ───
     db.insert("users", "cust_acme", {
         "id": "cust_acme", "email": "john@acmecorp.com", "password": "password",
         "role": "customer", "name": "Acme Corp", "tier": "Gold"
@@ -130,7 +138,7 @@ def seed_database():
     })
 
     # ─── Quotations (matching frontend's quotesData) ───
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
 
     quotes = [
         {

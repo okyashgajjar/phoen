@@ -6,8 +6,11 @@ export default function AuthView({ mode = 'login', onAuthSuccess, onBackToLandin
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [resetModalOpen, setResetModalOpen] = useState(false);
+  const [resetSuccess, setResetSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,179 +18,409 @@ export default function AuthView({ mode = 'login', onAuthSuccess, onBackToLandin
     setError('');
     
     try {
-      if (isLogin) {
-        // Assuming your api.js has a login function that stores the token
-        // Wait, current api.js might not have login, we will implement it.
-        await api.login(email, password);
-        onAuthSuccess();
-      } else {
-        await api.signup(email, password, name);
-        onAuthSuccess();
-      }
+      // Both login and signup use api.login because our backend
+      // dynamically provisions any arbitrary new email & password!
+      await api.login(email.trim(), password);
+      onAuthSuccess();
     } catch (err) {
-      setError(err.message || 'Authentication failed. Please try again.');
+      setError(err.message || 'Authentication failed. Please check your credentials.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleQuickPersona = async (personaEmail, personaPass = 'password') => {
+    setEmail(personaEmail);
+    setPassword(personaPass);
+    setLoading(true);
+    setError('');
+    try {
+      await api.login(personaEmail, personaPass);
+      onAuthSuccess();
+    } catch (err) {
+      setError(err.message || 'Quick login failed.');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Decorative background blobs */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
-        <div className="absolute top-40 -left-40 w-96 h-96 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+    <div className="min-h-screen bg-[#F8F9FA] text-[#212529] font-sans antialiased flex flex-col justify-between py-10 px-4 sm:px-6 lg:px-8 relative selection:bg-[#714B67] selection:text-white">
+      {/* Decorative Odoo background accents */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-b from-[#EFE6ED]/80 via-[#F8F4F7]/40 to-transparent rounded-full blur-3xl -z-10"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-teal-50 rounded-full blur-3xl -z-10"></div>
+        <div className="absolute top-20 left-10 w-80 h-80 bg-purple-50 rounded-full blur-3xl -z-10"></div>
       </div>
 
-      <div className="sm:mx-auto sm:w-full sm:max-w-md relative z-10">
-        <div 
+      {/* Top Navbar Brand Link */}
+      <div className="max-w-md w-full mx-auto flex items-center justify-between z-10">
+        <button
           onClick={onBackToLanding}
-          className="flex justify-center items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity mb-6"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#6C757D] hover:text-[#714B67] transition-colors"
         >
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center shadow-lg">
-            <span className="material-symbols-outlined text-white text-2xl">insights</span>
-          </div>
-          <span className="text-3xl font-extrabold tracking-tight text-slate-900">Phoen</span>
+          <span className="material-symbols-outlined text-[16px]">arrow_back</span>
+          Back to Phoen.io
+        </button>
+        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[11px] font-bold text-emerald-800">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          PostgreSQL Cloud Live
         </div>
-        <h2 className="mt-2 text-center text-3xl font-extrabold text-slate-900">
-          {isLogin ? 'Sign in to your account' : 'Create Admin Workspace'}
-        </h2>
-        <p className="mt-2 text-center text-sm text-slate-600">
-          Or{' '}
-          <button 
-            onClick={() => { setIsLogin(!isLogin); setError(''); }}
-            className="font-medium text-blue-600 hover:text-blue-500 transition-colors"
-          >
-            {isLogin ? 'create a new admin workspace' : 'sign in to an existing workspace'}
-          </button>
-        </p>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md relative z-10">
-        <div className="bg-white py-8 px-4 shadow-xl sm:rounded-2xl sm:px-10 border border-slate-100">
-          <form className="space-y-6" onSubmit={handleSubmit}>
+      {/* Centered Odoo Login Card */}
+      <div className="sm:mx-auto sm:w-full sm:max-w-md z-10 my-auto pt-6 pb-8">
+        {/* Brand Header */}
+        <div className="text-center mb-6">
+          <div 
+            onClick={onBackToLanding}
+            className="inline-flex items-center gap-3 cursor-pointer group mb-3"
+          >
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#714B67] to-[#5C3D54] flex items-center justify-center shadow-lg shadow-[#714B67]/25 group-hover:scale-105 transition-transform">
+              <span className="material-symbols-outlined text-white text-[26px]">view_quilt</span>
+            </div>
+            <div className="text-left">
+              <span className="text-2xl font-extrabold tracking-tight text-[#212529] block leading-tight">
+                Phoen
+              </span>
+              <span className="text-[10px] uppercase font-bold tracking-wider text-[#6C757D]">
+                Enterprise Commercial Cloud
+              </span>
+            </div>
+          </div>
+
+          {/* Odoo Database Selector Pill */}
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#EFE6ED] border border-[#714B67]/20 text-xs font-mono text-[#714B67] mt-1 shadow-sm">
+            <span className="material-symbols-outlined text-[14px]">database</span>
+            <span>Database: <strong>phoen_prod</strong></span>
+          </div>
+
+          <h2 className="mt-4 text-xl font-extrabold text-[#212529]">
+            {isLogin ? 'Sign in to your account' : 'Create Enterprise Workspace'}
+          </h2>
+          <p className="text-xs text-[#6C757D] mt-1">
+            {isLogin ? 'Enter your commercial credentials below' : 'Get started with instant database self-provisioning'}
+          </p>
+        </div>
+
+        {/* Login Form Container (Odoo Web Login Style) */}
+        <div className="bg-white py-8 px-6 sm:px-8 shadow-xl rounded-2xl border border-[#DEE2E6]">
+          {/* Flexible Login Notice Banner */}
+          <div className="mb-6 p-3 rounded-xl bg-[#F8F4F7] border border-[#E0CEDB] flex items-start gap-2.5">
+            <span className="material-symbols-outlined text-[#714B67] text-[18px] flex-shrink-0 mt-0.5">
+              auto_awesome
+            </span>
+            <div className="text-xs text-[#5C3D54] leading-relaxed">
+              <strong className="font-bold text-[#714B67]">Instant Access Enabled:</strong> You can enter <span className="underline font-semibold">ANY email and ANY password</span>. New emails will automatically connect and create your user profile in PostgreSQL!
+            </div>
+          </div>
+
+          {error && (
+            <div className="mb-6 p-3.5 rounded-xl bg-rose-50 border border-rose-200 flex items-start gap-2.5 animate-in fade-in duration-200">
+              <span className="material-symbols-outlined text-rose-500 text-[18px] flex-shrink-0 mt-0.5">
+                error
+              </span>
+              <div className="text-xs text-rose-800 font-medium leading-relaxed">
+                {error}
+              </div>
+            </div>
+          )}
+
+          <form className="space-y-4" onSubmit={handleSubmit}>
             {!isLogin && (
               <div>
-                <label className="block text-sm font-medium text-slate-700">Full Name</label>
-                <div className="mt-1">
-                  <input 
-                    type="text" 
-                    required 
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4A4A] mb-1.5">
+                  Full Name
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <span className="material-symbols-outlined text-[18px]">person</span>
+                  </div>
+                  <input
+                    type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="appearance-none block w-full px-3 py-2 border border-slate-300 rounded-lg shadow-sm placeholder-slate-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    placeholder="e.g. Rajiv Mehta"
+                    className="block w-full pl-10 pr-3 py-2.5 text-sm border border-[#DEE2E6] rounded-xl focus:ring-2 focus:ring-[#714B67] focus:border-[#714B67] bg-[#F8F9FA] focus:bg-white transition-all placeholder:text-slate-400"
                   />
                 </div>
               </div>
             )}
 
             <div>
-              <label className="block text-sm font-medium text-slate-700">Email address</label>
-              <div className="mt-1 relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <span className="material-symbols-outlined text-slate-400 text-[20px]">mail</span>
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4A4A] mb-1.5">
+                Email Address
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                  <span className="material-symbols-outlined text-[18px]">mail</span>
                 </div>
-                <input 
-                  type="email" 
-                  required 
+                <input
+                  type="email"
+                  required
+                  autoFocus
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="appearance-none block w-full pl-10 pr-3 py-2 border border-slate-300 rounded-lg shadow-sm placeholder-slate-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="you@company.com"
+                  placeholder="e.g. kavita@phoen.io or your@email.com"
+                  className="block w-full pl-10 pr-3 py-2.5 text-sm border border-[#DEE2E6] rounded-xl focus:ring-2 focus:ring-[#714B67] focus:border-[#714B67] bg-[#F8F9FA] focus:bg-white transition-all placeholder:text-slate-400"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-slate-700">Password</label>
-              <div className="mt-1 relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <span className="material-symbols-outlined text-slate-400 text-[20px]">lock</span>
+              <div className="flex items-center justify-between mb-1.5">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4A4A]">
+                  Password
+                </label>
+                {isLogin && (
+                  <button
+                    type="button"
+                    onClick={() => setResetModalOpen(true)}
+                    className="text-xs font-semibold text-[#714B67] hover:underline"
+                  >
+                    Reset Password
+                  </button>
+                )}
+              </div>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                  <span className="material-symbols-outlined text-[18px]">lock</span>
                 </div>
-                <input 
-                  type="password" 
-                  required 
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="appearance-none block w-full pl-10 pr-3 py-2 border border-slate-300 rounded-lg shadow-sm placeholder-slate-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="••••••••"
+                  placeholder="Any password accepted (e.g. password)"
+                  className="block w-full pl-10 pr-10 py-2.5 text-sm border border-[#DEE2E6] rounded-xl focus:ring-2 focus:ring-[#714B67] focus:border-[#714B67] bg-[#F8F9FA] focus:bg-white transition-all placeholder:text-slate-400"
                 />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-[#714B67] transition-colors"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    {showPassword ? 'visibility_off' : 'visibility'}
+                  </span>
+                </button>
               </div>
             </div>
 
             {isLogin && (
-              <div className="flex items-center justify-between">
-                <div className="flex items-center">
-                  <input id="remember-me" type="checkbox" className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-slate-300 rounded" />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm text-slate-900">
-                    Remember me
-                  </label>
-                </div>
-                <div className="text-sm">
-                  <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
-                    Forgot password?
-                  </a>
-                </div>
+              <div className="flex items-center pt-1">
+                <input
+                  id="remember-me"
+                  type="checkbox"
+                  defaultChecked
+                  className="h-4 w-4 text-[#714B67] focus:ring-[#714B67] border-slate-300 rounded cursor-pointer"
+                />
+                <label htmlFor="remember-me" className="ml-2 block text-xs text-[#6C757D] cursor-pointer">
+                  Remember my session on this device
+                </label>
               </div>
             )}
 
-            {error && (
-              <div className="rounded-md bg-red-50 p-4 border border-red-200">
-                <div className="flex">
-                  <div className="flex-shrink-0">
-                    <span className="material-symbols-outlined text-red-400 text-[20px]">error</span>
-                  </div>
-                  <div className="ml-3">
-                    <h3 className="text-sm font-medium text-red-800">{error}</h3>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            <div>
-              <button 
-                type="submit" 
+            <div className="pt-2">
+              <button
+                type="submit"
                 disabled={loading}
-                className="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors disabled:opacity-70"
+                className="w-full py-3 px-4 rounded-xl text-white font-bold text-sm bg-[#714B67] hover:bg-[#5C3D54] active:scale-[0.99] shadow-md shadow-[#714B67]/25 transition-all flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
               >
-                {loading ? 'Processing...' : (isLogin ? 'Sign in' : 'Create account')}
+                {loading ? (
+                  <>
+                    <span className="material-symbols-outlined animate-spin text-[18px]">sync</span>
+                    Authenticating...
+                  </>
+                ) : (
+                  <>
+                    <span>{isLogin ? 'Log in' : 'Create & Launch Workspace'}</span>
+                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  </>
+                )}
               </button>
             </div>
           </form>
 
-          <div className="mt-6">
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-slate-300"></div>
-              </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-slate-500">Or continue with</span>
-              </div>
+          {/* Quick Demo Personas (1-Click Instant Login) */}
+          <div className="mt-8 pt-6 border-t border-[#DEE2E6]">
+            <div className="text-center mb-3">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#6C757D]">
+                Or 1-Click Instant Demo Login
+              </span>
             </div>
 
-            <div className="mt-6 grid grid-cols-2 gap-3">
-              <div>
-                <a href="#" className="w-full inline-flex justify-center py-2 px-4 border border-slate-300 rounded-lg shadow-sm bg-white text-sm font-medium text-slate-500 hover:bg-slate-50 transition-colors">
-                  <span className="sr-only">Sign in with Google</span>
-                  <svg className="w-5 h-5" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12C5,7.9 8.2,4.73 12.2,4.73C15.29,4.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2 12.1,2C6.42,2 2.03,6.8 2.03,12C2.03,17.05 6.16,22 12.25,22C17.6,22 21.5,18.33 21.5,12.91C21.5,11.76 21.35,11.1 21.35,11.1V11.1Z" />
-                  </svg>
-                </a>
-              </div>
-              <div>
-                <a href="#" className="w-full inline-flex justify-center py-2 px-4 border border-slate-300 rounded-lg shadow-sm bg-white text-sm font-medium text-slate-500 hover:bg-slate-50 transition-colors">
-                  <span className="sr-only">Sign in with Microsoft</span>
-                  <svg className="w-5 h-5" viewBox="0 0 21 21">
-                    <rect x="1" y="1" width="9" height="9" fill="#f25022"/>
-                    <rect x="11" y="1" width="9" height="9" fill="#7fba00"/>
-                    <rect x="1" y="11" width="9" height="9" fill="#00a4ef"/>
-                    <rect x="11" y="11" width="9" height="9" fill="#ffb900"/>
-                  </svg>
-                </a>
-              </div>
+            <div className="grid grid-cols-2 gap-2.5">
+              {/* Sales Rep */}
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => handleQuickPersona('kavita@phoen.io', 'password')}
+                className="p-2.5 rounded-xl border border-[#E0CEDB] bg-[#F8F4F7] hover:bg-[#EFE6ED] text-left transition-all flex items-center gap-2.5 group cursor-pointer"
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#714B67]/15 flex items-center justify-center text-[#714B67] flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[18px]">badge</span>
+                </div>
+                <div className="overflow-hidden">
+                  <span className="block text-xs font-bold text-[#212529] truncate">Kavita Sharma</span>
+                  <span className="block text-[10px] text-[#714B67] font-semibold truncate">Sales Executive</span>
+                </div>
+              </button>
+
+              {/* Sales Manager */}
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => handleQuickPersona('vikram@phoen.io', 'password')}
+                className="p-2.5 rounded-xl border border-amber-200 bg-amber-50/70 hover:bg-amber-100 text-left transition-all flex items-center gap-2.5 group cursor-pointer"
+              >
+                <div className="w-8 h-8 rounded-lg bg-amber-200/60 flex items-center justify-center text-amber-800 flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[18px]">verified_user</span>
+                </div>
+                <div className="overflow-hidden">
+                  <span className="block text-xs font-bold text-[#212529] truncate">Vikramaditya S.</span>
+                  <span className="block text-[10px] text-amber-800 font-semibold truncate">Sales Manager</span>
+                </div>
+              </button>
+
+              {/* Finance Manager */}
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => handleQuickPersona('david@phoen.io', 'password')}
+                className="p-2.5 rounded-xl border border-teal-200 bg-teal-50/70 hover:bg-teal-100 text-left transition-all flex items-center gap-2.5 group cursor-pointer"
+              >
+                <div className="w-8 h-8 rounded-lg bg-teal-200/60 flex items-center justify-center text-teal-800 flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[18px]">receipt_long</span>
+                </div>
+                <div className="overflow-hidden">
+                  <span className="block text-xs font-bold text-[#212529] truncate">David Chen</span>
+                  <span className="block text-[10px] text-teal-800 font-semibold truncate">Finance Manager</span>
+                </div>
+              </button>
+
+              {/* System Admin */}
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => handleQuickPersona('admin@phoen.io', 'password')}
+                className="p-2.5 rounded-xl border border-purple-200 bg-purple-50/70 hover:bg-purple-100 text-left transition-all flex items-center gap-2.5 group cursor-pointer"
+              >
+                <div className="w-8 h-8 rounded-lg bg-purple-200/60 flex items-center justify-center text-purple-800 flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+                </div>
+                <div className="overflow-hidden">
+                  <span className="block text-xs font-bold text-[#212529] truncate">Alex Admin</span>
+                  <span className="block text-[10px] text-purple-800 font-semibold truncate">System Admin</span>
+                </div>
+              </button>
             </div>
           </div>
+
+          {/* Mode Switch & Bottom Links */}
+          <div className="mt-6 pt-4 border-t border-slate-100 text-center text-xs text-[#6C757D]">
+            {isLogin ? (
+              <span>
+                Don't have an account?{' '}
+                <button
+                  type="button"
+                  onClick={() => { setIsLogin(false); setError(''); }}
+                  className="font-bold text-[#714B67] hover:underline cursor-pointer"
+                >
+                  Sign up for free
+                </button>
+              </span>
+            ) : (
+              <span>
+                Already have an account?{' '}
+                <button
+                  type="button"
+                  onClick={() => { setIsLogin(true); setError(''); }}
+                  className="font-bold text-[#714B67] hover:underline cursor-pointer"
+                >
+                  Sign in
+                </button>
+              </span>
+            )}
+          </div>
         </div>
+
+        {/* Odoo Style Footer Details */}
+        <div className="mt-6 text-center text-xs text-[#6C757D] space-y-2">
+          <div className="flex items-center justify-center gap-4 text-[11px]">
+            <a 
+              href="#manage-db" 
+              onClick={(e) => { e.preventDefault(); alert('Connected to PostgreSQL Database: phoen_prod\nHost: 127.0.0.1:5432\nDriver: psycopg2 / SQLAlchemy'); }}
+              className="hover:text-[#714B67] underline"
+            >
+              Manage Databases
+            </a>
+            <span>•</span>
+            <button 
+              onClick={onBackToLanding}
+              className="hover:text-[#714B67] underline cursor-pointer"
+            >
+              Phoen Home
+            </button>
+            <span>•</span>
+            <span className="text-slate-400">v2.4-Enterprise</span>
+          </div>
+          <p className="text-[11px] text-slate-400">
+            Powered by Phoen • Odoo-Inspired Enterprise Architecture
+          </p>
+        </div>
+      </div>
+
+      {/* Reset Password Modal */}
+      {resetModalOpen && (
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-in fade-in duration-150">
+          <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 max-w-sm w-full p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-base font-bold text-[#212529]">Reset Password</h3>
+              <button 
+                onClick={() => { setResetModalOpen(false); setResetSuccess(false); }}
+                className="text-slate-400 hover:text-slate-600 cursor-pointer"
+              >
+                <span className="material-symbols-outlined text-[20px]">close</span>
+              </button>
+            </div>
+            {resetSuccess ? (
+              <div className="p-3 bg-emerald-50 text-emerald-800 rounded-xl text-xs leading-relaxed">
+                ✓ Password reset instruction: Flexible login is currently active. You can enter <strong>any password</strong> to log into your account directly!
+              </div>
+            ) : (
+              <div className="space-y-4">
+                <p className="text-xs text-[#6C757D]">
+                  Enter your email address and we'll unlock your credentials instantly.
+                </p>
+                <input 
+                  type="email" 
+                  defaultValue={email}
+                  placeholder="name@company.com"
+                  className="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#714B67]"
+                />
+                <div className="flex justify-end gap-2">
+                  <button
+                    onClick={() => setResetModalOpen(false)}
+                    className="px-3 py-1.5 text-xs text-slate-600 hover:bg-slate-100 rounded-lg cursor-pointer"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    onClick={() => setResetSuccess(true)}
+                    className="px-4 py-1.5 text-xs font-bold bg-[#714B67] text-white rounded-lg hover:bg-[#5C3D54] cursor-pointer"
+                  >
+                    Send Reset Link
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Footer copyright */}
+      <div className="text-center text-[11px] text-slate-400 z-10">
+        © 2026 Phoen Inc. All rights reserved.
       </div>
     </div>
   );
